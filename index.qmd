@@ -1,8 +1,6 @@
-# Learning Diary {.unnumbered}
+# CASA0023 Remote Sensing {.unnumbered}
 
-This is a Quarto book.
-
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+This is a learning diary for
 
 ```{r}
 1 + 1

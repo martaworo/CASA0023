@@ -1,8 +1,8 @@
 # Introduction
 
-This is a book created from markdown and executable code.
+Remote sensors.
 
-See @knuth84 for additional discussion of literate programming.
+XYSZ
 
 ```{r}
 1 + 1

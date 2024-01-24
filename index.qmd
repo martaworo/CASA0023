@@ -1,6 +1,6 @@
 # CASA0023 Remote Sensing {.unnumbered}
 
-This is a learning diary for
+This is a learning diary for entry XYZ
 
 ```{r}
 1 + 1

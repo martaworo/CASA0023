@@ -2,6 +2,6 @@
 title: "Week 2"
 ---
 
-\`\`\`{=html}
-
-\<iframe src="C:/Users/woron/Dropbox/UCL/CASA0023 Remotely Sensing Cities and Environments/Week 1/Week 1.html" width="100%" height="400px" style="border:none;"\>\</iframe\>
+```{=html}
+<iframe src="Operational_Land_Imager.html" width="100%" height="400px" style="border:none;"></iframe>
+```

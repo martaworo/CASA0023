@@ -25,6 +25,6 @@
     "href": "week2.html",
     "title": "2  Week 2",
     "section": "",
-    "text": "```{r echo = FALSE, out.width='40%'} xaringanExtra::embed_xaringan(   url = \"C:/Users/woron/Dropbox/UCL/CASA0023 Remotely Sensing Cities and Environments/Week 1/Week 1/Operational_Land_Imager.html\",   ratio = \"16:9\")  ```"
+    "text": "```{r echo = FALSE, out.width=‘40%’} xaringanExtra::embed_xaringan( url = “C:/Users/woron/Dropbox/UCL/CASA0023 Remotely Sensing Cities and Environments/Week 1/Week 1/Operational_Land_Imager.html”, ratio = “16:9” ) ```"
   }
 ]

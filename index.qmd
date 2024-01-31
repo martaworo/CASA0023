@@ -1,7 +1,7 @@
-# CASA0023 Remote Sensing {.unnumbered}
+# Introduction {.unnumbered}
 
-This is a learning diary for entry XYZ
+This could include information on your background, previous education, professional experience, interests and what you hope to get from the module and degree. Remember this will be a public facing document, if you have an concerns about putting this information online then please speak with the module leader.
 
-```{r}
-1 + 1
-```
+Hello!
+
+My name is Marta, I am currently pursuing a master degree of Social and Geographic Data Science.

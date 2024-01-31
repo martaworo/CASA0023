@@ -2,7 +2,8 @@
 title: "Week 2"
 ---
 
+# Xaringan Presentation {.unnumbered}
+
 ```{=html}
-<iframe src="Operational_Land_Imager.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="Operational_Land_Imager.html" width="100%" height="500px" style="border:none;"></iframe>
 ```
-Error with Xaringan

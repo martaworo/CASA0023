@@ -23,8 +23,22 @@
   {
     "objectID": "week2.html",
     "href": "week2.html",
-    "title": "2  Week 2",
+    "title": "3  Week 2",
     "section": "",
-    "text": "```{r echo = FALSE, out.width=‘40%’} xaringanExtra::embed_xaringan( url = “C:/Users/woron/Dropbox/UCL/CASA0023 Remotely Sensing Cities and Environments/Week 1/Week 1/Operational_Land_Imager.html”, ratio = “16:9” ) ```"
+    "text": "```{=html}"
+  },
+  {
+    "objectID": "week1.html",
+    "href": "week1.html",
+    "title": "2  Week 1",
+    "section": "",
+    "text": "week1"
+  },
+  {
+    "objectID": "week4.html",
+    "href": "week4.html",
+    "title": "5  Week 4",
+    "section": "",
+    "text": "Week 4 policy"
   }
 ]

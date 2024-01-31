@@ -1,0 +1,16 @@
+{
+  "hash": "12f83a3c44e2f720badf604d4eae71ce",
+  "result": {
+    "markdown": "# CASA0023 Remote Sensing {.unnumbered}\n\nThis is a learning diary for entry XYZ\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

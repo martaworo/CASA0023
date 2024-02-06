@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./week5.html" rel="next">
 <link href="./week3.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -130,6 +130,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./week5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -188,6 +194,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="applications" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">4.2</span> Applications</h2>
 <p>Remotely sensed data can provide the insight into the actual vehicles emissions across the streets of Warsaw. Being able to measure the emissions under real driving conditions allow to produce an accurate emissions assessment across urban areas. By combining data from sensors with other, already existing databases, it would be possible to analyse long-term trends and gain a better understanding of emissions of the vehicle fleet. This could lead to a comprehensive analysis, allowing to identify high-emitting vehicle groups, comparing the impact of different ambient conditions, and assessing how emission performance change with the vehicle’s age. Most importantly, this could help to inform the design of aforementioned low emission zones by pointing out which vehicle types would have the most impact on emissions reduction should they be restricted from the zone.</p>
+<section id="suggested-methodology" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="suggested-methodology"><span class="header-section-number">4.2.1</span> Suggested Methodology</h3>
 <p>The estimation of air pollution can be approached as a supervised computer vision problem. Datasets can be collected from Sentinel-2 and Sentinel-5P, spatially and temporally aligned with measurements from air quality monitoring stations. The proposed model can be trained on pairs of remote sensing input and air quality target values (see Figure 1), which yields a system that predicts air pollution levels solely from globally available remote sensing data.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -195,8 +203,6 @@ ul.task-list li input[type="checkbox"] {
 <figcaption class="figure-caption">Figure 1. Overview of the proposed air pollution prediction system</figcaption>
 </figure>
 </div>
-<section id="suggested-methodology" class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="suggested-methodology"><span class="header-section-number">4.2.1</span> Suggested Methodology</h3>
 <p>NO2 measurements by EEA air quality stations would have to be filtered to remove values with insufficient quality. To investigate the possibility to estimate NO2 concentrations at quarterly and monthly frequencies, the mean of NO2 measurements for each frequency could be used as prediction target. To build the dataset, Sentinel-2 Level-2A data could be downloaded(i.e.&nbsp;corrected for atmospheric effects and enriched with cloud masks) with low cloud-coverage at the locations of air quality stations, containing 12 different bands (band 10 is empty in the case of Level-2A data). The images could then be cropped to 120×120 pixel size (∼1.2×1.2 km) centered at the location of interest. Additionally, this would be followed by visual inspection of the RGB bands of all images to ensure that no clouds or artifacts are present.</p>
 </section>
 </section>
@@ -454,8 +460,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week5.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

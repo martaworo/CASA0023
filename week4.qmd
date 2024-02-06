@@ -2,4 +2,24 @@
 title: "Week 4"
 ---
 
-Week 4 policy
+# Policy {.unnumbered}
+
+## Summary
+
+Implementation of low emission zone in Poland's capital, Warsaw, is due to take place from July 2024. This is in line with national spatial policy for Warsaw to raise the rank in the network of European Union cities as one of sustainable economic, social development and protection of natural heritage.  Precisely, this is to adhere the policy of The Real Urban Emissions (TRUE) Initiative which is a partnership of the FIA Foundation and the International Council on Clean Transportation with an aim of restricting access to polluting cars and improving urban air quality.
+
+Since the air pollution is among the major environmental health risks globally, causing almost 4.5 million premature deaths in 2019 (reference), the transportation sector, which is the leading source of this problem, should be addressed with additional consideration. Vehicle emissions standards are currently successfully controlled, however they tend to differ during real-world operation quite significantly. For this reason, the use of remote sensors can come as a useful tool allowing policy makers to make informative decisions.
+
+## Applications
+
+Remotely sensed data can provide the insight into the actual vehicles emissions across the streets of Warsaw. Being able to measure the emissions under real driving conditions allow to produce an accurate emissions assessment across urban areas. By combining data from sensors with other, already existing databases, it would be possible to analyse long-term trends and gain a better understanding of emissions of the vehicle fleet. This could lead to a comprehensive analysis, allowing to identify high-emitting vehicle groups, comparing the impact of different ambient conditions, and assessing how emission performance change with the vehicle's age. Most importantly, this could help to inform the design of aforementioned low emission zones by pointing out which vehicle types would have the most impact on emissions reduction should they be restricted from the zone.
+
+The estimation of air pollution can be approached as a supervised computer vision problem. Datasets can be collected from Sentinel-2 and Sentinel-5P, spatially and temporally aligned with measurements from air quality monitoring stations. The proposed model can be trained on pairs of remote sensing input and air quality target values (see Figure 1), which yields a system that predicts air pollution levels solely from globally available remote sensing data.
+
+![Figure 1](C:/Users/woron/Dropbox/UCL/Remote%20Sesnsing/Learning%20Diart/images/Picture1.png)
+
+## Reflection
+
+-   The reflection criterion will refer to what you have learnt in relation to the policy, city and the application of the data.
+
+## References

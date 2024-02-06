@@ -2,10 +2,28 @@
 title: "Week 1"
 ---
 
-# Satelites XYZ {.unnumbered}
+# **Getting started with remote sensing** {.unnumbered}
 
 ## Summary
 
+Before the Sun's energy reaches the Earth's surface, following interactions happen: absorption, transmission and scattering. The energy transmitted is then either absorbed by the surface material or reflected. The reflected energy is subject to scattering and absorption in the atmosphere before reaching the remote sensor. Atmospheric scattering occurs when the particles or gaseous molecules present in the atmosphere cause the EM radiation to be redirected from its original path. The amount of scattering depends on several factors including the wavelength of the radiation, the amount of particles and gases, and the distance the radiant energy travels through the atmosphere. Three types of scattering:
+
+-Rayleigh scattering -- electromagnetic radiation interacts with particles that are smaller than the wavelengths of light -\> it disturbs RS in the visible spectral range from high altitudes. Due to Rayleigh scattering the shorter wavelengths are overestimated. It diminishes the 'crispness' of photos -\> has a negative effect on digital classification using data from multispectral sensors.
+
+-Mie scattering -- occurs when the wavelength of the EM radiation is similar in size to the atmospheric particles (e.g. aerosols, a mixture of gases, water vapour, dust). Influences the spectral range from near-UV up to mid-IR, and has a greater effect on radiation of longer wavelengths that Rayleigh scattering
+
+-Non-selective scattering -- occurs when the particle size is much larger that the radiation wavelength. For example, water droplets and larger dust particles. The most characteristic example is that we see clouds as white bodies. Important: clouds pose a great limitation -- remote sensors cannot see through them, and they cast shadows.
+
 ## Applications
 
+Since electromagnetic energy is partly absorbed by various molecules in the atmosphere, such as ozone, water vapour, and carbon dioxide, it may be concluded that many of the wavelegths are not useful for remote sensing of Earth's surface, due to the corresponding energy not being able to penetrate the atmosphere. According to @Tempfli2009 only the spectrum portions can be used for remote sensing, they are referred to as atmospheric transmission windows.
+
+Due to solar energy being reflected differently based on surface characteristics, remote sensors are able to collect information which can reflect characteristics of vegetation since its properties can be detected dues to differences in energy reflection. The amount of energy reflected for a particular wavelength depends on leaf pigmentation, leaf thickness and composition (cell structure), and on the amount of water in the leaf tissue. Optical remote sensing can provide information about the type of plant and about its health condition. Similarly, this can be applied for different types of soil too. For example, iron dominated soil has a significantly different reflectance curve, due to the iron absorption. In conclusion, different forms of radiant energy allows to determine information regarding terrain surface.
+
 ## Reflection
+
+The most interesting and life-changing part of this lecture was finally getting an answer to the biggest question of my life, why the sky is blue during a day, and orange/red during a sunset. Answer lies in scattering of sunlight. Due to difference in wave sizes, blue light is visible since it travels as shorter and smaller waves. This changes when the Sun gets lower in the sky, its light passes through more of the atmosphere, allowing the reds and yellows to pass straight through to our eyes.
+
+## References
+
+Tempfli, K., Huurneman, Gc., Bakker, Wh., Janssen, L.L., Feringa, W., Gieske, A., Grabmaier, K., Hecker, C., Horn, J., Kerle, N., others, 2009. Principles of remote sensing: an introductory textbook. International Institute for Geo-Information Science and Earth Observation

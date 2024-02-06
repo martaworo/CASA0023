@@ -2,7 +2,7 @@
 title: "Week 3"
 ---
 
-# Corrections 
+# Corrections {.unnumbered}
 
 ## Summary
 -	Geometric correction – wind, Earth rotation. We use geometric correction (we identify points in a satellite image, and true image, e.g. open street map (true representation of earth). Ground control point is this location in image X, and find it on image Y. Then we do linear regression with distorted image, and with gold standard data.

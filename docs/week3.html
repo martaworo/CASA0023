@@ -130,6 +130,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./week5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -144,12 +150,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#corrections" id="toc-corrections" class="nav-link active" data-scroll-target="#corrections"><span class="header-section-number">4</span> Corrections</a>
+  <li><a href="#corrections" id="toc-corrections" class="nav-link active" data-scroll-target="#corrections">Corrections</a>
   <ul class="collapse">
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">4.1</span> Summary</a></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">4.2</span> Applications</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">4.3</span> Reflection</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.4</span> References</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">3.2</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3.4</span> References</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -174,10 +180,10 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="corrections" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Corrections</h1>
-<section id="summary" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1</span> Summary</h2>
+<section id="corrections" class="level1 unnumbered">
+<h1 class="unnumbered">Corrections</h1>
+<section id="summary" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
 <ul>
 <li>Geometric correction – wind, Earth rotation. We use geometric correction (we identify points in a satellite image, and true image, e.g.&nbsp;open street map (true representation of earth). Ground control point is this location in image X, and find it on image Y. Then we do linear regression with distorted image, and with gold standard data. Or pick coordinates, and track them in original image. From Gold to EO. The more control points, the lower the error will be. We may need to resample the grid -&gt; nearest neighbour</li>
 <li>Atmospheric correction – haze or scattering; adjacency effect – pixels bleeding into other pixels; two ways to remove effects of atmosphere: o Relative - Dark object subtraction (DOS) or histogram adjustment; Psuedo-invariant Features (PIFs). o Absolute (definitive) – done through atmospheric radiative transfer models or empirical line correction – using a field spectrometer, and the you do linear regression between these values. Path radiance (radiance reflected above the surface), atmospheric attenuation (absorption of EMR due to materials in atmosphere)</li>
@@ -185,14 +191,14 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Joining data sets/ enhancements In remote sensing it is termed Mosaicking. If our study area is between two tiles, we do join. Before we clip data, we generate a seamline – 10 pixels from both tiles, overlap, and apply histogram matching algorithm. Enhancements - Contrast enhancement – image stretch -&gt; sort of clipping histogram - Other: Ratio, Filtering, PCA, PCA2, Texture (first order,</p>
 </section>
-<section id="applications" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">4.2</span> Applications</h2>
+<section id="applications" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">3.2</span> Applications</h2>
 </section>
-<section id="reflection" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>
+<section id="reflection" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
 </section>
-<section id="references" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="references"><span class="header-section-number">4.4</span> References</h2>
+<section id="references" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="references"><span class="header-section-number">3.4</span> References</h2>
 
 
 </section>

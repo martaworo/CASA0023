@@ -18,7 +18,7 @@ Remotely sensed data can provide the insight into the actual vehicles emissions 
 
 The estimation of air pollution can be approached as a supervised computer vision problem. Datasets can be collected from Sentinel-2 and Sentinel-5P, spatially and temporally aligned with measurements from air quality monitoring stations. The proposed model can be trained on pairs of remote sensing input and air quality target values (see Figure 1), which yields a system that predicts air pollution levels solely from globally available remote sensing data.
 
-![Figure 1](images/Picture1.png)
+![Figure 1. Overview of the proposed air pollution prediction system](images/Picture1.png)
 
 ### Suggested Methodology
 

@@ -1,5 +1,5 @@
 ---
-title: "week5"
+title: "Week 5"
 ---
 
 # Google Earth Engine I {.unnumbered}

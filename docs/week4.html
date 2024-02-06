@@ -147,7 +147,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#policy" id="toc-policy" class="nav-link active" data-scroll-target="#policy">Policy</a>
   <ul class="collapse">
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">4.1</span> Summary</a></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">4.2</span> Applications</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">4.2</span> Applications</a>
+  <ul class="collapse">
+  <li><a href="#suggested-methodology" id="toc-suggested-methodology" class="nav-link" data-scroll-target="#suggested-methodology"><span class="header-section-number">4.2.1</span> Suggested Methodology</a></li>
+  </ul></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">4.3</span> Reflection</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.4</span> References</a></li>
   </ul></li>
@@ -186,7 +189,16 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="4.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">4.2</span> Applications</h2>
 <p>Remotely sensed data can provide the insight into the actual vehicles emissions across the streets of Warsaw. Being able to measure the emissions under real driving conditions allow to produce an accurate emissions assessment across urban areas. By combining data from sensors with other, already existing databases, it would be possible to analyse long-term trends and gain a better understanding of emissions of the vehicle fleet. This could lead to a comprehensive analysis, allowing to identify high-emitting vehicle groups, comparing the impact of different ambient conditions, and assessing how emission performance change with the vehicle’s age. Most importantly, this could help to inform the design of aforementioned low emission zones by pointing out which vehicle types would have the most impact on emissions reduction should they be restricted from the zone.</p>
 <p>The estimation of air pollution can be approached as a supervised computer vision problem. Datasets can be collected from Sentinel-2 and Sentinel-5P, spatially and temporally aligned with measurements from air quality monitoring stations. The proposed model can be trained on pairs of remote sensing input and air quality target values (see Figure 1), which yields a system that predicts air pollution levels solely from globally available remote sensing data.</p>
-<p><img src="C:/Users/woron/Dropbox/UCL/Remote%20Sesnsing/Learning%20Diart/images/Picture1.png" class="img-fluid" alt="Figure 1"> ## Methodology NO2 measurements by EEA air quality stations would have to be filtered to remove values with insufficient quality. To investigate the possibility to estimate NO2 concentrations at quarterly and monthly frequencies, the mean of NO2 measurements for each frequency could be used as prediction target. To build the dataset, Sentinel-2 Level-2A data could be downloaded(i.e. corrected for atmospheric effects and enriched with cloud masks) with low cloud-coverage at the locations of air quality stations, containing 12 different bands (band 10 is empty in the case of Level-2A data). The images could then be cropped to 120×120 pixel size (∼1.2×1.2 km) centered at the location of interest. Additionally, this would be followed by visual inspection of the RGB bands of all images to ensure that no clouds or artifacts are present.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Picture1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 1</figcaption>
+</figure>
+</div>
+<section id="suggested-methodology" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="suggested-methodology"><span class="header-section-number">4.2.1</span> Suggested Methodology</h3>
+<p>NO2 measurements by EEA air quality stations would have to be filtered to remove values with insufficient quality. To investigate the possibility to estimate NO2 concentrations at quarterly and monthly frequencies, the mean of NO2 measurements for each frequency could be used as prediction target. To build the dataset, Sentinel-2 Level-2A data could be downloaded(i.e.&nbsp;corrected for atmospheric effects and enriched with cloud masks) with low cloud-coverage at the locations of air quality stations, containing 12 different bands (band 10 is empty in the case of Level-2A data). The images could then be cropped to 120×120 pixel size (∼1.2×1.2 km) centered at the location of interest. Additionally, this would be followed by visual inspection of the RGB bands of all images to ensure that no clouds or artifacts are present.</p>
+</section>
 </section>
 <section id="reflection" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>

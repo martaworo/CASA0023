@@ -6,7 +6,21 @@ title: "Week 1"
 
 ## Summary
 
-Before the Sun's energy reaches the Earth's surface, following interactions happen: absorption, transmission and scattering. The energy transmitted is then either absorbed by the surface material or reflected. The reflected energy is subject to scattering and absorption in the atmosphere before reaching the remote sensor. Atmospheric scattering occurs when the particles or gaseous molecules present in the atmosphere cause the EM radiation to be redirected from its original path. The amount of scattering depends on several factors including the wavelength of the radiation, the amount of particles and gases, and the distance the radiant energy travels through the atmosphere. Three types of scattering:
+### What is remote sensing?
+
+In line with NASA definition, remote sensing can be concluded as acquiring information from a distance which can be obtained via sensors. They are able to make use out of electromagnetic spectrum (Figure 1) and atmospheric windows in order to observe a chosen target.
+
+![Figure 1. Simplified representation of the electromagnetic spectrum](images/color.jpg)
+
+Sensors can be divided into active and passive. Passive sensors detect natural energy emitted or reflected by the Earth, for example optical sensors which are able to capture sunlight reflection (Figure 2a), while active sensors emit energy and measure the reflected or backscattered signals (Figure 2b). This wide range of sensors enables remote sensing data to be acquired via satellites for global coverage, aircraft for higher spatial resolution, and even drones for small-scale data collection.
+
+![Figure 2. (a) Passive remote sensing: the sensor receives information. (b) Active remote sensing: the sensor emits and receives information.](images/active.jpg)
+
+### Scattering
+
+Before the Sun's energy reaches the Earth's surface, following interactions happen: absorption, transmission and scattering. The energy transmitted is then either absorbed by the surface material or reflected. The reflected energy is subject to scattering and absorption in the atmosphere before reaching the remote sensor.
+
+Atmospheric scattering occurs when the particles or gaseous molecules present in the atmosphere cause the EM radiation to be redirected from its original path. The amount of scattering depends on several factors including the wavelength of the radiation, the amount of particles and gases, and the distance the radiant energy travels through the atmosphere. Three types of scattering:
 
 -Rayleigh scattering -- electromagnetic radiation interacts with particles that are smaller than the wavelengths of light -\> it disturbs RS in the visible spectral range from high altitudes. Due to Rayleigh scattering the shorter wavelengths are overestimated. It diminishes the 'crispness' of photos -\> has a negative effect on digital classification using data from multispectral sensors.
 
@@ -23,6 +37,8 @@ Due to solar energy being reflected differently based on surface characteristics
 ## Reflection
 
 The most interesting and life-changing part of this lecture was finally getting an answer to the biggest question of my life, why the sky is blue during a day, and orange/red during a sunset. Answer lies in scattering of sunlight. Due to difference in wave sizes, blue light is visible since it travels as shorter and smaller waves. This changes when the Sun gets lower in the sky, its light passes through more of the atmosphere, allowing the reds and yellows to pass straight through to our eyes.
+
+Amount of cluster in the atmosphere
 
 ## References
 

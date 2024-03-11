@@ -8,7 +8,7 @@ title: "Week 1"
 
 ### What is remote sensing?
 
-In line with NASA definition, remote sensing can be concluded as acquiring information from a distance which can be obtained via sensors. They are able to make use out of electromagnetic spectrum (Figure 1) and atmospheric windows in order to observe a chosen target.
+In line with NASA definition, remote sensing can be concluded as acquiring information from a distance which can be obtained via sensors. Remote sensors are devices that make use of electromagnetic spectrum (Figure 1) and atmospheric transmission windows in order to observe a chosen target. Most remote sensors measure either an intensity change or a phase change of EM radiation.
 
 ![Figure 1. Simplified representation of the electromagnetic spectrum](images/color.jpg)
 
@@ -17,8 +17,6 @@ Sensors can be divided into active and passive. Passive sensors detect natural e
 ![Figure 2. (a) Passive remote sensing: the sensor receives information. (b) Active remote sensing: the sensor emits and receives information.](images/active.jpg)
 
 ### Scattering
-
-Before the Sun's energy reaches the Earth's surface, following interactions happen: absorption, transmission and scattering. The energy transmitted is then either absorbed by the surface material or reflected. The reflected energy is subject to scattering and absorption in the atmosphere before reaching the remote sensor.
 
 Atmospheric scattering occurs when the particles or gaseous molecules present in the atmosphere cause the EM radiation to be redirected from its original path. The amount of scattering depends on several factors including the wavelength of the radiation, the amount of particles and gases, and the distance the radiant energy travels through the atmosphere. Three types of scattering:
 
@@ -38,7 +36,7 @@ Due to solar energy being reflected differently based on surface characteristics
 
 The most interesting and life-changing part of this lecture was finally getting an answer to the biggest question of my life, why the sky is blue during a day, and orange/red during a sunset. Answer lies in scattering of sunlight. Due to difference in wave sizes, blue light is visible since it travels as shorter and smaller waves. This changes when the Sun gets lower in the sky, its light passes through more of the atmosphere, allowing the reds and yellows to pass straight through to our eyes.
 
-Amount of cluster in the atmosphere
+Another interesting realisation is the amount of objects located in the atmosphere. This raises questions whether there are sufficient policies in place that would regulate the amount of cluster, control its life cycle and ensuring suitable recycling or removal.
 
 ## References
 

@@ -174,15 +174,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sar-in-gee" id="toc-sar-in-gee" class="nav-link active" data-scroll-target="#sar-in-gee">SAR in GEE</a>
+  <li><a href="#synthetic-aperture-radar-sar" id="toc-synthetic-aperture-radar-sar" class="nav-link active" data-scroll-target="#synthetic-aperture-radar-sar">Synthetic Aperture Radar (SAR)</a>
   <ul class="collapse">
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">9.1</span> Summary</a>
   <ul class="collapse">
   <li><a href="#sar-background" id="toc-sar-background" class="nav-link" data-scroll-target="#sar-background"><span class="header-section-number">9.1.1</span> SAR background</a></li>
-  <li><a href="#sar-polarization" id="toc-sar-polarization" class="nav-link" data-scroll-target="#sar-polarization"><span class="header-section-number">9.1.2</span> SAR polarization</a></li>
+  <li><a href="#how-does-it-work" id="toc-how-does-it-work" class="nav-link" data-scroll-target="#how-does-it-work"><span class="header-section-number">9.1.2</span> How does it work?</a></li>
+  <li><a href="#sar-polarization" id="toc-sar-polarization" class="nav-link" data-scroll-target="#sar-polarization"><span class="header-section-number">9.1.3</span> SAR polarization</a></li>
+  <li><a href="#amplitude" id="toc-amplitude" class="nav-link" data-scroll-target="#amplitude"><span class="header-section-number">9.1.4</span> Amplitude</a></li>
   </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">9.2</span> Applications</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">9.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">9.4</span> References</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -207,31 +210,48 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="sar-in-gee" class="level1 unnumbered">
-<h1 class="unnumbered">SAR in GEE</h1>
+<section id="synthetic-aperture-radar-sar" class="level1 unnumbered">
+<h1 class="unnumbered">Synthetic Aperture Radar (SAR)</h1>
 <section id="summary" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">9.1</span> Summary</h2>
 <section id="sar-background" class="level3" data-number="9.1.1">
 <h3 data-number="9.1.1" class="anchored" data-anchor-id="sar-background"><span class="header-section-number">9.1.1</span> SAR background</h3>
-<p>RADAR aperture = the antenna (instead of hole like in the camera) -&gt; which allows to increase the sensors resolution; the actual antenna would have need to be several kilometers long, therefore it exploits the motion of the aircraft as it comprises multiple images - swath (Synthetic Aperture Radar)</p>
+<p>SAR remote sensing satellites are active remote sensing instruments, independent of weather and sun illumination.</p>
 </section>
-<section id="sar-polarization" class="level3" data-number="9.1.2">
-<h3 data-number="9.1.2" class="anchored" data-anchor-id="sar-polarization"><span class="header-section-number">9.1.2</span> SAR polarization</h3>
+<section id="how-does-it-work" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="how-does-it-work"><span class="header-section-number">9.1.2</span> How does it work?</h3>
+<p>They transmit electromagnetic microwave from radar antenna and record the backscattered signal from the radar target (Lee, 2009). Thanks to the use of synthetic antenna which exploits the motion of the aircraft as it comprises multiple images (swath), there is no need for physical antenna, which would have needed to be several kilometers long (!)</p>
+<p>The sensitivity of SAR sensors is a function of the: (1) band, polarization, and incidence angle of the transmitted electromagnetic signal and (2) geometric and dielectric properties of the radar target [7]. Conventional SAR systems are linearly polarized radar systems which transmit horizontally and/or vertically polarized radar signal and receive the horizontal and/or vertical polarized components of the backscattered signal (Figure 3). In SAR systems, polarization is referred to the orientation of the electrical field of the electromagnetic wave.</p>
+</section>
+<section id="sar-polarization" class="level3" data-number="9.1.3">
+<h3 data-number="9.1.3" class="anchored" data-anchor-id="sar-polarization"><span class="header-section-number">9.1.3</span> SAR polarization</h3>
 <p>Rough scattering (e.g.&nbsp;bare earth) = most sensitive to VV (vertical vertical polarization) Volume scattering (e.g.&nbsp;leaves) = cross, VH or HV Double bounce (e.g.&nbsp;trees / buildings) = most sensitive to HH. (horizontal horizontal)</p>
 <p>Polarization affects the nature of what we can see with SAR Shorter wave lengths penetrate less deeply into objects. But for example P-BAND can penetrate way more into, e.g canopy, and therefore it can provide an image for more detailed interpretation, Double Bounce scattering generates very strong return signals.</p>
 <p>Certain surfaces absorb electrical systems more strongly -&gt; this property matters for the reflected outcome, e.g.&nbsp;concrete surface vs metal surface.</p>
-<p>Amplitude Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm, the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/sar.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 1. Horizontally and vertically polarized radar signal</figcaption>
+</figure>
+</div>
+</section>
+<section id="amplitude" class="level3" data-number="9.1.4">
+<h3 data-number="9.1.4" class="anchored" data-anchor-id="amplitude"><span class="header-section-number">9.1.4</span> Amplitude</h3>
+<p>Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm, the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations</p>
 <p>DinSAR</p>
 <p>Identifying change Ratio images, Improved ratio, mean ratio, log ratio, improved ratio</p>
-<p>Pixel Wise T-Test - example -&gt; the main challange is to identify buildings that have been damaged due to conflicts - when and where. The issue is that high resolution imagery is required and CNN. Probles: - expensive - so it cannot be replicated on the whole country because it needs to be replicated, e.g.&nbsp;$13.9 million to scan all Ukraine each time - it is not persistently collected like Sentinel 1 - neural networks require training to be accurate in different geographies -&gt; paper Monitoring war destruction from space using machine learning Hannes Mueller -&gt; the issue is train/test split; the test train is based on same cities. Train model from this cities, and when new war breaks out use the same models on new place. Look at their appendix -&gt; they trained in Aleppo and test on different cities -&gt; accuracy of the model (AUC) drops significantly. Solution: SAR radar imagery. Flat roof -&gt; rumble -&gt; rough surface scattering (increase in backscattering) Ollie Ballinger issues: snow (moisture) will make signal to be absorbed differently t-test - comparison of means of two samples</p>
 </section>
 </section>
 <section id="applications" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">9.2</span> Applications</h2>
-<p>Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations</p>
+<p>Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations Pixel Wise T-Test - example -&gt; the main challange is to identify buildings that have been damaged due to conflicts - when and where. The issue is that high resolution imagery is required and CNN. Probles: - expensive - so it cannot be replicated on the whole country because it needs to be replicated, e.g.&nbsp;$13.9 million to scan all Ukraine each time - it is not persistently collected like Sentinel 1 - neural networks require training to be accurate in different geographies -&gt; paper Monitoring war destruction from space using machine learning Hannes Mueller -&gt; the issue is train/test split; the test train is based on same cities. Train model from this cities, and when new war breaks out use the same models on new place. Look at their appendix -&gt; they trained in Aleppo and test on different cities -&gt; accuracy of the model (AUC) drops significantly. Solution: SAR radar imagery. Flat roof -&gt; rumble -&gt; rough surface scattering (increase in backscattering) Ollie Ballinger issues: snow (moisture) will make signal to be absorbed differently t-test - comparison of means of two samples</p>
 </section>
 <section id="reflection" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.3</span> Reflection</h2>
+</section>
+<section id="references" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="references"><span class="header-section-number">9.4</span> References</h2>
+<p>Lee JS, Pottier E. Polarimetric Radar Imaging: From Basics to Applications. Boca Raton, FL, USA: CRC Press; 2009</p>
 
 
 </section>

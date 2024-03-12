@@ -2,13 +2,21 @@
 title: "Week 9"
 ---
 
-# SAR in GEE {.unnumbered}
+# Synthetic Aperture Radar (SAR) {.unnumbered}
 
 ## Summary
 
 ### SAR background
 
-RADAR aperture = the antenna (instead of hole like in the camera) -> which allows to increase the sensors resolution; the actual antenna would have need to be several kilometers long, therefore it exploits the motion of the aircraft as it comprises multiple images - swath (Synthetic Aperture Radar)
+SAR remote sensing satellites are active remote sensing instruments,  independent of weather and sun illumination. 
+
+### How does it work? 
+They transmit electromagnetic microwave from radar antenna and record the backscattered signal from the radar target (Lee, 2009). Thanks to the use of synthetic antenna which exploits the motion of the aircraft as it comprises multiple images (swath), there is no need for physical antenna, which would have needed to be several kilometers long (!)
+
+The sensitivity of SAR sensors is a function of the: (1) band, polarization, and incidence angle of the transmitted electromagnetic signal and (2) geometric and dielectric properties of the radar target [7]. 
+Conventional SAR systems are linearly polarized radar systems which transmit horizontally and/or vertically polarized radar signal and receive the horizontal and/or vertical polarized components of the backscattered signal (Figure 3). In SAR systems, polarization is referred to the orientation of the electrical field of the electromagnetic wave.
+
+
 
 ### SAR polarization 
 
@@ -22,15 +30,21 @@ But for example P-BAND can penetrate way more into, e.g canopy, and therefore it
 
 Certain surfaces absorb electrical systems more strongly -> this property matters for the reflected outcome, e.g. concrete surface vs metal surface. 
 
-Amplitude
+![Figure 1. Horizontally and vertically polarized radar signal](images/sar.jpg) 
+
+### Amplitude
 Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm, the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations
 
 DinSAR
 
-Identifying change
-Ratio images, Improved ratio, mean ratio, log ratio, improved ratio
 
-Pixel Wise T-Test - example -> the main challange is to identify buildings that have been damaged due to conflicts - when and where. The issue is that high resolution imagery is required and CNN. Probles: 
+## Applications
+- Change detection:
+Example 1:
+Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations
+Example 2: 
+
+Pixel Wise T-Test - example -> the main challange is to identify buildings that have been damaged due to conflicts - when and where. The issue is that high resolution imagery is required and CNN. Problems: 
 - expensive - so it cannot be replicated on the whole country because it needs to be replicated, e.g. $13.9 million to scan all Ukraine each time
 - it is not persistently collected like Sentinel 1
 - neural networks require training to be accurate in different geographies -> paper Monitoring war destruction from space using machine learning Hannes Mueller -> the issue is train/test split; the test train is based on same cities. Train model from this cities, and when new war breaks out use the same models on new place. Look at their appendix -> they trained in Aleppo and test on different cities -> accuracy of the model (AUC) drops significantly. 
@@ -38,7 +52,7 @@ Solution: SAR radar imagery. Flat roof -> rumble -> rough surface scattering (in
 issues: snow (moisture) will make signal to be absorbed differently
 t-test - comparison of means of two samples
 
-## Applications
-Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations
-
 ## Reflection
+
+## References
+Lee JS, Pottier E. Polarimetric Radar Imaging: From Basics to Applications. Boca Raton, FL, USA: CRC Press; 2009

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA0023 Remote Sensing - Learning Diary - 5&nbsp; Week 5</title>
+<title>CASA0023 Remote Sensing - Learning Diary - 9&nbsp; Week 9</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week6.html" rel="next">
-<link href="./week4.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./week8.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week9.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Week 9</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week5.html" class="sidebar-item-text sidebar-link active">
+  <a href="./week5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5</span></span></a>
   </div>
 </li>
@@ -154,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week9.html" class="sidebar-item-text sidebar-link">
+  <a href="./week9.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Week 9</span></span></a>
   </div>
 </li>
@@ -174,7 +174,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link active" data-scroll-target="#reflection"><span class="header-section-number">5.1</span> Reflection</a></li>
+  <li><a href="#sar-in-gee" id="toc-sar-in-gee" class="nav-link active" data-scroll-target="#sar-in-gee">SAR in GEE</a>
+  <ul class="collapse">
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">9.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#sar-background" id="toc-sar-background" class="nav-link" data-scroll-target="#sar-background"><span class="header-section-number">9.1.1</span> SAR background</a></li>
+  <li><a href="#sar-polarization" id="toc-sar-polarization" class="nav-link" data-scroll-target="#sar-polarization"><span class="header-section-number">9.1.2</span> SAR polarization</a></li>
+  </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">9.2</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">9.3</span> Reflection</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -183,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Week 9</span></h1>
 </div>
 
 
@@ -198,11 +207,29 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="reflection" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.1</span> Reflection</h2>
-<p>No entry this week. See you next week!</p>
+<section id="sar-in-gee" class="level1 unnumbered">
+<h1 class="unnumbered">SAR in GEE</h1>
+<section id="summary" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">9.1</span> Summary</h2>
+<section id="sar-background" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="sar-background"><span class="header-section-number">9.1.1</span> SAR background</h3>
+<p>RADAR aperture = the antenna (instead of hole like in the camera) -&gt; which allows to increase the sensors resolution; the actual antenna would have need to be several kilometers long, therefore it exploits the motion of the aircraft as it comprises multiple images - swath (Synthetic Aperture Radar)</p>
+</section>
+<section id="sar-polarization" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="sar-polarization"><span class="header-section-number">9.1.2</span> SAR polarization</h3>
+<p>Rough scattering (e.g.&nbsp;bare earth) = most sensitive to VV (vertical vertical polarization) Volume scattering (e.g.&nbsp;leaves) = cross, VH or HV Double bounce (e.g.&nbsp;trees / buildings) = most sensitive to HH. (horizontal horizontal)</p>
+<p>Polarization affects the nature of what we can see with SAR Shorter wave lengths penetrate less deeply into objects. But for example P-BAND can penetrate way more into, e.g canopy, and therefore it can provide an image for more detailed interpretation, Double bounce scattering generates very strong return signals</p>
+</section>
+</section>
+<section id="applications" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">9.2</span> Applications</h2>
+<p>SAR</p>
+</section>
+<section id="reflection" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.3</span> Reflection</h2>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -441,13 +468,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week4.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4</span></span>
+      <a href="./week8.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week6.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

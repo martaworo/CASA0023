@@ -145,5 +145,61 @@
     "title": "5  Week 5",
     "section": "5.1 Summary",
     "text": "5.1 Summary"
+  },
+  {
+    "objectID": "week9.html#summary",
+    "href": "week9.html#summary",
+    "title": "9  Week 9",
+    "section": "9.1 Summary",
+    "text": "9.1 Summary\n\n9.1.1 SAR background\nRADAR aperture = the antenna (instead of hole like in the camera) -&gt; which allows to increase the sensors resolution; the actual antenna would have need to be several kilometers long, therefore it exploits the motion of the aircraft as it comprises multiple images - swath (Synthetic Aperture Radar)\n\n\n9.1.2 SAR polarization\nRough scattering (e.g. bare earth) = most sensitive to VV (vertical vertical polarization) Volume scattering (e.g. leaves) = cross, VH or HV Double bounce (e.g. trees / buildings) = most sensitive to HH. (horizontal horizontal)\nPolarization affects the nature of what we can see with SAR Shorter wave lengths penetrate less deeply into objects. But for example P-BAND can penetrate way more into, e.g canopy, and therefore it can provide an image for more detailed interpretation, Double bounce scattering generates very strong return signals"
+  },
+  {
+    "objectID": "week9.html#applications",
+    "href": "week9.html#applications",
+    "title": "9  Week 9",
+    "section": "9.2 Applications",
+    "text": "9.2 Applications\nSAR"
+  },
+  {
+    "objectID": "week9.html#reflection",
+    "href": "week9.html#reflection",
+    "title": "9  Week 9",
+    "section": "9.3 Reflection",
+    "text": "9.3 Reflection"
+  },
+  {
+    "objectID": "week5.html#reflection",
+    "href": "week5.html#reflection",
+    "title": "5  Week 5",
+    "section": "5.1 Reflection",
+    "text": "5.1 Reflection\nNo entry this week. See you next week!"
+  },
+  {
+    "objectID": "week6.html",
+    "href": "week6.html",
+    "title": "6  Week 6",
+    "section": "",
+    "text": "7 Intro to GEE"
+  },
+  {
+    "objectID": "week7.html",
+    "href": "week7.html",
+    "title": "7  Week 7",
+    "section": "",
+    "text": "Classification I"
+  },
+  {
+    "objectID": "week8.html",
+    "href": "week8.html",
+    "title": "8  Week 8",
+    "section": "",
+    "text": "Classification II"
+  },
+  {
+    "objectID": "week9.html",
+    "href": "week9.html",
+    "title": "9  Week 9",
+    "section": "",
+    "text": "SAR in GEE"
   }
 ]

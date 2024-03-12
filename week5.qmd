@@ -2,6 +2,6 @@
 title: "Week 5"
 ---
 
-# Google Earth Engine I {.unnumbered}
+## Reflection
 
-## Summary
+No entry this week. See you next week!

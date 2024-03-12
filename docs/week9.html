@@ -218,12 +218,17 @@ ul.task-list li input[type="checkbox"] {
 <section id="sar-polarization" class="level3" data-number="9.1.2">
 <h3 data-number="9.1.2" class="anchored" data-anchor-id="sar-polarization"><span class="header-section-number">9.1.2</span> SAR polarization</h3>
 <p>Rough scattering (e.g.&nbsp;bare earth) = most sensitive to VV (vertical vertical polarization) Volume scattering (e.g.&nbsp;leaves) = cross, VH or HV Double bounce (e.g.&nbsp;trees / buildings) = most sensitive to HH. (horizontal horizontal)</p>
-<p>Polarization affects the nature of what we can see with SAR Shorter wave lengths penetrate less deeply into objects. But for example P-BAND can penetrate way more into, e.g canopy, and therefore it can provide an image for more detailed interpretation, Double bounce scattering generates very strong return signals</p>
+<p>Polarization affects the nature of what we can see with SAR Shorter wave lengths penetrate less deeply into objects. But for example P-BAND can penetrate way more into, e.g canopy, and therefore it can provide an image for more detailed interpretation, Double Bounce scattering generates very strong return signals.</p>
+<p>Certain surfaces absorb electrical systems more strongly -&gt; this property matters for the reflected outcome, e.g.&nbsp;concrete surface vs metal surface.</p>
+<p>Amplitude Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm, the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations</p>
+<p>DinSAR</p>
+<p>Identifying change Ratio images, Improved ratio, mean ratio, log ratio, improved ratio</p>
+<p>Pixel Wise T-Test - example -&gt; the main challange is to identify buildings that have been damaged due to conflicts - when and where. The issue is that high resolution imagery is required and CNN. Probles: - expensive - so it cannot be replicated on the whole country because it needs to be replicated, e.g.&nbsp;$13.9 million to scan all Ukraine each time - it is not persistently collected like Sentinel 1 - neural networks require training to be accurate in different geographies -&gt; paper Monitoring war destruction from space using machine learning Hannes Mueller -&gt; the issue is train/test split; the test train is based on same cities. Train model from this cities, and when new war breaks out use the same models on new place. Look at their appendix -&gt; they trained in Aleppo and test on different cities -&gt; accuracy of the model (AUC) drops significantly. Solution: SAR radar imagery. Flat roof -&gt; rumble -&gt; rough surface scattering (increase in backscattering) Ollie Ballinger issues: snow (moisture) will make signal to be absorbed differently t-test - comparison of means of two samples</p>
 </section>
 </section>
 <section id="applications" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">9.2</span> Applications</h2>
-<p>SAR</p>
+<p>Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations</p>
 </section>
 <section id="reflection" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.3</span> Reflection</h2>

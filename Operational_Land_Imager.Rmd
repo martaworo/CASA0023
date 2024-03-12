@@ -13,11 +13,12 @@ output:
     css: [default, metropolis, metropolis-fonts]
 ---
 
-# Overview and Mission
+# Summary: Overview and Mission
 
 
 Operational Land Imager (OLI)
 is an advanced sensor that is used on Landsat 8 and Landsat 9 satellites built by the Ball Aerospace & Technologies Corporation. 
+
 It is a push broom type of sensor that plays a crucial role in Earth observation and remote sensing. 
 
 It has a five-year design life. 
@@ -32,28 +33,43 @@ The entire Earth falls within view once every 16 days.
 
 ---
 
-# How does it work?
+# Summary: How does it work?
 
-* Measures in the visible, near infrared, and short wave infrared portions of the spectrum as well as a panchromatic band
-* Its images have 15-meter (49 ft.) panchromatic and 30-meter multi-spectral spatial resolutions along a 185 km (115 miles) wide swath, covering wide areas of the Earth’s landscape while providing sufficient resolution to distinguish features like urban centers, farms, forests and other land uses. 
+* It measures in the visible, near infrared, and short wave infrared portions of the spectrum as well as a panchromatic band
+* Its images have 15-meter panchromatic and 30-meter multi-spectral spatial resolutions along a 185 km wide swath, covering wide areas of the Earth’s landscape while providing sufficient resolution to distinguish features like urban centers, farms, forests and other land uses
 * It has a four-mirror telescope and 12-bit quantization
+
 <img src="images/Landsat_Data_Continuity_Mission_Operational_Land_Imager_Instrument_Design.jpg" id="oli-logo" />
 
 ---
 
-# Push Broom  Scanner
-
-A push broom scanner, also known as an along-track scanner, is a device for obtaining images with spectroscopic sensors. The scanners are regularly used for passive remote sensing from space, and in spectral analysis on production lines, for example with near-infrared spectroscopy used to identify contaminated food and feed.[1] The moving scanner line in a traditional photocopier (or a scanner or facsimile machine) is also a familiar, everyday example of a push broom scanner. Push broom scanners and the whisk broom scanners variant (also known as across-track scanners) are often contrasted with staring arrays (such as in a digital camera), which image objects without scanning, and are more familiar to most people.
-
-In orbital push broom sensors, a line of sensors arranged perpendicular to the flight direction of the spacecraft is used. Different areas of the surface are imaged as the spacecraft flies forward. A push broom scanner can gather more light than a whisk broom scanner because it looks at a particular area for a longer time, like a long exposure on a camera. One drawback of push broom sensors is the varying sensitivity of the individual detectors. Another drawback is that the resolution is lower than a whisk broom scanner because the entire image is captured at once.
----
-
 # More Specifications
 
-OLI’s design is an advancement in Landsat sensor technology and uses an approach demonstrated by the Advanced Land Imager sensor flown on NASA’s experimental EO-1 satellite. Instruments on earlier Landsat satellites employed scan mirrors to sweep the instrument fields of view across the surface swath width and transmit light to a few detectors. The OLI instead uses long detector arrays, with over 7,000 detectors per spectral band, aligned across its focal plane to view across the swath. This “push-broom” design results in a more sensitive instrument providing improved land surface information with fewer moving parts. With an improved signal-to-noise ratio compared to past Landsat instruments, OLI is more reliable and provides improved performance.
+OLI’s design uses an approach demonstrated by the Advanced Land Imager sensor flown on NASA’s experimental EO-1 satellite. Instruments on earlier Landsat satellites employed scan mirrors to sweep the instrument fields of view across the surface swath width and transmit light to a few detectors. The OLI instead uses long detector arrays, with over 7,000 detectors per spectral band, aligned across its focal plane to view across the swath. This “push-broom” design results in a more sensitive instrument providing improved land surface information with fewer moving parts. With an improved signal-to-noise ratio compared to past Landsat instruments, OLI is more reliable and provides improved performance.
 <img src="images/OLI.jpg"/>
 
 ---
+
+# Summary: Push Broom  Scanner
+
+A push broom scanner (an along-track scanner), is a device that captures images with the use of spectroscopic sensors. 
+
+Advantages
+
+* A significant advantage of push broom scanners over whisk broom scanners is their ability to gather more light by focusing on a specific area for an extended period, like a long exposure on a camera. 
+This feature is particularly beneficial for capturing images under difficult lighting conditions and for observing subtle features on the Earth's surface.
+
+Challenges
+
+
+* Sensitivity of the individual detectors - this variance can affect image uniformity and quality, requiring calibration and correction during image processing.
+* Resolution is lower than a whisk broom scanner because the entire image is captured at once.
+
+<img src="images/pushbroom.jpg"/>
+
+---
+
+
 # Requirements
 
 Maintaining continuity with the data archive placed significant constraining requirements on OLI. Spectrally and spatially, the spectral bands and ground sample distance (GSD) needed to match the existing data sets. OLI also had to be accurately radiometrically calibrated in a method traceable to National Institute of Standards and Technology (NIST), so it could be on the same scale as other remote sensing data sets and previous Landsat missions. Finally, its images needed to be geolocated well enough to allow direct comparison at the pixel level between data taken with OLI and data taken years ago. 
@@ -63,33 +79,61 @@ Maintaining continuity with the data archive placed significant constraining req
 # Applications
 
 The images and data that OLI has helped collect have practical applications today in:
+* environmental monitoring (e.g.monitoring changes in snow, ice, and water)
+* urban planning
+* disaster management
 * agriculture
-* mapping
-* monitoring changes in snow, ice, and water
+
+<img src="images/ice.jpg"/>
 
 ---
 
 
 
-# Applications
+# Applications - Environmental Monitoring
 
-This is slide 
+* Climate Change Studies: OLI's data assists in tracking the impacts of climate change by monitoring glacier retreat, changes in snow cover, and the health of global vegetation.
+Water Resource Management: By observing water quality, extent, and usage, OLI supports the sustainable management of freshwater resources. It aids in identifying pollution sources, tracking sediment transport, and mapping wetland changes.
+* Agriculture Optimization: OLI data is pivotal for precision agriculture, enabling farmers to monitor crop health, optimize irrigation, and improve yield predictions. It assists in detecting crop stress early, guiding efficient resource use.
+* Forest and Wildlife Conservation: The instrument's ability to map forest cover changes and habitat fragmentation is invaluable for conservation efforts, helping to combat deforestation and preserve biodiversity.
+
+---
+
+# Applications - Urban Planning
+
+* OLI can support urban planners in mapping city growth, land use changes, and infrastructure development which as a consequence improves planning sustainability and decreses environmental impact
+* OLI's rapid data collection enables effective damage assessment, aiding in the coordination of relief efforts and long-term disaster recovery planning.
+* Coastal areas benefit from OLI's surveillance, which helps in erosion studies, coastal defense planning, and the monitoring of sea-level rise effects.
+* Heritage Conservation: By providing detailed images of historical sites and landscapes, OLI contributes to the preservation of cultural heritage against the challenges posed by natural decay and human-induced changes
 
 ---
 
-# Applications
+# Applications - Agriculture
 
-This is slide 
+* Deep insights into crop health, soil conditions, and water usage.
+
+* Crop Health Monitoring: OLI enables the detection of subtle variations in plant health by analyzing reflected light across various spectral bands. This capability allows for the identification of stressed vegetation, disease presence, or nutrient deficiencies early in the crop cycle, facilitating timely intervention to protect yields.
+
+* Irrigation Management: By assessing crop water stress and monitoring irrigation practices, OLI data helps in optimizing water use. This is crucial for conserving water resources while ensuring crops receive adequate hydration. The imagery can highlight areas of both over and under-irrigation, guiding improvements in irrigation systems and strategies.
+
+* Precision Agriculture: Leveraging OLI imagery, farmers and agronomists can practice precision agriculture—applying the right treatment, at the right place, at the right time. This approach minimizes waste, reduces environmental impact, and increases productivity by tailoring farming practices to the specific needs of each plot.
+
+* Yield Estimation and Prediction: The detailed data provided by OLI assists in estimating and predicting crop yields more accurately. Analyzing historical and current satellite data helps in understanding crop performance trends and making informed decisions for future planting seasons.
+
+* Sustainable Agriculture: OLI's comprehensive monitoring capabilities support the advancement of sustainable agricultural practices. By providing insights into crop rotation effectiveness, land use changes, and degradation, OLI data helps in maintaining soil health, reducing chemical inputs, and increasing farm resilience to climate variability.
+
 
 ---
+
 # Reflections
 
-This is slide 
+
+The Operational Land Imager (OLI) on Landsat 8 symbolizes a remarkable leap forward in our ability to observe and understand the Earth's surface. Through its sophisticated imaging capabilities, OLI not only enhances our comprehension of environmental dynamics but also bridges the gap between scientific knowledge and practical application, especially in critical areas like agriculture, water management, and environmental conservation. Its high-resolution, multispectral data provides an invaluable resource for monitoring changes over time, offering insights that can lead to more informed decisions and sustainable practices. Reflection on OLI's contributions evokes a sense of optimism about the potential for technology to address some of the most pressing challenges facing our planet. It underscores the importance of continued investment in Earth observation technologies, as the data they provide plays a pivotal role in guiding policy, advancing scientific research, and promoting a more sustainable interaction with our natural environment. In this light, OLI is not just a tool for observation but a beacon of hope for future generations, illuminating paths towards environmental stewardship and resilience.
 
 ---
 # References
 
 
-This is slide 
+Add references everywhere!!
 
 ---

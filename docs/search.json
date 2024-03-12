@@ -25,7 +25,7 @@
     "href": "week2.html",
     "title": "2  Week 2",
     "section": "",
-    "text": "Xaringan Presentation"
+    "text": "Xaringan Presentation\nThis week content is a presentation in Xaringan on the selected sensor. Summary, application and reflection are all included in the presentation below:"
   },
   {
     "objectID": "week1.html",
@@ -151,14 +151,14 @@
     "href": "week9.html#summary",
     "title": "9  Week 9",
     "section": "9.1 Summary",
-    "text": "9.1 Summary\n\n9.1.1 SAR background\nRADAR aperture = the antenna (instead of hole like in the camera) -&gt; which allows to increase the sensors resolution; the actual antenna would have need to be several kilometers long, therefore it exploits the motion of the aircraft as it comprises multiple images - swath (Synthetic Aperture Radar)\n\n\n9.1.2 SAR polarization\nRough scattering (e.g. bare earth) = most sensitive to VV (vertical vertical polarization) Volume scattering (e.g. leaves) = cross, VH or HV Double bounce (e.g. trees / buildings) = most sensitive to HH. (horizontal horizontal)\nPolarization affects the nature of what we can see with SAR Shorter wave lengths penetrate less deeply into objects. But for example P-BAND can penetrate way more into, e.g canopy, and therefore it can provide an image for more detailed interpretation, Double bounce scattering generates very strong return signals"
+    "text": "9.1 Summary\n\n9.1.1 SAR background\nRADAR aperture = the antenna (instead of hole like in the camera) -&gt; which allows to increase the sensors resolution; the actual antenna would have need to be several kilometers long, therefore it exploits the motion of the aircraft as it comprises multiple images - swath (Synthetic Aperture Radar)\n\n\n9.1.2 SAR polarization\nRough scattering (e.g. bare earth) = most sensitive to VV (vertical vertical polarization) Volume scattering (e.g. leaves) = cross, VH or HV Double bounce (e.g. trees / buildings) = most sensitive to HH. (horizontal horizontal)\nPolarization affects the nature of what we can see with SAR Shorter wave lengths penetrate less deeply into objects. But for example P-BAND can penetrate way more into, e.g canopy, and therefore it can provide an image for more detailed interpretation, Double Bounce scattering generates very strong return signals.\nCertain surfaces absorb electrical systems more strongly -&gt; this property matters for the reflected outcome, e.g. concrete surface vs metal surface.\nAmplitude Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm, the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations\nDinSAR\nIdentifying change Ratio images, Improved ratio, mean ratio, log ratio, improved ratio\nPixel Wise T-Test - example -&gt; the main challange is to identify buildings that have been damaged due to conflicts - when and where. The issue is that high resolution imagery is required and CNN. Probles: - expensive - so it cannot be replicated on the whole country because it needs to be replicated, e.g. $13.9 million to scan all Ukraine each time - it is not persistently collected like Sentinel 1 - neural networks require training to be accurate in different geographies -&gt; paper Monitoring war destruction from space using machine learning Hannes Mueller -&gt; the issue is train/test split; the test train is based on same cities. Train model from this cities, and when new war breaks out use the same models on new place. Look at their appendix -&gt; they trained in Aleppo and test on different cities -&gt; accuracy of the model (AUC) drops significantly. Solution: SAR radar imagery. Flat roof -&gt; rumble -&gt; rough surface scattering (increase in backscattering) Ollie Ballinger issues: snow (moisture) will make signal to be absorbed differently t-test - comparison of means of two samples"
   },
   {
     "objectID": "week9.html#applications",
     "href": "week9.html#applications",
     "title": "9  Week 9",
     "section": "9.2 Applications",
-    "text": "9.2 Applications\nSAR"
+    "text": "9.2 Applications\nPhase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations"
   },
   {
     "objectID": "week9.html#reflection",

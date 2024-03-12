@@ -27,6 +27,17 @@ Phase - location of wave on the cycle when it comes back to the sensor. If the s
 
 DinSAR
 
+Identifying change
+Ratio images, Improved ratio, mean ratio, log ratio, improved ratio
+
+Pixel Wise T-Test - example -> the main challange is to identify buildings that have been damaged due to conflicts - when and where. The issue is that high resolution imagery is required and CNN. Probles: 
+- expensive - so it cannot be replicated on the whole country because it needs to be replicated, e.g. $13.9 million to scan all Ukraine each time
+- it is not persistently collected like Sentinel 1
+- neural networks require training to be accurate in different geographies -> paper Monitoring war destruction from space using machine learning Hannes Mueller -> the issue is train/test split; the test train is based on same cities. Train model from this cities, and when new war breaks out use the same models on new place. Look at their appendix -> they trained in Aleppo and test on different cities -> accuracy of the model (AUC) drops significantly. 
+Solution: SAR radar imagery. Flat roof -> rumble -> rough surface scattering (increase in backscattering) Ollie Ballinger
+issues: snow (moisture) will make signal to be absorbed differently
+t-test - comparison of means of two samples
+
 ## Applications
 Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations
 

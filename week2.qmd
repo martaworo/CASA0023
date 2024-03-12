@@ -4,6 +4,8 @@ title: "Week 2"
 
 # Xaringan Presentation {.unnumbered}
 
+This week content is a presentation in Xaringan on the selected sensor. Summary, application and reflection are all included in the presentation below:
+
 ```{=html}
 <iframe src="Operational_Land_Imager.html" width="100%" height="500px" style="border:none;"></iframe>
 ```

@@ -1,0 +1,33 @@
+---
+title: "Week 9"
+---
+
+# SAR in GEE {.unnumbered}
+
+## Summary
+
+### SAR background
+
+RADAR aperture = the antenna (instead of hole like in the camera) -> which allows to increase the sensors resolution; the actual antenna would have need to be several kilometers long, therefore it exploits the motion of the aircraft as it comprises multiple images - swath (Synthetic Aperture Radar)
+
+### SAR polarization 
+
+Rough scattering (e.g. bare earth) = most sensitive to VV (vertical vertical polarization)
+Volume scattering (e.g. leaves) = cross, VH or HV
+Double bounce (e.g. trees / buildings) = most sensitive to HH. (horizontal horizontal)
+
+Polarization affects the nature of what we can see with SAR
+Shorter wave lengths penetrate less deeply into objects. 
+But for example P-BAND can penetrate way more into, e.g canopy, and therefore it can provide an image for more detailed interpretation, Double Bounce scattering generates very strong return signals.
+
+Certain surfaces absorb electrical systems more strongly -> this property matters for the reflected outcome, e.g. concrete surface vs metal surface. 
+
+Amplitude
+Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm, the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations
+
+DinSAR
+
+## Applications
+Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations
+
+## Reflection

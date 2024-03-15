@@ -1,58 +1,62 @@
 ---
 title: "Week 9"
+bibliography: references.bib
 ---
 
 # Synthetic Aperture Radar (SAR) {.unnumbered}
 
 ## Summary
 
-### SAR background
-
 SAR remote sensing satellites are active remote sensing instruments,  independent of weather and sun illumination. 
 
 ### How does it work? 
 They transmit electromagnetic microwave from radar antenna and record the backscattered signal from the radar target (Lee, 2009). Thanks to the use of synthetic antenna which exploits the motion of the aircraft as it comprises multiple images (swath), there is no need for physical antenna, which would have needed to be several kilometers long (!)
 
-The sensitivity of SAR sensors is a function of the: (1) band, polarization, and incidence angle of the transmitted electromagnetic signal and (2) geometric and dielectric properties of the radar target [7]. 
-Conventional SAR systems are linearly polarized radar systems which transmit horizontally and/or vertically polarized radar signal and receive the horizontal and/or vertical polarized components of the backscattered signal (Figure 3). In SAR systems, polarization is referred to the orientation of the electrical field of the electromagnetic wave.
-
-
-
 ### SAR polarization 
+Polarization of SAR implies the orientation of the electrical field of the electromagnetic wave (Figure 1). It affects the nature of what we can see with SAR.
+
+
+![Figure 1. Horizontally and vertically polarized radar signal](images/sar.png) 
+
+Shorter wave lengths penetrate less deeply into objects. 
+But for example P-BAND can penetrate way more into, e.g canopy, and therefore it can provide an image for more detailed interpretation, Double Bounce scattering generates very strong return signals.
 
 Rough scattering (e.g. bare earth) = most sensitive to VV (vertical vertical polarization)
 Volume scattering (e.g. leaves) = cross, VH or HV
 Double bounce (e.g. trees / buildings) = most sensitive to HH. (horizontal horizontal)
 
-Polarization affects the nature of what we can see with SAR
-Shorter wave lengths penetrate less deeply into objects. 
-But for example P-BAND can penetrate way more into, e.g canopy, and therefore it can provide an image for more detailed interpretation, Double Bounce scattering generates very strong return signals.
-
-Certain surfaces absorb electrical systems more strongly -> this property matters for the reflected outcome, e.g. concrete surface vs metal surface. 
-
-![Figure 1. Horizontally and vertically polarized radar signal](images/sar.jpg) 
-
-### Amplitude
-Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm, the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations
-
-DinSAR
+Certain surfaces absorb electrical systems more strongly -> this property matters for the reflected outcome, e.g. concrete surface vs metal surface.
+Interestingly, SAR does not penetrate water beyond a few millimeters --> as a consequence one of the limitations of SAR imagery is that moisture (e.g. snow) will make signal to be absorbed differently
 
 
 ## Applications
-- Change detection:
-Example 1:
-Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations
-Example 2: 
+Change detection:
 
-Pixel Wise T-Test - example -> the main challange is to identify buildings that have been damaged due to conflicts - when and where. The issue is that high resolution imagery is required and CNN. Problems: 
-- expensive - so it cannot be replicated on the whole country because it needs to be replicated, e.g. $13.9 million to scan all Ukraine each time
-- it is not persistently collected like Sentinel 1
-- neural networks require training to be accurate in different geographies -> paper Monitoring war destruction from space using machine learning Hannes Mueller -> the issue is train/test split; the test train is based on same cities. Train model from this cities, and when new war breaks out use the same models on new place. Look at their appendix -> they trained in Aleppo and test on different cities -> accuracy of the model (AUC) drops significantly. 
-Solution: SAR radar imagery. Flat roof -> rumble -> rough surface scattering (increase in backscattering) Ollie Ballinger
-issues: snow (moisture) will make signal to be absorbed differently
-t-test - comparison of means of two samples
+- Example 1 (from lecture)
+Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations
+- Example 2 (reference: https://www.economist.com/interactive/briefing/2023/02/23/data-from-satellites-reveal-the-vast-extent-of-fighting-in-ukraine)
+Pixel Wise T-Test  -> the main challange is to identify buildings that have been damaged due to conflicts - when and where. However, in previous projects based on satellite imagery and CNN techniques, there have been following issues observed:
+  - expensive - it cannot be replicated on the whole country because it needs high resolution imagery to be replicated, e.g. $13.9 million to scan all Ukraine each time
+  - it is not persistently collected like, e.g. Sentinel 1
+  - neural networks require training to be accurate in different geographies -> according to  Monitoring war destruction from space using machine learning Hannes Mueller -> the issue is train/test split is based on same cities and the accuracy results, if replicated in different cities (even if in the same country) tend to drop significantly. 
+In this case, as explored by Ollie Ballinger, SAR radar imagery can be applied, as it has been presented on the example of Ukraine and Gaza war zones, where flat roof surface (rumbled or not) has been used to detect damaged buildings (possible thanks to changes in backscattering). This method allowed to replicate high accuracies across different cities in different countries. Limitations here: snow on the rooftops!
+- Example 3 (reference https://www.intechopen.com/chapters/63701)
+Wetland Monitoring and Mapping Using Synthetic Aperture Radar
+Implementation of SAR imagery for water level monitoring, i.e. allows the evaluation of methane emission contributions to climate change from degraded and thawing wetlands. SAR is particularly useful in this case since it provides data regardless of weather conditions and lighting, and wetlands tend to be located in remote areas or under cloud cover. 
+- Soldiery applications 
+- ships
+
+SAR has become one of the valued remote sensing tools for both soldierly and non-combatant users. Various soldierly SAR applications are intelligence gathering, battlefield survey, and weapons supervision. The non-combatant applications like agricultural and land-use monitoring, topographic planning, geology and mining, oil spill observation, sea ice observation, oceanography and planetary or celestial examinations [11]. SAR has wide practical applications on ocean as well as on land like artificial illegal or coincidental spills are visible in SAR images in the oceans, ships detection and tracking in the oceans, observation of natural leakage from oil deposits in the oceans, providing hints for the oil industries, ocean wave forecasting and marine climatology, regional ice monitoring. This is very crucial and helpful for navigation in ice-infested waters [11].
+
+Synthetic Aperture Radar. Available at: http://wtlab.iis.u-tokyo.ac.jp/~wataru/lecture/rsgis/rsnote/cp4/cp4-3.htm
+
+Conversely, add some limitations
+https://link.springer.com/article/10.1007/s11831-021-09548-z
 
 ## Reflection
+
+This week I am especially amazed by the applications of SAR imagery both in soldierly and non-combatant uses. Its ability to provide a vast data in an affordable way allows for advanced analysis 
+
 
 ## References
 Lee JS, Pottier E. Polarimetric Radar Imaging: From Basics to Applications. Boca Raton, FL, USA: CRC Press; 2009

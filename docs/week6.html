@@ -174,7 +174,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#intro-to-gee" id="toc-intro-to-gee" class="nav-link active" data-scroll-target="#intro-to-gee"><span class="header-section-number">7</span> Intro to GEE</a></li>
+  <li><a href="#google-earth-engine" id="toc-google-earth-engine" class="nav-link active" data-scroll-target="#google-earth-engine"><span class="header-section-number">7</span> Google Earth Engine</a>
+  <ul class="collapse">
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link" data-scroll-target="#what-is-it"><span class="header-section-number">7.1.1</span> What is it?</a></li>
+  </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">7.2</span> Applications</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">7.3</span> Reflections</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.4</span> References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -198,10 +207,39 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="intro-to-gee" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Intro to GEE</h1>
+<section id="google-earth-engine" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Google Earth Engine</h1>
+<section id="summary" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
+<section id="what-is-it" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="what-is-it"><span class="header-section-number">7.1.1</span> What is it?</h3>
+<p>Geospatial data processing &amp; analysis cloud-based platform powered by Google; It hosts petabytes of over 40 years of remotely-sensed data, such as Landsat, MODIS, National Oceanographic and Atmospheric Administration Advanced Very High Resolution Radiometer (NOAA AVHRR), Sentinel 1, 2, 3 and 5-P; and Advanced Land Observing Satellite (ALOS) data. (Gorelick et al., 2017). MODIS collections for example, provide a twice a day global coverage. N. Gorelick et al.&nbsp;Google Earth Engine: Planetary-scale geospatial analysis for everyone</p>
+<p>GEE platform data is publicly available and is designed to be used with an explorer web app. It also provides various machine learning algorithms based on Google’s computational infrastructure and allows for high-speed parallel processing. In addition it provides library of APIs enabling the use of JavaScript and Python for analysis (<span class="citation" data-cites="Tamiminia">(<a href="references.html#ref-Tamiminia" role="doc-biblioref"><strong>Tamiminia?</strong></a>)</span> et al., 2020) https://www.sciencedirect.com/science/article/abs/pii/S0924271620300927</p>
+<p>This tool enables for analysis and visualizing big geospatial data without access to supercomputer or specialized coding expertise (cool!)</p>
+</section>
+</section>
+<section id="applications" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">7.2</span> Applications</h2>
+<p>Overall, the Google Earth Engine has a vast and growing presence across the current literature. It has found its applications in the analysis of many societal issues such as: deforestation, drought, disaster, disease, food security, water management, climate monitoring, and environmental protection, as pointed by Google Earth Engine: Planetary-scale geospatial analysis for everyone Gorelick, 2017). Remote sensing applications. GEE has shown its potential in disaster mapping. However, it can delve into: droughts [198,199], earthquakes [200], floods [201,202], fires [203,204], and landslides [205,206]. Likewise, environmental monitoring [207] and mangrove mapping [208] have become very important in recent years.</p>
+<p>Since GEE is a rather multidisciplinary tool with many applications, I will focus on one particular research that I found quite interesting, i.e.&nbsp;application for wetland mapping and monitoring using sentinel data. https://www.mdpi.com/2072-4292/13/20/4169 presents its methodology (Figure 1) using a combination of Sentinel-1 and Sentinel-2 images and the pixel-based Random Forest (RF) classifier within GEE. Wetland maps were generated with a 10-m spatial resolution which yielded Overall Accuracy and Kappa coefficient values of respectively, 97.98% and 0.97, which indicates the high efficiency of the proposed method in mapping of this ecosystem. It has been pointed that despite GEE offering a preprocessed data, the Sentinel-1 scenes included speckle noise, which has a negative impact on the classification results as it has been concluded by other studies (Adeli, S.; Salehi, B.; Mahdianpari, M.; Quackenbush, L.J.; Brisco, B.; Tamiminia, H.; Shaw, S. Wetland Monitoring Using SAR Data: A Meta-Analysis and Comprehensive Review. Remote Sens. 2020, 12, 2190. [Google Scholar] [CrossRef]). This signals as a reminder for further research to ensure pre-processing steps in their methodologies. This study proved to result in a time-saving and cost-efficient method of intensive field data collection, allowing to map and monitor important environmental changes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wetland.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 1. Methodology used in <em>Wetland Monitoring Using SAR Data: A Meta-Analysis and Comprehensive Review(2020)</em></figcaption>
+</figure>
+</div>
+<p>Considering the numerous advantages of Google Earth Engine, it is easy to forget about its negative externalities! As it has been noted by https://www.sciencedirect.com/science/article/pii/S0048969723072121 “A simple band arithmetic function applied to a Landsat 9 scene using Google Earth Engine (GEE) generated CO2 equivalent (e) emissions of 0.042–0.69 g CO2e (locally) and 0.13–0.45 g CO2e”. There have been many studies signaling that data centres are already producing CO2 emissions similar in a scale to emissions from aviation (Carbon footprint in data centre: A case study https://link.springer.com/article/10.1007/s11948-019-00171-7). I think this information should be treated as a motivation to seek more transparency from cloud services regarding their data life-cycle impacts, and the actual cost of cloud computation.</p>
+</section>
+<section id="reflections" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">7.3</span> Reflections</h2>
+<p>This week I guess I embedded some of the reflective notion within the part above as well. Nevertheless, it is extremely interesting to see the exponential increase in number of articles published regarding GEE. Availability of this data, even though it still requires expertise to use, has opened many opportunities for researches from around the world, and even hobbyists. This is a great step towards democratization of data access and distribution of power. Nevertheless, with great power comes great responsibility! As I mentioned earlier, all of the consequences need to be taken into account, e.g.&nbsp;carbon footprint (!), insufficient data centres’ environmental policies, etc. At the end of the day, <em>there is no such thing as a free lunch</em>.</p>
+</section>
+<section id="references" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="references"><span class="header-section-number">7.4</span> References</h2>
+<p>https://www.sciencedirect.com/science/article/pii/S2352938522002154</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

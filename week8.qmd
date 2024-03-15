@@ -1,5 +1,12 @@
 ---
 title: "Week 8"
+bibliography: references.bib
 ---
 
 # Classification II {.unnumbered}
+
+## Summary
+
+## Applications
+
+## Reflections

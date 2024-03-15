@@ -2,6 +2,6 @@
 title: "Week 5"
 ---
 
-## Reflection
-
 No entry required. See you next week!
+
+{{< video https://www.youtube.com/watch?v=lOqVQPq8zm8 >}}

@@ -1,5 +1,6 @@
 ---
 title: "Week 4"
+bibliography: references.bib
 ---
 
 # Policy {.unnumbered}
@@ -28,5 +29,6 @@ NO2 measurements by EEA air quality stations would have to be filtered to remove
 ## Reflection
 
 -   The reflection criterion will refer to what you have learnt in relation to the policy, city and the application of the data.
+Fun fact, they stopped this projects with protests, etc. ... 
 
 ## References

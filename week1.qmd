@@ -1,5 +1,6 @@
 ---
 title: "Week 1"
+bibliography: references.bib
 ---
 
 # **Getting started with remote sensing** {.unnumbered}
@@ -26,11 +27,11 @@ Atmospheric scattering occurs when the particles or gaseous molecules present in
 
 -Non-selective scattering -- occurs when the particle size is much larger that the radiation wavelength. For example, water droplets and larger dust particles. The most characteristic example is that we see clouds as white bodies. Important: clouds pose a great limitation -- remote sensors cannot see through them, and they cast shadows.
 
+Since electromagnetic energy is partly absorbed by various molecules in the atmosphere, such as ozone, water vapour, and carbon dioxide, it may be concluded that many of the wavelegths are not useful for remote sensing of Earth's surface, due to the corresponding energy not being able to penetrate the atmosphere. According to @Tempfli2009 only the spectrum portions can be used for remote sensing, they are referred to as atmospheric transmission windows. `[@Knuth1984]`.
+
 ## Applications
 
-Since electromagnetic energy is partly absorbed by various molecules in the atmosphere, such as ozone, water vapour, and carbon dioxide, it may be concluded that many of the wavelegths are not useful for remote sensing of Earth's surface, due to the corresponding energy not being able to penetrate the atmosphere. According to @Tempfli2009 only the spectrum portions can be used for remote sensing, they are referred to as atmospheric transmission windows.
-
-Due to solar energy being reflected differently based on surface characteristics, remote sensors are able to collect information which can reflect characteristics of vegetation since its properties can be detected dues to differences in energy reflection. The amount of energy reflected for a particular wavelength depends on leaf pigmentation, leaf thickness and composition (cell structure), and on the amount of water in the leaf tissue. Optical remote sensing can provide information about the type of plant and about its health condition. Similarly, this can be applied for different types of soil too. For example, iron dominated soil has a significantly different reflectance curve, due to the iron absorption. In conclusion, different forms of radiant energy allows to determine information regarding terrain surface.
+Due to solar energy being reflected differently based on surface characteristics, remote sensors are able to collect information which can reflect characteristics of vegetation since its properties can be detected dues to differences in energy reflection. The amount of energy reflected for a particular wavelength depends on leaf pigmentation, leaf thickness and composition (cell structure), and on the amount of water in the leaf tissue. Optical remote sensing can provide information about the type of plant and about its health condition. Or even forest biodervisity can be tracked with the use of remote sensors which are able to provide detailed information on key leaf traits such as leaf mass per area (wow!) (https://www.mdpi.com/2072-4292/13/17/3352) Similarly, this can be applied for different types of soil too. For example, iron dominated soil has a significantly different reflectance curve, due to the iron absorption. In conclusion, different forms of radiant energy allows to determine information regarding terrain surface (https://www.mdpi.com/2072-4292/12/7/1197) . Marek Wójtowicz1, Andrzej Wójtowicz2\*, Jan Piekarczyk (2016) presented how to optimize profitability of agricultural crop production with the use of remote sensors. This capability can be especially beneficial for farmers allowing them to make informed decisions optimizing agricultural practices. However, as it has been pointed by X (REFERENCE), remote sensing data analysis might be costly, and require some expert knowledge. For this reason, not all farmers, as in the outlined case, would be able to benefit from this opportunity. Perhaps, only the biggest farming corporations are able to benefit of such practices.
 
 ## Reflection
 

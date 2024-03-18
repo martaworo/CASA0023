@@ -1,6 +1,7 @@
 ---
 title: "Week 1"
 bibliography: references.bib
+link-citations: true
 ---
 
 # **Getting started with remote sensing** {.unnumbered}
@@ -9,11 +10,11 @@ bibliography: references.bib
 
 ### What is remote sensing?
 
-In line with NASA definition, remote sensing can be concluded as acquiring information from a distance which can be obtained via sensors. Remote sensors are devices that make use of electromagnetic spectrum (Figure 1) and atmospheric transmission windows in order to observe a chosen target. Most remote sensors measure either an intensity change or a phase change of EM radiation.
+Remote sensing can be concluded as acquiring information from a distance which can be obtained via sensors. Remote sensors are devices that make use of the electromagnetic spectrum (Figure 1) and atmospheric transmission windows in order to observe a chosen target. Most remote sensors measure either an intensity change or a phase change of EM radiation.
 
 ![Figure 1. Simplified representation of the electromagnetic spectrum](images/color.jpg)
 
-Sensors can be divided into active and passive. Passive sensors detect natural energy emitted or reflected by the Earth, for example optical sensors which are able to capture sunlight reflection (Figure 2a), while active sensors emit energy and measure the reflected or backscattered signals (Figure 2b). This wide range of sensors enables remote sensing data to be acquired via satellites for global coverage, aircraft for higher spatial resolution, and even drones for small-scale data collection.
+Sensors can be divided into active and passive. Passive sensors detect natural energy emitted or reflected by the Earth, for example, optical sensors which are able to capture sunlight reflection (Figure 2a), while active sensors emit energy and measure the reflected or backscattered signals (Figure 2b). This wide range of sensors enables remote sensing data to be acquired via satellites for global coverage, aircraft for higher spatial resolution, and even drones for small-scale data collection.
 
 ![Figure 2. (a) Passive remote sensing: the sensor receives information. (b) Active remote sensing: the sensor emits and receives information.](images/active.jpg)
 
@@ -23,22 +24,23 @@ Atmospheric scattering occurs when the particles or gaseous molecules present in
 
 -Rayleigh scattering -- electromagnetic radiation interacts with particles that are smaller than the wavelengths of light -\> it disturbs RS in the visible spectral range from high altitudes. Due to Rayleigh scattering the shorter wavelengths are overestimated. It diminishes the 'crispness' of photos -\> has a negative effect on digital classification using data from multispectral sensors.
 
--Mie scattering -- occurs when the wavelength of the EM radiation is similar in size to the atmospheric particles (e.g. aerosols, a mixture of gases, water vapour, dust). Influences the spectral range from near-UV up to mid-IR, and has a greater effect on radiation of longer wavelengths that Rayleigh scattering
+-Mie scattering -- occurs when the wavelength of the EM radiation is similar in size to the atmospheric particles (e.g. aerosols, a mixture of gases, water vapour, dust). Influences the spectral range from near-UV up to mid-IR, and has a greater effect on radiation of longer wavelengths than Rayleigh scattering
 
--Non-selective scattering -- occurs when the particle size is much larger that the radiation wavelength. For example, water droplets and larger dust particles. The most characteristic example is that we see clouds as white bodies. Important: clouds pose a great limitation -- remote sensors cannot see through them, and they cast shadows.
+-Non-selective scattering -- occurs when the particle size is much larger than the radiation wavelength. For example, water droplets and larger dust particles. The most characteristic example is that we see clouds as white bodies. Important: clouds pose a great limitation -- remote sensors cannot see through them, and they cast shadows.
 
-Since electromagnetic energy is partly absorbed by various molecules in the atmosphere, such as ozone, water vapour, and carbon dioxide, it may be concluded that many of the wavelegths are not useful for remote sensing of Earth's surface, due to the corresponding energy not being able to penetrate the atmosphere. According to @Tempfli2009 only the spectrum portions can be used for remote sensing, they are referred to as atmospheric transmission windows. `[@Knuth1984]`.
+Since electromagnetic energy is partly absorbed by various molecules in the atmosphere, such as ozone, water vapour, and carbon dioxide, it may be concluded that many of the wavelengths are not useful for remote sensing of Earth's surface, due to the corresponding energy not being able to penetrate the atmosphere. According to [@tempfli_principles_2009] only the spectrum portions can be used for remote sensing, they are referred to as atmospheric transmission windows.
 
 ## Applications
 
-Due to solar energy being reflected differently based on surface characteristics, remote sensors are able to collect information which can reflect characteristics of vegetation since its properties can be detected dues to differences in energy reflection. The amount of energy reflected for a particular wavelength depends on leaf pigmentation, leaf thickness and composition (cell structure), and on the amount of water in the leaf tissue. Optical remote sensing can provide information about the type of plant and about its health condition. Or even forest biodervisity can be tracked with the use of remote sensors which are able to provide detailed information on key leaf traits such as leaf mass per area (wow!) (https://www.mdpi.com/2072-4292/13/17/3352) Similarly, this can be applied for different types of soil too. For example, iron dominated soil has a significantly different reflectance curve, due to the iron absorption. In conclusion, different forms of radiant energy allows to determine information regarding terrain surface (https://www.mdpi.com/2072-4292/12/7/1197) . Marek Wójtowicz1, Andrzej Wójtowicz2\*, Jan Piekarczyk (2016) presented how to optimize profitability of agricultural crop production with the use of remote sensors. This capability can be especially beneficial for farmers allowing them to make informed decisions optimizing agricultural practices. However, as it has been pointed by X (REFERENCE), remote sensing data analysis might be costly, and require some expert knowledge. For this reason, not all farmers, as in the outlined case, would be able to benefit from this opportunity. Perhaps, only the biggest farming corporations are able to benefit of such practices.
+Due to solar energy being reflected differently based on surface characteristics, remote sensors are able to collect information which can reflect characteristics of vegetation since its properties can be detected dues to differences in energy reflection. The amount of energy reflected for a particular wavelength depends on leaf pigmentation, leaf thickness and composition (cell structure), and on the amount of water in the leaf tissue. Optical remote sensing can provide information about the type of plant and about its health condition. Or even forest biodervisity can be tracked with the use of remote sensors which are able to provide detailed information on key leaf traits such as leaf mass per area (wow!) [@gara_forest_2021]. Similarly, this can be applied for different types of soil too. For example, iron dominated soil has a significantly different reflectance curve, due to the iron absorption. This 'feature' of remote sensing can allow for detecion of soil contamination as @chen_rapid_2024 did who in order to detect Chromium pollution used variability of soil spectra. Additionally, different forms of radiant energy allows to determine information regarding terrain surface [@poppiel_soil_2020] . @wojtowicz_application_2016 presented how to optimize profitability of agricultural crop production with the use of remote sensors. This capability can be especially beneficial for farmers allowing them to make informed decisions optimizing agricultural practices. However, as it has been pointed by @jensen_modeling_2009, remote sensing data analysis might be costly, and require some expert knowledge. For this reason, not all farmers, as in the outlined case, would be able to benefit from this opportunity. Perhaps, only the biggest farming corporations are able to benefit of such practices.
 
 ## Reflection
 
 The most interesting and life-changing part of this lecture was finally getting an answer to the biggest question of my life, why the sky is blue during a day, and orange/red during a sunset. Answer lies in scattering of sunlight. Due to difference in wave sizes, blue light is visible since it travels as shorter and smaller waves. This changes when the Sun gets lower in the sky, its light passes through more of the atmosphere, allowing the reds and yellows to pass straight through to our eyes.
 
-Another interesting realisation is the amount of objects located in the atmosphere. This raises questions whether there are sufficient policies in place that would regulate the amount of cluster, control its life cycle and ensuring suitable recycling or removal.
+Another interesting realization is the amount of objects located in the atmosphere. This raises questions whether there are sufficient policies in place that would regulate the amount of cluster, control its life cycle and ensuring suitable recycling or removal.
 
 ## References
 
-Tempfli, K., Huurneman, Gc., Bakker, Wh., Janssen, L.L., Feringa, W., Gieske, A., Grabmaier, K., Hecker, C., Horn, J., Kerle, N., others, 2009. Principles of remote sensing: an introductory textbook. International Institute for Geo-Information Science and Earth Observation
+::: {#refs}
+:::

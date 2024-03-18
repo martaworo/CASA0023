@@ -179,6 +179,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">8.1</span> Summary</a></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">8.2</span> Applications</a></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">8.3</span> Reflections</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">8.4</span> References</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -207,12 +208,32 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="unnumbered">Classification II</h1>
 <section id="summary" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> Summary</h2>
+<p>This entry is a continuation of classification topic.</p>
+<p>There are available sources of pre-classified data that can be used instead of producing own datasets: - GlobeLand30 - European Space Agency’s (ESA) Climate Change Initiative (CCI) - Dynamic World - near real time 10m - MODIS - Google building data</p>
+<p>Dynamic World datasets are using semi-supervised approach - stratification based; trained with the expert group. Mapping unit is 5x5 pixels, therefore its limitation is that it can include various land uses. It is based on CNNs with accuracy assess through Confusion matrix. Training data available at Radiant MLHub.</p>
+<p>Object based image analysis (OBIA) - they are based on SLIC (Simple Lienar Iterative Clustering) Algorithm for Superpixel generation. It measure the distance from point to the centre of the pixel</p>
+<p>Sub pixel analysis (aka Spectral Mixture Analysis) - identification of the composition of land cover types per single pixel; with the use of comparing our findings to the known spectrally pure endmembers; V-I-S triangle is used here</p>
+<p>Accuracy assessment - this process involves comparing the classified data against the actual data in order to determine how well it performs. Common metrics used in accuracy assessment include overall accuracy (OA), producer’s accuracy, user’s accuracy, errors of omission, errors of commission and the Kappa coefficient.</p>
+<p>Spatial cross validation - cross-validation techniques based on random split of the dataset into training and testing subsets. Crucial for models applied to geographic data because nearby observations are often more similar to each other than to distant observations, due to spatial autocorrelation.</p>
 </section>
 <section id="applications" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.2</span> Applications</h2>
+<p>Highlighting innovative uses of image classification, such as detecting floating plastics in water bodies, the text showcases the expanding range of environmental issues that can be addressed. These applications not only demonstrate the versatility of image classification techniques but also underscore their potential in environmental protection and resource management.WOWO</p>
+<p>In the study by https://link.springer.com/article/10.1007/s11069-022-05642-y thee classification methods were evaluated for the purpose of detecting co-seismic landslides in seismically active area in Lesser Himalaya in Pakistan. Maximum Likelihood Classification, OBIA, and COSI-Corr were analyzed for the purpose of identifying their accuracy levels and model reliability (Figure 1). It has been concluded that MLC classification technique is performing worse than other pixel-based landslide classification algorithms which is consistent with other existing literature ( Saba et al.&nbsp;2019). COSI-Corr offered better outcome thanks to the sub-pixel analysis and employing extra masks for landslide detection. This has also been confirmed by Saba et al.&nbsp;(2017). However, as a consequence of natural variation and atmospheric effects, this method resulted in some extent of spleckled noise in pixels, which in consequence leads to spectral image being exhibited differently. Similar study by https://ieeexplore.ieee.org/abstract/document/9897214?casa_token=EzRUtojc9OMAAAAA:0Tn-vSMMikITkTbGg_b38bBfLskPYBxU8NdSTJjgml24m8azFeay4wRJUC8M84cFi6_JU3oA also explored this method for ground deformation study disregarding use of COSI-Corr for CNN-DATe which provided them with results of better accuracy. Back to the initial paper, third method OBIA’s performance was deemed as highly dependent on the spatial resolution of the imagery. “Although many studies (Moosavi et al.&nbsp;2014; Sibaruddin et al.&nbsp;2018; Saba et al.&nbsp;2019) from around the world suggest that OBIA-based classification produces better landslide maps than pixel-based techniques, it still has a number of drawbacks that might be addressed through the use of COSI-Corr approach for co-seismic landslide identification. To improve these techniques for various Geosciences applications, particularly landslide detection (Debella-Gilo and Kääb 2011; Butler 2018), consistent efforts are required.”</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/class.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 1. Comparison of classification techniques (yellow), i.e.&nbsp;a Pixel-based MLC, b Object–based and c COSI-Corr</figcaption>
+</figure>
+</div>
 </section>
 <section id="reflections" class="level2" data-number="8.3">
 <h2 data-number="8.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">8.3</span> Reflections</h2>
+<p>Radiant MLHub might come very handy for my other machine learning projects I’m doing! To Kappa or not to Kappa</p>
+</section>
+<section id="references" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="references"><span class="header-section-number">8.4</span> References</h2>
+<p>Saba SB, Khattak NU, Ali M, Waseem M, Siddiqui S, Anjum S, Turab SA (2019) Application of sub-pixel-based technique “orthorectification of optically sensed images and its correlation” for co-seismic landslide detection and its accuracy modification through integration of various masks. J Himalayan Earth Sci 51:37–50 Saba SB, Ali M, van der Meijde M, van der Werff H (2017) Co-seismic landslides automatic detection on regional scale with sub-pixel analysis of multi temporal high resolution optical images: Application to southwest of Port au Prince, Haiti. J Himalayan Earth Sci 50:74–92</p>
 
 
 </section>

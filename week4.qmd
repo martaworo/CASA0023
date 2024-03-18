@@ -23,12 +23,10 @@ The estimation of air pollution can be approached as a supervised computer visio
 
 ![Figure 1. Overview of the proposed air pollution prediction system](images/Picture1.png)
 
-
 NO2 measurements by EEA air quality stations would have to be filtered to remove values with insufficient quality. To investigate the possibility to estimate NO2 concentrations at quarterly and monthly frequencies, the mean of NO2 measurements for each frequency could be used as prediction target. To build the dataset, Sentinel-2 Level-2A data could be downloaded(i.e. corrected for atmospheric effects and enriched with cloud masks) with low cloud-coverage at the locations of air quality stations, containing 12 different bands (band 10 is empty in the case of Level-2A data). The images could then be cropped to 120×120 pixel size (∼1.2×1.2 km) centered at the location of interest. Additionally, this would be followed by visual inspection of the RGB bands of all images to ensure that no clouds or artifacts are present.
 
 ## Reflection
 
--   The reflection criterion will refer to what you have learnt in relation to the policy, city and the application of the data.
-Fun fact, they stopped this projects with protests, etc. ... 
+-   The reflection criterion will refer to what you have learnt in relation to the policy, city and the application of the data. Fun fact, they stopped this projects with protests, etc. ...
 
 ## References

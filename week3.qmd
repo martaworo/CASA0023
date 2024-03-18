@@ -6,35 +6,46 @@ bibliography: references.bib
 # Corrections {.unnumbered}
 
 ## Summary
--	Geometric correction – wind, Earth rotation. We use geometric correction (we identify points in a satellite image, and true image, e.g. open street map (true representation of earth). Ground control point is this location in image X, and find it on image Y. Then we do linear regression with distorted image, and with gold standard data.
-Or pick coordinates, and track them in original image. From Gold to EO. The more control points, the lower the error will be. 
-We may need to resample the grid -> nearest neighbour
--	Atmospheric correction – haze or scattering; adjacency effect – pixels bleeding into other pixels; two ways to remove effects of atmosphere:
-o	Relative - Dark object subtraction (DOS) or histogram adjustment; Psuedo-invariant Features (PIFs). 
-o	Absolute (definitive) – done through atmospheric radiative transfer models or empirical line correction – using a field spectrometer, and the you do linear regression between these values. Path radiance (radiance reflected above the surface), atmospheric attenuation (absorption of EMR due to materials in atmosphere)
--	Orthorectification correction – subset of georectification 
-Georectification = giving coordinates to an image
-Orthorectification = removing distortions... making the pixels viewed at nadir (straight down)
-Atmospheric correction has to be done before topographic correction
-Radiometric Calibration - sensors capture image brightness and distributed as a Digital Number (or DN) - allows for efficient storage but has no units!
-Sensor calibration = linear regression; DN to spectral radiance; radiance might also be called Top of Atmosphere (TOA) radiance. We can remove the effects of the light source to generate Top of Atmosphere reflectance but usually this is combined within the radiance to reflectance step. Radiance – when light is on. Reflectance is when light is off. Reflectance is a property of a material (e.g. reflectance of grass is a property of grass)
-Bottom of Atmosphere vs Top of Atmosphere
-Assumptions: 
-If/ But
-•	All of the light leaving the surface goes straight to the sensor (nothing is intercepted or at an angle) = hemispherical reflectance
-•	We need to account for atmospheric and illumination effects to create reflectance. BUT this typically doesn't deal with shadows and directional effects (e.g. viewing angles) = apparent reflectance However, this is often called reflectance
-Landsat ARD – Analysis Ready Data – there are algorithms that prepare data but they are not perfect, what are the assumptions, influences. But fairly good, no reflected values
-Level 2 product – means something has changed or advanced from level 1.
 
-Joining data sets/ enhancements
-In remote sensing it is termed Mosaicking. If our study area is between two tiles, we do join. Before we clip data, we generate a seamline – 10 pixels from both tiles, overlap, and apply histogram matching algorithm. 
-Enhancements
--	Contrast enhancement – image stretch -> sort of clipping histogram
--	Other: Ratio, Filtering, PCA, PCA2, Texture (first order, 
+-   Geometric correction -- distortion due to wind, Earth rotation, etc. Points are identified in a satellite image, and true image, e.g. Open Street Map (true representation of Earth). Ground control point is this location in image X, and find it on image Y. Then linear regression with distorted image and with gold standard data is performed. From Gold to EO. The more control points, the lower the error will be.
 
+-   Atmospheric correction -- distortion due to haze or scattering; adjacency effect -- pixels bleeding into other pixels; two ways to remove effects of atmosphere:
+
+    o relative - Dark object subtraction (DOS) or histogram adjustment; Psuedo-invariant Features (PIFs). o absolute (definitive) -- done through atmospheric radiative transfer models or empirical line correction -- using a field spectrometer, and the you do linear regression between these values. Path radiance (radiance reflected above the surface), atmospheric attenuation (absorption of EMR due to materials in atmosphere)
+
+-   Orthorectification correction -- subset of georectification;
+
+    georectification = giving coordinates to an image;
+
+    orthorectification = removing distortions... making the pixels viewed at nadir (straight down) Atmospheric correction has to be done before topographic correction Radiometric Calibration - sensors capture image brightness and distributed as a Digital Number (or DN) - allows for efficient storage but has no units! Sensor calibration = linear regression;
+
+    DN to spectral radiance; radiance might also be called Top of Atmosphere (TOA) radiance. We can remove the effects of the light source to generate Top of Atmosphere reflectance but usually this is combined within the radiance to reflectance step.
+
+    Radiance is when light is on.
+
+    Reflectance is when light is off.
+
+    Reflectance is a property of a material (e.g. reflectance of grass is a property of grass)
+
+Landsat ARD -- Analysis Ready Data -- there are algorithms that prepare data but they are not perfect, what are the assumptions, influences. Level 2 product -- means something has changed or advanced from level 1.
+
+Joining data sets/ enhancements in remote sensing it is termed Mosaicking. If our study area is between two tiles, we do join. Before we clip data, we generate a seamline -- 10 pixels from both tiles, overlap, and apply histogram matching algorithm.
 
 ## Applications
 
+Since geometric distortions are inherit in remote sensing imagery, this section focuses on studies that explore various preprocessing methods for geometric correction. 
+As it has been noted by [REFERECNE], there are 
+https://www.researchgate.net/profile/Rahul-Joshi-18/publication/276128802_A_Survey_on_Geometric_Correction_of_Satellite_Imagery/links/5c6a8a97299bf1e3a5af6807/A-Survey-on-Geometric-Correction-of-Satellite-Imagery.pdf
+Following are the major difficulties occurred during
+geometric correction process.
+1. Selection of the feature points from the images
+2. Determination of correspondence between images
+3. Selection of right transformation function that can
+represents geometric distortion between images
+4. No technique to determine correspondence between
+features points when the images have nonlinear
+geometric distortions.
 ## Reflection
+This lecture made me painfully aware how much effort needs to be taken before remote sensing data can be used. I'm glad that there is already numerous amount of appropriate algorithms, and corrected data than can be utilized by researchers. Nevertheless, the wide range of possible image enhancements and adjustments stands as a reminder of imagery limitations, i.e. each correction method entails some shortcomings.
 
 ## References

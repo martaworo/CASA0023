@@ -178,8 +178,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">3.2</span> Applications</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3.4</span> References</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3.3</span> References</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -209,20 +208,26 @@ ul.task-list li input[type="checkbox"] {
 <section id="summary" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
 <ul>
-<li>Geometric correction – wind, Earth rotation. We use geometric correction (we identify points in a satellite image, and true image, e.g.&nbsp;open street map (true representation of earth). Ground control point is this location in image X, and find it on image Y. Then we do linear regression with distorted image, and with gold standard data. Or pick coordinates, and track them in original image. From Gold to EO. The more control points, the lower the error will be. We may need to resample the grid -&gt; nearest neighbour</li>
-<li>Atmospheric correction – haze or scattering; adjacency effect – pixels bleeding into other pixels; two ways to remove effects of atmosphere: o Relative - Dark object subtraction (DOS) or histogram adjustment; Psuedo-invariant Features (PIFs). o Absolute (definitive) – done through atmospheric radiative transfer models or empirical line correction – using a field spectrometer, and the you do linear regression between these values. Path radiance (radiance reflected above the surface), atmospheric attenuation (absorption of EMR due to materials in atmosphere)</li>
-<li>Orthorectification correction – subset of georectification Georectification = giving coordinates to an image Orthorectification = removing distortions… making the pixels viewed at nadir (straight down) Atmospheric correction has to be done before topographic correction Radiometric Calibration - sensors capture image brightness and distributed as a Digital Number (or DN) - allows for efficient storage but has no units! Sensor calibration = linear regression; DN to spectral radiance; radiance might also be called Top of Atmosphere (TOA) radiance. We can remove the effects of the light source to generate Top of Atmosphere reflectance but usually this is combined within the radiance to reflectance step. Radiance – when light is on. Reflectance is when light is off. Reflectance is a property of a material (e.g.&nbsp;reflectance of grass is a property of grass) Bottom of Atmosphere vs Top of Atmosphere Assumptions: If/ But • All of the light leaving the surface goes straight to the sensor (nothing is intercepted or at an angle) = hemispherical reflectance • We need to account for atmospheric and illumination effects to create reflectance. BUT this typically doesn’t deal with shadows and directional effects (e.g.&nbsp;viewing angles) = apparent reflectance However, this is often called reflectance Landsat ARD – Analysis Ready Data – there are algorithms that prepare data but they are not perfect, what are the assumptions, influences. But fairly good, no reflected values Level 2 product – means something has changed or advanced from level 1.</li>
+<li><p>Geometric correction – distortion due to wind, Earth rotation, etc. Points are identified in a satellite image, and true image, e.g.&nbsp;Open Street Map (true representation of Earth). Ground control point is this location in image X, and find it on image Y. Then linear regression with distorted image and with gold standard data is performed. From Gold to EO. The more control points, the lower the error will be.</p></li>
+<li><p>Atmospheric correction – distortion due to haze or scattering; adjacency effect – pixels bleeding into other pixels; two ways to remove effects of atmosphere:</p>
+<p>o relative - Dark object subtraction (DOS) or histogram adjustment; Psuedo-invariant Features (PIFs). o absolute (definitive) – done through atmospheric radiative transfer models or empirical line correction – using a field spectrometer, and the you do linear regression between these values. Path radiance (radiance reflected above the surface), atmospheric attenuation (absorption of EMR due to materials in atmosphere)</p></li>
+<li><p>Orthorectification correction – subset of georectification;</p>
+<p>georectification = giving coordinates to an image;</p>
+<p>orthorectification = removing distortions… making the pixels viewed at nadir (straight down) Atmospheric correction has to be done before topographic correction Radiometric Calibration - sensors capture image brightness and distributed as a Digital Number (or DN) - allows for efficient storage but has no units! Sensor calibration = linear regression;</p>
+<p>DN to spectral radiance; radiance might also be called Top of Atmosphere (TOA) radiance. We can remove the effects of the light source to generate Top of Atmosphere reflectance but usually this is combined within the radiance to reflectance step.</p>
+<p>Radiance is when light is on.</p>
+<p>Reflectance is when light is off.</p>
+<p>Reflectance is a property of a material (e.g.&nbsp;reflectance of grass is a property of grass)</p></li>
 </ul>
-<p>Joining data sets/ enhancements In remote sensing it is termed Mosaicking. If our study area is between two tiles, we do join. Before we clip data, we generate a seamline – 10 pixels from both tiles, overlap, and apply histogram matching algorithm. Enhancements - Contrast enhancement – image stretch -&gt; sort of clipping histogram - Other: Ratio, Filtering, PCA, PCA2, Texture (first order,</p>
+<p>Landsat ARD – Analysis Ready Data – there are algorithms that prepare data but they are not perfect, what are the assumptions, influences. Level 2 product – means something has changed or advanced from level 1.</p>
+<p>Joining data sets/ enhancements in remote sensing it is termed Mosaicking. If our study area is between two tiles, we do join. Before we clip data, we generate a seamline – 10 pixels from both tiles, overlap, and apply histogram matching algorithm.</p>
 </section>
 <section id="applications" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">3.2</span> Applications</h2>
+<p>Since geometric distortions are inherit in remote sensing imagery, this section focuses on studies that explore various preprocessing methods for geometric correction. As it has been noted by [REFERECNE], there are https://www.researchgate.net/profile/Rahul-Joshi-18/publication/276128802_A_Survey_on_Geometric_Correction_of_Satellite_Imagery/links/5c6a8a97299bf1e3a5af6807/A-Survey-on-Geometric-Correction-of-Satellite-Imagery.pdf Following are the major difficulties occurred during geometric correction process. 1. Selection of the feature points from the images 2. Determination of correspondence between images 3. Selection of right transformation function that can represents geometric distortion between images 4. No technique to determine correspondence between features points when the images have nonlinear geometric distortions. ## Reflection This lecture made me painfully aware how much effort needs to be taken before remote sensing data can be used. I’m glad that there is already numerous amount of appropriate algorithms, and corrected data than can be utilized by researchers. Nevertheless, the wide range of possible image enhancements and adjustments stands as a reminder of imagery limitations, i.e.&nbsp;each correction method entails some shortcomings.</p>
 </section>
-<section id="reflection" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
-</section>
-<section id="references" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="references"><span class="header-section-number">3.4</span> References</h2>
+<section id="references" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="references"><span class="header-section-number">3.3</span> References</h2>
 
 
 </section>

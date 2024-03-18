@@ -4,6 +4,7 @@
     <title>Operational Land Imager (OLI)</title>
     <meta charset="utf-8" />
     <meta name="author" content="Marta Woroniecka" />
+    <meta name="date" content="2024-01-16" />
     <script src="libs/header-attrs-2.25/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
@@ -23,7 +24,7 @@ class: center, middle, inverse, title-slide
 ### CASA0023 Remotely Sensing Cities and Environments
 ]
 .date[
-### 2024-01-16 (updated: 2024-03-17)
+### 2024-01-16
 ]
 
 ---
@@ -32,7 +33,7 @@ class: center, middle, inverse, title-slide
 # Summary: Overview
 
 
-Operational Land Imager (OLI) is an  sensor that is used on Landsat 8 and Landsat 9 satellites built by the Ball Aerospace &amp; Technologies Corporation. 
+Operational Land Imager (OLI) is an  sensor that is used on Landsat 8 and Landsat 9 satellites built by the Ball Aerospace &amp; Technologies Corporation (NASA, 2021).
 
 * It is a push broom type of sensor that plays a crucial role in Earth observation and remote sensing. 
 
@@ -40,27 +41,35 @@ Operational Land Imager (OLI) is an  sensor that is used on Landsat 8 and Landsa
 
 * The entire Earth falls within view once every 16 days.
 
-.pull-left[
-  &lt;img src="images/OLI_logo2.jpg" id="oli-logo" /&gt;
-]
 
-
-
+&lt;div style="display: flex;"&gt;
+  &lt;figure&gt;
+    &lt;img src="images/OLI_logo2.jpg" alt="oli" style="width:500px; height: 250;"&gt;
+    &lt;figcaption&gt;Operational Land Imager. (Image: NASA)&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;figure style="margin-left: 20px;"&gt;
+    &lt;img src="images/fly.jpg" alt="satellite" style="width: 500px; height: 250;"&gt;
+    &lt;figcaption&gt;Landsat 8 Satellite Sensor. (Image: NASA)&lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
 ---
 
 # Summary: How does it work?
 
-It measures in the visible, near infrared, and short wave infrared portions of the spectrum as well as a panchromatic band
+It measures in the visible, near infrared, and short wave infrared portions of the spectrum as well as a panchromatic band (Knight &amp; Kvaran, 2014).
 * Its images have 30-meter multi-spectral spatial resolutions along a 185 km wide swath, covering wide areas of the Earth’s landscape while providing sufficient resolution to distinguish features like urban centers, farms, forests and other land uses
 * It has a four-mirror telescope and 12-bit quantization
 
-&lt;img src="images/Landsat_Data_Continuity_Mission_Operational_Land_Imager_Instrument_Design.jpg" id="oli-logo" /&gt;
-
+  &lt;/figure&gt;
+  &lt;figure style="margin: 0 auto; width: 420px;"&gt;
+    &lt;img src="images/Landsat_Data_Continuity_Mission_Operational_Land_Imager_Instrument_Design.jpg" alt="instrument" style="width: 390px; height: 250;"&gt;
+    &lt;figcaption&gt; OLI Design.(Image: NASA) &lt;/figcaption&gt;
+  &lt;/figure&gt;
 ---
 
 # Summary: Push Broom  Scanner
 
-A push broom scanner (an along-track scanner), is a device that captures images with the use of spectroscopic sensors. 
+A push broom scanner (an along-track scanner), is a device that captures images with the use of spectroscopic sensors (Middlebury Remote Sensing, 2020).
 
 Advantages
 
@@ -84,55 +93,65 @@ The images and data that OLI has helped collect have practical applications toda
 * disaster management
 * agriculture
 
-&lt;img src="images/ice.jpg"/&gt;
 
+  &lt;/figure&gt;
+  &lt;figure style="margin: 0 auto; width: 420px;"&gt;
+    &lt;img src="images/ice.jpg" alt="ice" style="width: 900px; height: 800;"&gt;
+    &lt;figcaption&gt;Change in the amount of ice and snow in nine days in Antarctica (Image: NASA)  &lt;/figcaption&gt;
+  &lt;/figure&gt;
+  
 ---
 
 # Applications: Environmental Monitoring
 
-* Climate Change Studies: OLI's data assists in tracking the impacts of climate change by monitoring glacier retreat, changes in snow cover, and the health of global vegetation.
-Water Resource Management: By observing water quality, extent, and usage, OLI supports the sustainable management of freshwater resources. It aids in identifying pollution sources, tracking sediment transport, and mapping wetland changes.
-* Agriculture Optimization: OLI data is pivotal for precision agriculture, enabling farmers to monitor crop health, optimize irrigation, and improve yield predictions. It assists in detecting crop stress early, guiding efficient resource use.
-* Forest and Wildlife Conservation: The instrument's ability to map forest cover changes and habitat fragmentation is invaluable for conservation efforts, helping to combat deforestation and preserve biodiversity.
 
+In study by Kumar et al. (2022) Landsat 8 OLI was used to calculate the ground surface temperature in order to assess land degradation. Precisely, this study develops an algorithm using the observed thermal radiance of the LANDSAT 8 TIRS Band 10. Researchers were able to estimate how much of area is degradation lands, vegetation lands, built-up lands, desertified lands and water bodies. 
+  &lt;/figure&gt;
+  &lt;figure style="margin: 0 auto; width: 300px;"&gt;
+    &lt;img src="images/kumar.jpg" alt="ice" style="width: 900px; height: 700;"&gt;
+    &lt;figcaption&gt; &lt;/figcaption&gt;
+  &lt;/figure&gt;
+Land degradation and desertification map of the study area. (Kumar et al., 2022) 
 ---
 
 # Applications: Urban Planning
 
-* OLI can support urban planners in mapping city growth, land use changes, and infrastructure development which as a consequence improves planning sustainability and decreses environmental impact
-* OLI's rapid data collection enables effective damage assessment, aiding in the coordination of relief efforts and long-term disaster recovery planning.
-* Coastal areas benefit from OLI's surveillance, which helps in erosion studies, coastal defense planning, and the monitoring of sea-level rise effects.
-* Heritage Conservation: By providing detailed images of historical sites and landscapes, OLI contributes to the preservation of cultural heritage against the challenges posed by natural decay and human-induced changes
+OLI can support urban planners in mapping city growth, land use changes, and infrastructure development.
+For example, a study by Khallef et al. (2020) analyzes the urban heat islands of the city of Guelma. Thanks to the use of data from Landsat 8, researchers were able to detect which parts of the city are experiencing the strongest phenomenon of urban heat islands and the worst eco-environment, and in consequence suggest which zones urgently require urban redevelopment. 
+  &lt;/figure&gt;
+  &lt;figure style="margin: 0 auto; width: 400px;"&gt;
+    &lt;img src="images/heat.png" alt="ice" style="width: 900px; height: 700;"&gt;
+    &lt;figcaption&gt;Ecological evaluation index of the city of Guelma. Khallef et al. (2020)&lt;/figcaption&gt;
+  &lt;/figure&gt;
 
 ---
 
 # Applications: Agriculture
 
-* Deep insights into crop health, soil conditions, and water usage.
-
-* Crop Health Monitoring: OLI enables the detection of subtle variations in plant health by analyzing reflected light across various spectral bands. This capability allows for the identification of stressed vegetation, disease presence, or nutrient deficiencies early in the crop cycle, facilitating timely intervention to protect yields.
-
-* Irrigation Management: By assessing crop water stress and monitoring irrigation practices, OLI data helps in optimizing water use. This is crucial for conserving water resources while ensuring crops receive adequate hydration. The imagery can highlight areas of both over and under-irrigation, guiding improvements in irrigation systems and strategies.
-
-* Precision Agriculture: Leveraging OLI imagery, farmers and agronomists can practice precision agriculture—applying the right treatment, at the right place, at the right time. This approach minimizes waste, reduces environmental impact, and increases productivity by tailoring farming practices to the specific needs of each plot.
-
-* Yield Estimation and Prediction: The detailed data provided by OLI assists in estimating and predicting crop yields more accurately. Analyzing historical and current satellite data helps in understanding crop performance trends and making informed decisions for future planting seasons.
-
-* Sustainable Agriculture: OLI's comprehensive monitoring capabilities support the advancement of sustainable agricultural practices. By providing insights into crop rotation effectiveness, land use changes, and degradation, OLI data helps in maintaining soil health, reducing chemical inputs, and increasing farm resilience to climate variability.
-
+OLI imagery can be leveraged for making informed decision for agricultural production.
+In a study by Ozelkan et al. (2016), Landsat 8 Operational Land Imager (OLI) NDVI data was used in order to estimate meteorological drought – Standardized Precipitation Index (SPI) during spring and summer of 2013 and 2014 in Southeast Anatolia (Turkey). Accurate and spatially-explicit drought mapping can support effective farmland management and mitigate risks associated with drought and desertification.
+  &lt;/figure&gt;
+  &lt;figure style="margin: 0 auto; width: 300px;"&gt;
+    &lt;img src="images/agri.jpg" alt="ice" style="width: 900px; height: 700;"&gt;
+    &lt;figcaption&gt;NDVI images calculated from OLI (Ozelkan et al., 2016). &lt;/figcaption&gt;
+  &lt;/figure&gt;
 
 ---
 
 # Reflections
 
+The OLI imagery is an incredible step forward in the ability to observe and analyze the Earth's surface. Vast practical application across many fields is just remarkable. It seems like an amazing tool for change monitoring, which can lead to extraordinary findings. Learning from the researches completed with the use of OLI, it can be concluded that there are plenty of approaches that can be taken for every study. 
 
-The Operational Land Imager (OLI) on Landsat 8 symbolizes a remarkable leap forward in our ability to observe and understand the Earth's surface. Through its sophisticated imaging capabilities, OLI not only enhances our comprehension of environmental dynamics but also bridges the gap between scientific knowledge and practical application, especially in critical areas like agriculture, water management, and environmental conservation. Its high-resolution, multispectral data provides an invaluable resource for monitoring changes over time, offering insights that can lead to more informed decisions and sustainable practices. Reflection on OLI's contributions evokes a sense of optimism about the potential for technology to address some of the most pressing challenges facing our planet. It underscores the importance of continued investment in Earth observation technologies, as the data they provide plays a pivotal role in guiding policy, advancing scientific research, and promoting a more sustainable interaction with our natural environment. In this light, OLI is not just a tool for observation but a beacon of hope for future generations, illuminating paths towards environmental stewardship and resilience.
+I think, my lesson learnt would be design my future research questions in a very detailed way, in order to ensure the abundance of data do not overpower me and my processing powers. 
 
 ---
 # References
-
-
-Add references everywhere!!
+* Khallef, B. et al. (2020) ‘Analysis of urban heat islands using Landsat 8 Oli / TIR data: Case of the City of Guelma (Algeria)’, Asian Journal of Environment &amp;amp; Ecology, pp. 42–51. doi:10.9734/ajee/2020/v12i430167. 
+* Knight, E. and Kvaran, G. (2014) ‘Landsat-8 operational land imager design, characterization and performance’, Remote Sensing, 6(11), pp. 10286–10305. doi:10.3390/rs61110286.
+* Kumar, B.P. et al. (2022) ‘Geo-environmental monitoring and assessment of land degradation and desertification in the semi-arid regions using Landsat 8 oli / TIRS, LST, and NDVI approach’, Environmental Challenges, 8, p. 100578. doi:10.1016/j.envc.2022.100578.   
+* Ozelkan, E., Chen, G. and Ustundag, B.B. (2016) ‘Multiscale object-based drought monitoring and comparison in rainfed and irrigated agriculture from Landsat 8 Oli imagery’, International Journal of Applied Earth Observation and Geoinformation, 44, pp. 159–170. doi:10.1016/j.jag.2015.08.003.   
+* Middlebury Remote Sensing (2020a) Whiskbroom vs. pushbroom sensors (class 4- V2), YouTube. Available at: https://www.youtube.com/watch?v=S7o0E593uc0&amp;ab_channel=MiddleburyRemoteSensing (Accessed: 18 January 2024).   
+* NASA (2021) Operational Land Imager, NASA. Available at: https://landsat.gsfc.nasa.gov/satellites/landsat-8/spacecraft-instruments/operational-land-imager/ (Accessed: 18 January 2024).
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

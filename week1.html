@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA0023 Remote Sensing - Learning Diary - 7&nbsp; Week 7</title>
+<title>CASA0023 Remote Sensing - Learning Diary - 1&nbsp; Week 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -49,8 +49,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week8.html" rel="next">
-<link href="./week6.html" rel="prev">
+<link href="./week2.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -92,7 +92,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -125,7 +125,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week1.html" class="sidebar-item-text sidebar-link">
+  <a href="./week1.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1</span></span></a>
   </div>
 </li>
@@ -161,7 +161,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week7.html" class="sidebar-item-text sidebar-link active">
+  <a href="./week7.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7</span></span></a>
   </div>
 </li>
@@ -193,15 +193,16 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#classification-i" id="toc-classification-i" class="nav-link active" data-scroll-target="#classification-i">Classification I</a>
+  <li><a href="#getting-started-with-remote-sensing" id="toc-getting-started-with-remote-sensing" class="nav-link active" data-scroll-target="#getting-started-with-remote-sensing"><strong>Getting started with remote sensing</strong></a>
   <ul class="collapse">
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">1.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#how-does-it-work" id="toc-how-does-it-work" class="nav-link" data-scroll-target="#how-does-it-work"><span class="header-section-number">7.1.1</span> How does it work?</a></li>
+  <li><a href="#what-is-remote-sensing" id="toc-what-is-remote-sensing" class="nav-link" data-scroll-target="#what-is-remote-sensing"><span class="header-section-number">1.1.1</span> What is remote sensing?</a></li>
+  <li><a href="#scattering" id="toc-scattering" class="nav-link" data-scroll-target="#scattering"><span class="header-section-number">1.1.2</span> Scattering</a></li>
   </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">7.2</span> Applications</a></li>
-  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">7.3</span> Reflections</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.4</span> References</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">1.2</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">1.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">1.4</span> References</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -211,7 +212,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1</span></h1>
 </div>
 
 
@@ -226,55 +227,68 @@ div.csl-indent {
 
 </header>
 
-<section id="classification-i" class="level1 unnumbered">
-<h1 class="unnumbered">Classification I</h1>
-<section id="summary" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
-<p>Classification refers to the process of categorizing pixels in satellite imagery into distinct classes or categories based on their spectral signatures, textural features, or other characteristics detectable from the imagery. This is in line with Tobler’s first law of geography, i.e.&nbsp;closer things are more related.</p>
-<section id="how-does-it-work" class="level3" data-number="7.1.1">
-<h3 data-number="7.1.1" class="anchored" data-anchor-id="how-does-it-work"><span class="header-section-number">7.1.1</span> How does it work?</h3>
-<p>Expert Systems - a system that uses human knowledge to solve problems that require human intelligence, e.g.&nbsp;training datasets.</p>
-<p><strong>Machine Learning</strong></p>
-<p>Is linear regression machine learning? Yes, it can be considered so. Types of ML:</p>
-<p>- classification trees - classify data into two or more discrete categories, e.g.&nbsp;should I play golf today? - regression trees - predict continuous dependent variable, e.g.&nbsp;GCSE score</p>
-<p>Overfitting - too perfect model, 100% accuracy, most likely useless, e.g leaf with just one person or pixel value</p>
-<p>Underfitting - potentially can happen when forcing a linear relationship in regression when out data in not linear.</p>
-<p>- random forests - produce bootstrap samples; many decision trees with less control (from a random numver of variables)</p>
-<p>- image classification: - unsupervised (pixels are grouped into “clusters” based on their properties, and each “cluster” is classified with a land cover class)</p>
-<ul>
-<li><p>supervised (representative samples are chosen for each land cover class, and based on the training set results, this is replicated for the entire image)</p></li>
-<li><p>OBIA - object based image analysis (especially useful for high-resolution data because it uses both spectral and contextual information; pixels are grouped into representative vector shapes with size and geometry)</p></li>
-</ul>
-<p>Interestingly, higher resolution images do not guarantee better land cover. The image classification techniques used are a very important factor for better accuracy.</p>
-</section>
-</section>
-<section id="applications" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">7.2</span> Applications</h2>
-<p>The goal of classification in environmental and Earth sciences is often to monitor changes over time, assess ecosystem health, plan conservation efforts, or understand human impact on natural landscapes, among other applications. In recent years, the use of deep learning in remote sensing image classification is becoming more and more popular, especially thanks to its powerful feature extraction capabilities and robustness <span class="citation" data-cites="dou_remote_2021">(<a href="week1.html#ref-dou_remote_2021" role="doc-biblioref">Dou et al. 2021</a>)</span></p>
-<p>Brazil case from lecture: Monitoring forests + illegal logging - instead of using the raw Earth observation data, they’re making composites, they’re taking part of the data that are most relevant for their application, so here we have maximum, minimum, mean values and some kind of linear regression also happening. And then from those metrics they are then using a classifier on the metrics as opposed to the raw Google data. Forest fires paper - vegetation was from a classified Landsat TM image - classified 16 categories.</p>
-<p><span class="citation" data-cites="feng_deep_2023">Feng et al. (<a href="week1.html#ref-feng_deep_2023" role="doc-biblioref">2023</a>)</span> study aims to develop a deep learning framework to improve the accuracy of crop type identification using Sentinel 2 data. Researchers built a time-series image classification framework using Attention-based Bidirectional Gated Recurrent Unit (A-BiGRU) to map rice, maize, and soybean in Fujin region of China, from reconstructed Sentinel-2 time-series images. Figure 1 demonstrates methodolgy used in this study. Interestingly, despite its the inherent disadvantage of CNNs is the need for a large number of spatially labeled samples as it has been observed by Gallo et al.&nbsp;(2023) Nevertheless, different studies which focused on using a different algorithm, e.g. <span class="citation" data-cites="wei2023early">Wei et al. (<a href="week1.html#ref-wei2023early" role="doc-biblioref">2023</a>)</span> who used RF algorithm also on Sentinel 2 data, was able to achieve a significantly higher accuracy. Their study was based on random forest importance and normalization, which concluded in a strong performance for early crop mapping.</p>
+<section id="getting-started-with-remote-sensing" class="level1 unnumbered">
+<h1 class="unnumbered"><strong>Getting started with remote sensing</strong></h1>
+<section id="summary" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.1</span> Summary</h2>
+<section id="what-is-remote-sensing" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="what-is-remote-sensing"><span class="header-section-number">1.1.1</span> What is remote sensing?</h3>
+<p>Remote sensing can be concluded as acquiring information from a distance which can be obtained via sensors. Remote sensors are devices that make use of the electromagnetic spectrum (Figure 1) and atmospheric transmission windows in order to observe a chosen target. Most remote sensors measure either an intensity change or a phase change of EM radiation.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/method.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure 1. Methodology used in <em>A deep learning framework for crop mapping with reconstructed Sentinel-2 time series images (2021)</em></figcaption>
+<p><img src="images/color.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 1. Simplified representation of the electromagnetic spectrum</figcaption>
+</figure>
+</div>
+<p>Sensors can be divided into active and passive. Passive sensors detect natural energy emitted or reflected by the Earth, for example, optical sensors which are able to capture sunlight reflection (Figure 2a), while active sensors emit energy and measure the reflected or backscattered signals (Figure 2b). This wide range of sensors enables remote sensing data to be acquired via satellites for global coverage, aircraft for higher spatial resolution, and even drones for small-scale data collection.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/active.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure 2. (a) Passive remote sensing: the sensor receives information. (b) Active remote sensing: the sensor emits and receives information.</figcaption>
 </figure>
 </div>
 </section>
-<section id="reflections" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">7.3</span> Reflections</h2>
-<p>Case of Brazil forest monitoring was among the most thought provoking this week fir me. Fact that the area of a forest the size of Nepal can be monitored by two employees with two vehicles, a boat and a drone and provide a sufficient image within 20 minutes is just incredible, how efficient this is. At the same time, it is also a bit scary to think about its monitoring capabilities… is there a line between control, justice and big brother entering into our lives? At the same time, it is incredible how all of the image classification efforts (as in example from China) may result in tools able to predict crop yield and monitor its growth, indirectly ensuring food security. I found it interesting to find out about machine learning real use-cases. I’m quite amazed with its vast options and and seemingly endless opportunities for accuracy improvements.</p>
+<section id="scattering" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="scattering"><span class="header-section-number">1.1.2</span> Scattering</h3>
+<p>Atmospheric scattering occurs when the particles or gaseous molecules present in the atmosphere cause the EM radiation to be redirected from its original path. The amount of scattering depends on several factors including the wavelength of the radiation, the amount of particles and gases, and the distance the radiant energy travels through the atmosphere. Three types of scattering:</p>
+<p>-Rayleigh scattering – electromagnetic radiation interacts with particles that are smaller than the wavelengths of light -&gt; it disturbs RS in the visible spectral range from high altitudes. Due to Rayleigh scattering the shorter wavelengths are overestimated. It diminishes the ‘crispness’ of photos -&gt; has a negative effect on digital classification using data from multispectral sensors.</p>
+<p>-Mie scattering – occurs when the wavelength of the EM radiation is similar in size to the atmospheric particles (e.g.&nbsp;aerosols, a mixture of gases, water vapour, dust). Influences the spectral range from near-UV up to mid-IR, and has a greater effect on radiation of longer wavelengths than Rayleigh scattering</p>
+<p>-Non-selective scattering – occurs when the particle size is much larger than the radiation wavelength. For example, water droplets and larger dust particles. The most characteristic example is that we see clouds as white bodies. Important: clouds pose a great limitation – remote sensors cannot see through them, and they cast shadows.</p>
+<p>Since electromagnetic energy is partly absorbed by various molecules in the atmosphere, such as ozone, water vapour, and carbon dioxide, it may be concluded that many of the wavelengths are not useful for remote sensing of Earth’s surface, due to the corresponding energy not being able to penetrate the atmosphere. According to <span class="citation" data-cites="tempfli_principles_2009">Tempfli et al. (<a href="#ref-tempfli_principles_2009" role="doc-biblioref">2009</a>)</span> only the spectrum portions can be used for remote sensing, they are referred to as atmospheric transmission windows.</p>
 </section>
-<section id="references" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="references"><span class="header-section-number">7.4</span> References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-dou_remote_2021" class="csl-entry" role="listitem">
-Dou, Peng, Huanfeng Shen, Zhiwei Li, Xiaobin Guan, and Wenli Huang. 2021. <span>“Remote <span>Sensing</span> <span>Image</span> <span>Classification</span> <span>Using</span> <span>Deep</span>–<span>Shallow</span> <span>Learning</span>.”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 14 (January): 3070–83. <a href="https://doi.org/10.1109/JSTARS.2021.3062635">https://doi.org/10.1109/JSTARS.2021.3062635</a>.
+</section>
+<section id="applications" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">1.2</span> Applications</h2>
+<p>Due to solar energy being reflected differently based on surface characteristics, remote sensors are able to collect information which can reflect characteristics of vegetation since its properties can be detected due to differences in energy reflection <span class="citation" data-cites="ashraf_introduction_2011">(<a href="#ref-ashraf_introduction_2011" role="doc-biblioref">Ashraf et al. 2011</a>)</span>. The amount of energy reflected for a particular wavelength depends on leaf pigmentation, leaf thickness and composition (cell structure), and on the amount of water in the leaf tissue. Optical remote sensing can provide information about the type of plant and about its health condition. Or even forest biodervisity can be tracked with the use of remote sensors which are able to provide detailed information on key leaf traits such as leaf mass per area (wow!) <span class="citation" data-cites="gara_forest_2021">(<a href="#ref-gara_forest_2021" role="doc-biblioref">Gara, Rahimzadeh-Bajgiran, and Darvishzadeh 2021</a>)</span>. Similarly, this can be applied for different types of soil too. For example, iron dominated soil has a significantly different reflectance curve, due to the iron absorption. This ‘feature’ of remote sensing can allow for detecion of soil contamination as <span class="citation" data-cites="chen_rapid_2024">Chen et al. (<a href="#ref-chen_rapid_2024" role="doc-biblioref">2024</a>)</span> did who in order to detect Chromium pollution used variability of soil spectra. Additionally, different forms of radiant energy allows to determine information regarding terrain surface <span class="citation" data-cites="poppiel_soil_2020">(<a href="#ref-poppiel_soil_2020" role="doc-biblioref">Poppiel et al. 2020</a>)</span>. <span class="citation" data-cites="wojtowicz_application_2016">Wójtowicz, Wójtowicz, and Piekarczyk (<a href="#ref-wojtowicz_application_2016" role="doc-biblioref">2016</a>)</span> presented how to optimize profitability of agricultural crop production with the use of remote sensors. This capability can be especially beneficial for farmers allowing them to make informed decisions optimizing agricultural practices. However, as it has been pointed by <span class="citation" data-cites="jensen_modeling_2009">Jensen et al. (<a href="#ref-jensen_modeling_2009" role="doc-biblioref">2009</a>)</span>, remote sensing data analysis might be costly, and require some expert knowledge. For this reason, not all farmers, as in the outlined case, would be able to benefit from this opportunity. Perhaps, only the biggest farming corporations are able to benefit of such practices.</p>
+</section>
+<section id="reflection" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">1.3</span> Reflection</h2>
+<p>The most interesting and life-changing part of this lecture was finally getting an answer to the biggest question of my life, why the sky is blue during a day, and orange/red during a sunset. Answer lies in scattering of sunlight. Due to difference in wave sizes, blue light is visible since it travels as shorter and smaller waves. This changes when the Sun gets lower in the sky, its light passes through more of the atmosphere, allowing the reds and yellows to pass straight through to our eyes.</p>
+<p>Another interesting realization is the amount of objects located in the atmosphere. This raises questions whether there are sufficient policies in place that would regulate the amount of cluster, control its life cycle and ensuring suitable recycling or removal.</p>
+</section>
+<section id="references" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="references"><span class="header-section-number">1.4</span> References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-ashraf_introduction_2011" class="csl-entry" role="listitem">
+Ashraf, Muhammad Aqeel, Mohd Jamil Maah, Ismail Yusoff, Muhammad Aqeel Ashraf, Mohd Jamil Maah, and Ismail Yusoff. 2011. <span>“Introduction to <span>Remote</span> <span>Sensing</span> of <span>Biomass</span>.”</span> In <em>Biomass and <span>Remote</span> <span>Sensing</span> of <span>Biomass</span></em>. IntechOpen. <a href="https://doi.org/10.5772/16462">https://doi.org/10.5772/16462</a>.
 </div>
-<div id="ref-feng_deep_2023" class="csl-entry" role="listitem">
-Feng, Fukang, Maofang Gao, Ronghua Liu, Shuihong Yao, and Guijun Yang. 2023. <span>“A Deep Learning Framework for Crop Mapping with Reconstructed <span>Sentinel</span>-2 Time Series Images.”</span> <em>Computers and Electronics in Agriculture</em> 213 (October): 108227. <a href="https://doi.org/10.1016/j.compag.2023.108227">https://doi.org/10.1016/j.compag.2023.108227</a>.
+<div id="ref-chen_rapid_2024" class="csl-entry" role="listitem">
+Chen, Lihan, Kun Tan, Xue Wang, and Yu Chen. 2024. <span>“A Rapid Soil <span>Chromium</span> Pollution Detection Method Based on Hyperspectral Remote Sensing Data.”</span> <em>International Journal of Applied Earth Observation and Geoinformation</em> 128 (April): 103759. <a href="https://doi.org/10.1016/j.jag.2024.103759">https://doi.org/10.1016/j.jag.2024.103759</a>.
 </div>
-<div id="ref-wei2023early" class="csl-entry" role="listitem">
-Wei, Peng, Huichun Ye, Shuting Qiao, Ronghao Liu, Chaojia Nie, Bingrui Zhang, Lijuan Song, and Shanyu Huang. 2023. <span>“Early Crop Mapping Based on Sentinel-2 Time-Series Data and the Random Forest Algorithm.”</span> <em>Remote Sensing</em> 15 (13): 3212. <a href="https://doi.org/10.3390/rs15133212">https://doi.org/10.3390/rs15133212</a>.
+<div id="ref-gara_forest_2021" class="csl-entry" role="listitem">
+Gara, Tawanda W., Parinaz Rahimzadeh-Bajgiran, and Roshanak Darvishzadeh. 2021. <span>“Forest <span>Leaf</span> <span>Mass</span> Per <span>Area</span> (<span>LMA</span>) Through the <span>Eye</span> of <span>Optical</span> <span>Remote</span> <span>Sensing</span>: <span>A</span> <span>Review</span> and <span>Future</span> <span>Outlook</span>.”</span> <em>Remote Sensing</em> 13 (17): 3352. <a href="https://doi.org/10.3390/rs13173352">https://doi.org/10.3390/rs13173352</a>.
+</div>
+<div id="ref-jensen_modeling_2009" class="csl-entry" role="listitem">
+Jensen, Ryan R., Perry J. Hardin, Matthew Bekker, Derek S. Farnes, Vijay Lulla, and Andrew Hardin. 2009. <span>“Modeling Urban Leaf Area Index with <span>AISA</span>+ Hyperspectral Data.”</span> <em>Applied Geography</em> 29 (3): 320–32. <a href="https://doi.org/10.1016/j.apgeog.2008.10.001">https://doi.org/10.1016/j.apgeog.2008.10.001</a>.
+</div>
+<div id="ref-poppiel_soil_2020" class="csl-entry" role="listitem">
+Poppiel, Raúl Roberto, Marilusa Pinto Coelho Lacerda, Rodnei Rizzo, José Lucas Safanelli, Benito Roberto Bonfatti, Nélida Elizabet Quiñonez Silvero, and José Alexandre Melo Demattê. 2020. <span>“Soil <span>Color</span> and <span>Mineralogy</span> <span>Mapping</span> <span>Using</span> <span>Proximal</span> and <span>Remote</span> <span>Sensing</span> in <span>Midwest</span> <span>Brazil</span>.”</span> <em>Remote Sensing</em> 12 (7): 1197. <a href="https://doi.org/10.3390/rs12071197">https://doi.org/10.3390/rs12071197</a>.
+</div>
+<div id="ref-tempfli_principles_2009" class="csl-entry" role="listitem">
+Tempfli, Klaus, G. C. Huurneman, Wim Bakker, L. L. F. Janssen, W. F. Feringa, Ambro Gieske, K. A. Grabmaier, et al. 2009. <span>“Principles of Remote Sensing : An Introductory Textbook.”</span> In, 56–85.
+</div>
+<div id="ref-wojtowicz_application_2016" class="csl-entry" role="listitem">
+Wójtowicz, Marek, Andrzej Wójtowicz, and J. Piekarczyk. 2016. <span>“Application of Remote Sensing Methods in Agriculture”</span> 11 (January): 31–50.
 </div>
 </div>
 
@@ -518,13 +532,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week6.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6</span></span>
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week8.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week2.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

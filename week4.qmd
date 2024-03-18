@@ -1,6 +1,7 @@
 ---
 title: "Week 4"
 bibliography: references.bib
+link-citations: true
 ---
 
 # Policy {.unnumbered}

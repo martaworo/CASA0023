@@ -1,6 +1,7 @@
 ---
 title: "Week 3"
 bibliography: references.bib
+link-citations: true
 ---
 
 # Corrections {.unnumbered}
@@ -33,19 +34,11 @@ Joining data sets/ enhancements in remote sensing it is termed Mosaicking. If ou
 
 ## Applications
 
-Since geometric distortions are inherit in remote sensing imagery, this section focuses on studies that explore various preprocessing methods for geometric correction. 
-As it has been noted by [REFERECNE], there are 
-https://www.researchgate.net/profile/Rahul-Joshi-18/publication/276128802_A_Survey_on_Geometric_Correction_of_Satellite_Imagery/links/5c6a8a97299bf1e3a5af6807/A-Survey-on-Geometric-Correction-of-Satellite-Imagery.pdf
-Following are the major difficulties occurred during
-geometric correction process.
-1. Selection of the feature points from the images
-2. Determination of correspondence between images
-3. Selection of right transformation function that can
-represents geometric distortion between images
-4. No technique to determine correspondence between
-features points when the images have nonlinear
-geometric distortions.
-## Reflection
-This lecture made me painfully aware how much effort needs to be taken before remote sensing data can be used. I'm glad that there is already numerous amount of appropriate algorithms, and corrected data than can be utilized by researchers. Nevertheless, the wide range of possible image enhancements and adjustments stands as a reminder of imagery limitations, i.e. each correction method entails some shortcomings.
+Since geometric distortions are inherit in remote sensing imagery, this section focuses on studies that explore various preprocessing methods for geometric correction. As it has been noted by \[REFERECNE\], there are https://www.researchgate.net/profile/Rahul-Joshi-18/publication/276128802_A_Survey_on_Geometric_Correction_of_Satellite_Imagery/links/5c6a8a97299bf1e3a5af6807/A-Survey-on-Geometric-Correction-of-Satellite-Imagery.pdf Following are the major difficulties occurred during geometric correction process. 1. Selection of the feature points from the images 2. Determination of correspondence between images 3. Selection of right transformation function that can represents geometric distortion between images 4. No technique to determine correspondence between features points when the images have nonlinear geometric distortions. \## Reflection This lecture made me painfully aware how much effort needs to be taken before remote sensing data can be used. I'm glad that there is already numerous amount of appropriate algorithms, and corrected data than can be utilized by researchers. Nevertheless, the wide range of possible image enhancements and adjustments stands as a reminder of imagery limitations, i.e. each correction method entails some shortcomings.
+
+## Reflections
 
 ## References
+::: {#refs}
+:::
+

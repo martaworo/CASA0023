@@ -1,7 +1,7 @@
 ---
 title: "Week 9"
----
 bibliography: references.bib
+link-citations: true
 ---
 
 # Synthetic Aperture Radar (SAR) {.unnumbered}
@@ -12,7 +12,7 @@ SAR remote sensing satellites are active remote sensing instruments, independent
 
 ### How does it work?
 
-They transmit electromagnetic microwave from radar antenna and record the backscattered signal from the radar target (Lee, 2009). Thanks to the use of synthetic antenna which exploits the motion of the aircraft as it comprises multiple images (swath), there is no need for physical antenna, which would have needed to be several kilometers long (!)
+They transmit electromagnetic microwave from radar antenna and record the backscattered signal from the radar target [@]. Thanks to the use of synthetic antenna which exploits the motion of the aircraft as it comprises multiple images (swath), there is no need for physical antenna, which would have needed to be several kilometers long (!)
 
 ### SAR polarization
 
@@ -31,7 +31,7 @@ Certain surfaces absorb electrical systems more strongly -\> this property matte
 Change detection:
 
 -   Example 1 (from lecture) Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations
--   Example 2 (reference: https://www.economist.com/interactive/briefing/2023/02/23/data-from-satellites-reveal-the-vast-extent-of-fighting-in-ukraine) Pixel Wise T-Test -\> the main challange is to identify buildings that have been damaged due to conflicts - when and where. However, in previous projects based on satellite imagery and CNN techniques, there have been following issues observed:
+-   Example 2 [@] https://www.economist.com/interactive/briefing/2023/02/23/data-from-satellites-reveal-the-vast-extent-of-fighting-in-ukraine) Pixel Wise T-Test -\> the main challange is to identify buildings that have been damaged due to conflicts - when and where. However, in previous projects based on satellite imagery and CNN techniques, there have been following issues observed:
     -   expensive - it cannot be replicated on the whole country because it needs high resolution imagery to be replicated, e.g. \$13.9 million to scan all Ukraine each time
     -   it is not persistently collected like, e.g. Sentinel 1
     -   neural networks require training to be accurate in different geographies -\> according to Monitoring war destruction from space using machine learning Hannes Mueller -\> the issue is train/test split is based on same cities and the accuracy results, if replicated in different cities (even if in the same country) tend to drop significantly. In this case, as explored by Ollie Ballinger, SAR radar imagery can be applied, as it has been presented on the example of Ukraine and Gaza war zones, where flat roof surface (rumbled or not) has been used to detect damaged buildings (possible thanks to changes in backscattering). This method allowed to replicate high accuracies across different cities in different countries. Limitations here: snow on the rooftops!

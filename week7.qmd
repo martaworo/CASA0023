@@ -1,6 +1,7 @@
 ---
 title: "Week 7"
 bibliography: references.bib
+link-citations: true
 ---
 
 # Classification I {.unnumbered}
@@ -35,13 +36,13 @@ Interestingly, higher resolution images do not guarantee better land cover. The 
 
 ## Applications
 
-The goal of classification in environmental and Earth sciences is often to monitor changes over time, assess ecosystem health, plan conservation efforts, or understand human impact on natural landscapes, among other applications. In recent years, the use of deep learning in remote sensing image classification is becoming more and more popular, especially thanks to its powerful feature extraction capabilities and robustness (Shen et al., 2021). https://www.researchgate.net/publication/350370369_Remote_Sensing_Image_Classification_Using_Deep-Shallow_Learning
+The goal of classification in environmental and Earth sciences is often to monitor changes over time, assess ecosystem health, plan conservation efforts, or understand human impact on natural landscapes, among other applications. In recent years, the use of deep learning in remote sensing image classification is becoming more and more popular, especially thanks to its powerful feature extraction capabilities and robustness [@dou_remote_2021]
 
 Brazil case from lecture: Monitoring forests + illegal logging - instead of using the raw Earth observation data, they're making composites, they're taking part of the data that are most relevant for their application, so here we have maximum, minimum, mean values and some kind of linear regression also happening. And then from those metrics they are then using a classifier on the metrics as opposed to the raw Google data. 
 Forest fires paper - vegetation was from a classified Landsat TM image - classified 16 categories.
 
-https://www.sciencedirect.com/science/article/abs/pii/S0168169923006154 - this study aims to develop a deep learning framework to improve the accuracy of crop type identification using Sentinel 2 data. Researchers built a time-series image classification framework using Attention-based Bidirectional Gated Recurrent Unit (A-BiGRU) to map rice, maize, and soybean in Fujin region of China, from reconstructed Sentinel-2 time-series images. Figure 1 demonstrates methodolgy used in this study. Interestingly, despite its 
-the inherent disadvantage of CNNs is the need for a large number of spatially labeled samples.as it has been observed by  Gallo et al. (2023) Nevertheless, different studies which focused on using a different algorithm, e.g. https://www.mdpi.com/2072-4292/15/13/3212 who used RF algorithm also on Sentinel 2 data, was able to achieve a significantly higher accuracy. Their study was based on random forest importance and normalization, which concluded in a strong performance for early crop mapping. 
+@feng_deep_2023 study aims to develop a deep learning framework to improve the accuracy of crop type identification using Sentinel 2 data. Researchers built a time-series image classification framework using Attention-based Bidirectional Gated Recurrent Unit (A-BiGRU) to map rice, maize, and soybean in Fujin region of China, from reconstructed Sentinel-2 time-series images. Figure 1 demonstrates methodolgy used in this study. Interestingly, despite its 
+the inherent disadvantage of CNNs is the need for a large number of spatially labeled samples as it has been observed by  Gallo et al. (2023) Nevertheless, different studies which focused on using a different algorithm, e.g. @wei2023early who used RF algorithm also on Sentinel 2 data, was able to achieve a significantly higher accuracy. Their study was based on random forest importance and normalization, which concluded in a strong performance for early crop mapping. 
 
 ![Figure 1. Methodology used in *A deep learning framework for crop mapping with reconstructed Sentinel-2 time series images (2021)*](images/method.jpg)
 
@@ -50,3 +51,9 @@ the inherent disadvantage of CNNs is the need for a large number of spatially la
 
 Case of Brazil forest monitoring was among the most thought provoking this week fir me. Fact that the area of a forest the size of Nepal can be monitored by two employees with two vehicles, a boat and a drone and provide a sufficient image within 20 minutes is just incredible, how efficient this is. At the same time, it is also a bit scary to think about its monitoring capabilities... is there a line between control, justice and big brother entering into our lives?
 At the same time, it is incredible how all of the image classification efforts (as in example from China) may result in tools able to predict crop yield and monitor its growth, indirectly ensuring food security. I found it interesting to find out about machine learning real use-cases. I'm quite amazed with its vast options and and seemingly endless opportunities for accuracy improvements. 
+
+## References
+
+::: {#refs}
+:::
+

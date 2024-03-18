@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -219,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="applications" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.2</span> Applications</h2>
 <p>Highlighting innovative uses of image classification, such as detecting floating plastics in water bodies, the text showcases the expanding range of environmental issues that can be addressed. These applications not only demonstrate the versatility of image classification techniques but also underscore their potential in environmental protection and resource management.WOWO</p>
-<p>In the study by https://link.springer.com/article/10.1007/s11069-022-05642-y thee classification methods were evaluated for the purpose of detecting co-seismic landslides in seismically active area in Lesser Himalaya in Pakistan. Maximum Likelihood Classification, OBIA, and COSI-Corr were analyzed for the purpose of identifying their accuracy levels and model reliability (Figure 1). It has been concluded that MLC classification technique is performing worse than other pixel-based landslide classification algorithms which is consistent with other existing literature ( Saba et al.&nbsp;2019). COSI-Corr offered better outcome thanks to the sub-pixel analysis and employing extra masks for landslide detection. This has also been confirmed by Saba et al.&nbsp;(2017). However, as a consequence of natural variation and atmospheric effects, this method resulted in some extent of spleckled noise in pixels, which in consequence leads to spectral image being exhibited differently. Similar study by https://ieeexplore.ieee.org/abstract/document/9897214?casa_token=EzRUtojc9OMAAAAA:0Tn-vSMMikITkTbGg_b38bBfLskPYBxU8NdSTJjgml24m8azFeay4wRJUC8M84cFi6_JU3oA also explored this method for ground deformation study disregarding use of COSI-Corr for CNN-DATe which provided them with results of better accuracy. Back to the initial paper, third method OBIA’s performance was deemed as highly dependent on the spatial resolution of the imagery. “Although many studies (Moosavi et al.&nbsp;2014; Sibaruddin et al.&nbsp;2018; Saba et al.&nbsp;2019) from around the world suggest that OBIA-based classification produces better landslide maps than pixel-based techniques, it still has a number of drawbacks that might be addressed through the use of COSI-Corr approach for co-seismic landslide identification. To improve these techniques for various Geosciences applications, particularly landslide detection (Debella-Gilo and Kääb 2011; Butler 2018), consistent efforts are required.”</p>
+<p>In the study by <span class="citation" data-cites="saba_comparison_2023">Saba et al. (<a href="week1.html#ref-saba_comparison_2023" role="doc-biblioref">2023</a>)</span>, three classification methods were evaluated for the purpose of detecting co-seismic landslides in seismically active area in Lesser Himalaya in Pakistan. Maximum Likelihood Classification, OBIA, and COSI-Corr were analyzed for the purpose of identifying their accuracy levels and model reliability (Figure 1). It has been concluded that MLC classification technique is performing worse than other pixel-based landslide classification algorithms which is consistent with other existing literature <span class="citation" data-cites="Saba2019ApplicationOS">(<a href="week1.html#ref-Saba2019ApplicationOS" role="doc-biblioref">Saba et al. 2019</a>)</span>. COSI-Corr offered better outcome thanks to the sub-pixel analysis and employing extra masks for landslide detection. This has also been confirmed by <span class="citation" data-cites="Saba2017CoSeismicLA">Saba et al. (<a href="week1.html#ref-Saba2017CoSeismicLA" role="doc-biblioref">2017</a>)</span>. However, as a consequence of natural variation and atmospheric effects, this method resulted in some extent of spleckled noise in pixels, which in consequence leads to spectral image being exhibited differently. Similar study by <span class="citation" data-cites="montagnon_sub-pixel_2022">Montagnon et al. (<a href="week1.html#ref-montagnon_sub-pixel_2022" role="doc-biblioref">2022</a>)</span> also explored this method for ground deformation study disregarding use of COSI-Corr for CNN-DATe which provided them with results of better accuracy. Back to the initial paper, third method OBIA’s performance was deemed as highly dependent on the spatial resolution of the imagery. “Although many studies (Moosavi et al.&nbsp;2014; Sibaruddin et al.&nbsp;2018; Saba et al.&nbsp;2019) from around the world suggest that OBIA-based classification produces better landslide maps than pixel-based techniques, it still has a number of drawbacks that might be addressed through the use of COSI-Corr approach for co-seismic landslide identification. To improve these techniques for various Geosciences applications, particularly landslide detection (Debella-Gilo and Kääb 2011; Butler 2018), consistent efforts are required.”</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/class.png" class="img-fluid figure-img"></p>
@@ -229,11 +248,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="reflections" class="level2" data-number="8.3">
 <h2 data-number="8.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">8.3</span> Reflections</h2>
-<p>Radiant MLHub might come very handy for my other machine learning projects I’m doing! To Kappa or not to Kappa</p>
+<p>To Kappa or not to Kappa? I have to admit, this material was rather challenging for me in comprehension since it introduced a lot of new vocabulary and acronyms into my life. Nevertheless, I find them very helpful, and now when I read articles, I am able to understand more dimensions of methodological descriptions than before. In addition, it seems that radiant MLHub might come very handy for my other machine learning projects I’m doing!</p>
 </section>
 <section id="references" class="level2" data-number="8.4">
 <h2 data-number="8.4" class="anchored" data-anchor-id="references"><span class="header-section-number">8.4</span> References</h2>
-<p>Saba SB, Khattak NU, Ali M, Waseem M, Siddiqui S, Anjum S, Turab SA (2019) Application of sub-pixel-based technique “orthorectification of optically sensed images and its correlation” for co-seismic landslide detection and its accuracy modification through integration of various masks. J Himalayan Earth Sci 51:37–50 Saba SB, Ali M, van der Meijde M, van der Werff H (2017) Co-seismic landslides automatic detection on regional scale with sub-pixel analysis of multi temporal high resolution optical images: Application to southwest of Port au Prince, Haiti. J Himalayan Earth Sci 50:74–92</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-montagnon_sub-pixel_2022" class="csl-entry" role="listitem">
+Montagnon, Tristan, James Hollingsworth, Erwan Pathier, Mathilde Marchandon, Mauro Dalla Mura, and Sophie Giffard-Roisin. 2022. <span>“Sub-Pixel <span>Optical</span> <span>Satellite</span> <span>Image</span> <span>Registration</span> for <span>Ground</span> <span>Deformation</span> <span>Using</span> <span>Deep</span> <span>Learning</span>.”</span> In <em>2022 <span>IEEE</span> <span>International</span> <span>Conference</span> on <span>Image</span> <span>Processing</span> (<span>ICIP</span>)</em>, 2716–20. <a href="https://doi.org/10.1109/ICIP46576.2022.9897214">https://doi.org/10.1109/ICIP46576.2022.9897214</a>.
+</div>
+<div id="ref-Saba2017CoSeismicLA" class="csl-entry" role="listitem">
+Saba, Sumbal Bahar, Muhammad Ali, Mark van der Meijde, and Harald van der Werff. 2017. <span>“Co-Seismic Landslides Automatic Detection on Regional Scale with Sub-Pixel Analysis of Multi Temporal High Resolution Optical Images: Application to Southwest of Port Au Prince, Haiti.”</span> <em>Journal of Himalayan Earth Sciences</em> 50 (2): 74–92.
+</div>
+<div id="ref-saba_comparison_2023" class="csl-entry" role="listitem">
+Saba, Sumbal Bahar, Muhammad Ali, Syed Ali Turab, Muhammad Waseem, and Shah Faisal. 2023. <span>“Comparison of Pixel, Sub-Pixel and Object-Based Image Analysis Techniques for Co-Seismic Landslides Detection in Seismically Active Area in <span>Lesser</span> <span>Himalaya</span>, <span>Pakistan</span>.”</span> <em>Natural Hazards</em> 115 (3): 2383–98. <a href="https://doi.org/10.1007/s11069-022-05642-y">https://doi.org/10.1007/s11069-022-05642-y</a>.
+</div>
+<div id="ref-Saba2019ApplicationOS" class="csl-entry" role="listitem">
+Saba, Sumbal Bahar, Nimat Ullah Khattak, Muhammad Ali, Muhammad Waseem, Samina Siddiqui, Seema Anjum, and Syed Ali Turab. 2019. <span>“Application of Sub-Pixel-Based Technique <span>‘Orthorectification of Optically Sensed Images and Its Correlation’</span> for Co-Seismic Landslide Detection and Its Accuracy Modification Through the Integration of Various Masks.”</span> <em>Journal of Himalayan Earth Sciences</em> 52 (1): 37–50.
+</div>
+</div>
 
 
 </section>

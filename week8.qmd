@@ -28,12 +28,13 @@ Spatial cross validation - cross-validation techniques based on random split of 
 
 ## Applications
 
-Highlighting innovative uses of image classification, such as detecting floating plastics in water bodies, the text showcases the expanding range of environmental issues that can be addressed. These applications not only demonstrate the versatility of image classification techniques but also underscore their potential in environmental protection and resource management.WOWO
+Image classification has various innovative applications, with one of them that amazes me the most is possibility to detect floating plastics in water bodies [@basu_development_2021].This and many other capabilities behind image classification allows to respond to a range of environmental issues in a very efficient way. Very impressing! I did delve down into a more methodological applications after that:
 
 In the study by @saba_comparison_2023, three classification methods were evaluated for the purpose of detecting co-seismic landslides in seismically active area in Lesser Himalaya in Pakistan. Maximum Likelihood Classification, OBIA, and COSI-Corr were analyzed for the purpose of identifying their accuracy levels and model reliability (Figure 1). It has been concluded that MLC classification technique is performing worse than other pixel-based landslide classification algorithms which is consistent with other existing literature [@Saba2019ApplicationOS]. COSI-Corr offered better outcome thanks to the sub-pixel analysis and employing extra masks for landslide detection. This has also been confirmed by @Saba2017CoSeismicLA. However, as a consequence of natural variation and atmospheric effects, this method resulted in some extent of spleckled noise in pixels, which in consequence leads to spectral image being exhibited differently. Similar study by @montagnon_sub-pixel_2022 also explored this method for ground deformation study disregarding use of COSI-Corr for CNN-DATe which provided them with results of better accuracy. Back to the initial paper, third method OBIA's performance was deemed as highly dependent on the spatial resolution of the imagery.
-"Although many studies (Moosavi et al. 2014; Sibaruddin et al. 2018; Saba et al. 2019) from around the world suggest that OBIA-based classification produces better landslide maps than pixel-based techniques, it still has a number of drawbacks that might be addressed through the use of COSI-Corr approach for co-seismic landslide identification. To improve these techniques for various Geosciences applications, particularly landslide detection (Debella-Gilo and Kääb 2011; Butler 2018), consistent efforts are required."
+
 
 ![Figure 1. Comparison of classification techniques (yellow), i.e. a Pixel-based MLC, b Object–based and c COSI-Corr](images/class.png)
+
 
 ## Reflections
 To Kappa or not to Kappa? I have to admit, this material was rather challenging for me in comprehension since it introduced a lot of new vocabulary and acronyms into my life. Nevertheless, I find them very helpful, and now when I read articles, I am able to understand more dimensions of methodological descriptions than before. 

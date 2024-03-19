@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -211,33 +230,44 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="unnumbered">Policy</h1>
 <section id="summary" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1</span> Summary</h2>
-<p>Implementation of low emission zone in Poland’s capital, Warsaw, is due to take place from July 2024. This is in line with national spatial policy for Warsaw to raise the rank in the network of European Union cities as one of sustainable economic, social development and protection of natural heritage.&nbsp; Precisely, this is to adhere the policy of The Real Urban Emissions (TRUE) Initiative which is a partnership of the FIA Foundation and the International Council on Clean Transportation with an aim of restricting access to polluting cars and improving urban air quality.</p>
-<p>According to the World Bank Group, 36 of the 50 most polluted cities in the European Union are in Poland. Thus, ambient air pollution and its detrimental health effects are a matter of immense importance in Poland. This narrative review aims to analyse current findings on air pollution and health in Poland, with a focus on respiratory diseases, including COVID-19, as well as the Poles’ awareness of air pollution. PubMed, Scopus and Google Scholar databases were searched. In total, results from 71 research papers were summarized qualitatively. In Poland, increased air pollution levels are linked to increased general and respiratory disease mortality rates, higher prevalence of respiratory diseases, including asthma, lung cancer and COVID-19 infections, reduced forced expiratory volume in one second (FEV1) and forced vital capacity (FVC). The proximity of high traffic areas exacerbates respiratory health problems. People living in more polluted regions (south of Poland) and in the winter season have a higher level of air pollution awareness. There is an urgent need to reduce air pollution levels and increase public awareness of this threat. A larger number of multi-city studies are needed in Poland to consistently track the burden of diseases attributable to air pollution.</p>
-<p>Since the air pollution is among the major environmental health risks globally, causing almost 4.5 million premature deaths in 2019 (reference), the transportation sector, which is the leading source of this problem, should be addressed with additional consideration. Vehicle emissions standards are currently successfully controlled, however they tend to differ during real-world operation quite significantly. For this reason, the use of remote sensors can come as a useful tool allowing policy makers to make informative decisions.</p>
+<p>Implementation of low emission zone in Poland’s capital, Warsaw, is due to take place from July 2024. It intends to ban an entry for diesel engine cars older than 18 years and gasoline vehicles older than 27 years. This initiative is in line with national spatial policy for Warsaw to raise the rank in the network of European Union cities as one of sustainable economic, social development and protection of natural heritage. Precisely, this is to adhere the policy of The Real Urban Emissions (TRUE) Initiative which is a partnership of the FIA Foundation and the International Council on Clean Transportation with an aim of restricting access to polluting cars and improving urban air quality.</p>
+<p>In line with the World Bank report, out of 50 most polluted cities in the EU, 36 are located in Poland <span class="citation" data-cites="worldbank19">(<a href="week1.html#ref-worldbank19" role="doc-biblioref">World Bank Group 2019</a>)</span>. For this reason, initiatives aiming to relieve this matter are of the utmost importance. It has been concluded by <span class="citation" data-cites="nazar_air_2022">Nazar and Niedoszytko (<a href="week1.html#ref-nazar_air_2022" role="doc-biblioref">2022</a>)</span> that in Poland, increased values of air pollution are linked with the general increase of respiratory disease mortality rates, higher prevalence of respiratory diseases (e.g.&nbsp;asthma, lung cancer, COVID-19 infections), reduced forced expiratory volume in one second (FEV1) and forced vital capacity (FVC). Therefore, the proximity of high traffic zones has an influence on respiratory health problems. There is an urgent need to reduce air pollution levels.</p>
+<p>Warsaw is among one of the most polluted cities in the European Union and it has one of the highest vehicle ownership rates (859 per 1,000 people) in Europe <span class="citation" data-cites="statista_motorization_2021">(<a href="week1.html#ref-statista_motorization_2021" role="doc-biblioref">STATISTA 2021</a>)</span>. Vehicle emissions standards are currently successfully controlled in Warsaw, however they tend to differ during real-world operation quite significantly. For this reason, the use of remote sensors can come as a useful tool allowing policy makers to make informative decisions.</p>
 </section>
 <section id="applications" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">4.2</span> Applications</h2>
 <p>Remotely sensed data can provide the insight into the actual vehicles emissions across the streets of Warsaw. Being able to measure the emissions under real driving conditions allow to produce an accurate emissions assessment across urban areas. By combining data from sensors with other, already existing databases, it would be possible to analyse long-term trends and gain a better understanding of emissions of the vehicle fleet. This could lead to a comprehensive analysis, allowing to identify high-emitting vehicle groups, comparing the impact of different ambient conditions, and assessing how emission performance change with the vehicle’s age. Most importantly, this could help to inform the design of aforementioned low emission zones by pointing out which vehicle types would have the most impact on emissions reduction should they be restricted from the zone.</p>
 <section id="suggested-methodology" class="level3" data-number="4.2.1">
 <h3 data-number="4.2.1" class="anchored" data-anchor-id="suggested-methodology"><span class="header-section-number">4.2.1</span> Suggested Methodology</h3>
-<p>The estimation of air pollution can be approached as a supervised computer vision problem. Datasets can be collected from Sentinel-2 and Sentinel-5P, spatially and temporally aligned with measurements from air quality monitoring stations. The proposed model can be trained on pairs of remote sensing input and air quality target values (see Figure 1), which yields a system that predicts air pollution levels solely from globally available remote sensing data.</p>
+<p>The estimation of air pollution can be approached as a supervised computer vision problem as consulted with <span class="citation" data-cites="scheibenreif_estimation_2021">Scheibenreif, Mommert, and Borth (<a href="week1.html#ref-scheibenreif_estimation_2021" role="doc-biblioref">2021</a>)</span>. Datasets can be collected from Sentinel-2, along with measurements from air quality monitoring stations. The proposed model can be trained on pairs of remote sensing input and air quality target values (see Figure 1) to produce a prediction of air pollution level.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Picture1.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">Figure 1. Overview of the proposed air pollution prediction system</figcaption>
 </figure>
 </div>
-<p>NO2 measurements by EEA air quality stations would have to be filtered to remove values with insufficient quality. To investigate the possibility to estimate NO2 concentrations at quarterly and monthly frequencies, the mean of NO2 measurements for each frequency could be used as prediction target. To build the dataset, Sentinel-2 Level-2A data could be downloaded(i.e.&nbsp;corrected for atmospheric effects and enriched with cloud masks) with low cloud-coverage at the locations of air quality stations, containing 12 different bands (band 10 is empty in the case of Level-2A data). The images could then be cropped to 120×120 pixel size (∼1.2×1.2 km) centered at the location of interest. Additionally, this would be followed by visual inspection of the RGB bands of all images to ensure that no clouds or artifacts are present.</p>
 </section>
 </section>
 <section id="reflection" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>
-<ul>
-<li>The reflection criterion will refer to what you have learnt in relation to the policy, city and the application of the data. Fun fact, they stopped this projects with protests, etc. …</li>
-</ul>
+<p>Remote sensing data can support policy of introduction of low emission zone in Warsaw in order to ensure informed decisions regarding zone’s boundaries and to facilitate a gentle introduction of the zone itself. Especially considering the fact that public consultation were met with a big protest from citizens and numerous local councils. For this reason, being able to ensure negative impact of transport on the urban environment is actually reduced, stands as a crucial part of policy introduction.</p>
 </section>
 <section id="references" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="references"><span class="header-section-number">4.4</span> References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-nazar_air_2022" class="csl-entry" role="listitem">
+Nazar, Wojciech, and Marek Niedoszytko. 2022. <span>“Air <span>Pollution</span> in <span>Poland</span>: <span>A</span> 2022 <span>Narrative</span> <span>Review</span> with <span>Focus</span> on <span>Respiratory</span> <span>Diseases</span>.”</span> <em>International Journal of Environmental Research and Public Health</em> 19 (2): 895. <a href="https://doi.org/10.3390/ijerph19020895">https://doi.org/10.3390/ijerph19020895</a>.
+</div>
+<div id="ref-scheibenreif_estimation_2021" class="csl-entry" role="listitem">
+Scheibenreif, Linus, Michael Mommert, and Damian Borth. 2021. <span>“Estimation of <span>Air</span> <span>Pollution</span> with <span>Remote</span> <span>Sensing</span> <span>Data</span>: <span>Revealing</span> <span>Greenhouse</span> <span>Gas</span> <span>Emissions</span> from <span>Space</span>.”</span> arXiv. <a href="http://arxiv.org/abs/2108.13902">http://arxiv.org/abs/2108.13902</a>.
+</div>
+<div id="ref-statista_motorization_2021" class="csl-entry" role="listitem">
+STATISTA. 2021. <span>“Motorization Rate in <span>Poland</span> 2021.”</span> <em>Statista</em>. <a href="https://www.statista.com/statistics/452094/poland-number-of-cars-per-1000-inhabitants/">https://www.statista.com/statistics/452094/poland-number-of-cars-per-1000-inhabitants/</a>.
+</div>
+<div id="ref-worldbank19" class="csl-entry" role="listitem">
+World Bank Group, x. 2019. <span>“Air Quality in Poland, What Are the Issues and What Can Be Done?”</span> September.
+</div>
+</div>
 
 
 </section>

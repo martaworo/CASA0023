@@ -202,8 +202,7 @@ div.csl-indent {
   </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">9.2</span> Applications</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">9.3</span> Reflection</a></li>
-  <li><a href="#song-of-the-week" id="toc-song-of-the-week" class="nav-link" data-scroll-target="#song-of-the-week"><span class="header-section-number">9.4</span> Song of the week</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">9.5</span> References</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">9.4</span> References</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -235,7 +234,7 @@ div.csl-indent {
 <p>SAR remote sensing satellites are active remote sensing instruments, independent of weather and sun illumination.</p>
 <section id="how-does-it-work" class="level3" data-number="9.1.1">
 <h3 data-number="9.1.1" class="anchored" data-anchor-id="how-does-it-work"><span class="header-section-number">9.1.1</span> How does it work?</h3>
-<p>They transmit electromagnetic microwave from radar antenna and record the backscattered signal from the radar target [@]. Thanks to the use of synthetic antenna which exploits the motion of the aircraft as it comprises multiple images (swath), there is no need for physical antenna, which would have needed to be several kilometers long (!)</p>
+<p>They transmit electromagnetic microwave from radar antenna and record the backscattered signal from the radar target. Thanks to the use of synthetic antenna which exploits the motion of the aircraft as it comprises multiple images (swath), there is no need for physical antenna, which would have needed to be several kilometers long (!)</p>
 </section>
 <section id="sar-polarization" class="level3" data-number="9.1.2">
 <h3 data-number="9.1.2" class="anchored" data-anchor-id="sar-polarization"><span class="header-section-number">9.1.2</span> SAR polarization</h3>
@@ -256,15 +255,13 @@ div.csl-indent {
 <p>Change detection:</p>
 <ul>
 <li>Example 1 (from lecture) Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations</li>
-<li>Example 2 [@] https://www.economist.com/interactive/briefing/2023/02/23/data-from-satellites-reveal-the-vast-extent-of-fighting-in-ukraine) Pixel Wise T-Test -&gt; the main challange is to identify buildings that have been damaged due to conflicts - when and where. However, in previous projects based on satellite imagery and CNN techniques, there have been following issues observed:
+<li>Example 2 <span class="citation" data-cites="ballinger_leveraging_2023">(<a href="week1.html#ref-ballinger_leveraging_2023" role="doc-biblioref">Ballinger and Zwijnenburg 2023</a>)</span> Pixel Wise T-Test -&gt; the main challange is to identify buildings that have been damaged due to conflicts - when and where. However, in previous projects based on satellite imagery and CNN techniques, there have been following issues observed:
 <ul>
 <li>expensive - it cannot be replicated on the whole country because it needs high resolution imagery to be replicated, e.g.&nbsp;$13.9 million to scan all Ukraine each time</li>
 <li>it is not persistently collected like, e.g.&nbsp;Sentinel 1</li>
 <li>neural networks require training to be accurate in different geographies -&gt; according to Monitoring war destruction from space using machine learning Hannes Mueller -&gt; the issue is train/test split is based on same cities and the accuracy results, if replicated in different cities (even if in the same country) tend to drop significantly. In this case, as explored by Ollie Ballinger, SAR radar imagery can be applied, as it has been presented on the example of Ukraine and Gaza war zones, where flat roof surface (rumbled or not) has been used to detect damaged buildings (possible thanks to changes in backscattering). This method allowed to replicate high accuracies across different cities in different countries. Limitations here: snow on the rooftops!</li>
 </ul></li>
-<li>Example 3 (reference https://www.intechopen.com/chapters/63701) Wetland Monitoring and Mapping Using Synthetic Aperture Radar Implementation of SAR imagery for water level monitoring, i.e.&nbsp;allows the evaluation of methane emission contributions to climate change from degraded and thawing wetlands. SAR is particularly useful in this case since it provides data regardless of weather conditions and lighting, and wetlands tend to be located in remote areas or under cloud cover.</li>
-<li>Soldiery applications</li>
-<li>ships</li>
+<li>Example 3 <span class="citation" data-cites="dabboor_wetland_2018">(<a href="week1.html#ref-dabboor_wetland_2018" role="doc-biblioref">Dabboor et al. 2018</a>)</span> Wetland Monitoring and Mapping Using Synthetic Aperture Radar Implementation of SAR imagery for water level monitoring, i.e.&nbsp;allows the evaluation of methane emission contributions to climate change from degraded and thawing wetlands. SAR is particularly useful in this case since it provides data regardless of weather conditions and lighting, and wetlands tend to be located in remote areas or under cloud cover.</li>
 </ul>
 <p>SAR has become one of the valued remote sensing tools for both soldierly and non-combatant users. Various soldierly SAR applications are intelligence gathering, battlefield survey, and weapons supervision. The non-combatant applications like agricultural and land-use monitoring, topographic planning, geology and mining, oil spill observation, sea ice observation, oceanography and planetary or celestial examinations [11]. SAR has wide practical applications on ocean as well as on land like artificial illegal or coincidental spills are visible in SAR images in the oceans, ships detection and tracking in the oceans, observation of natural leakage from oil deposits in the oceans, providing hints for the oil industries, ocean wave forecasting and marine climatology, regional ice monitoring. This is very crucial and helpful for navigation in ice-infested waters [11].</p>
 <p>Synthetic Aperture Radar. Available at: http://wtlab.iis.u-tokyo.ac.jp/~wataru/lecture/rsgis/rsnote/cp4/cp4-3.htm</p>
@@ -274,15 +271,16 @@ div.csl-indent {
 <h2 data-number="9.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.3</span> Reflection</h2>
 <p>This week I am especially amazed by the applications of SAR imagery both in soldierly and non-combatant uses. Its ability to provide a vast data in an affordable way allows for advanced analysis</p>
 </section>
-<section id="song-of-the-week" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="song-of-the-week"><span class="header-section-number">9.4</span> Song of the week</h2>
-<p><a href="https://open.spotify.com/track/1JIqLhfgaLP1EB4mseWCmP?si=26c0689f8ed34012">Paranoid London</a></p>
-</section>
-<section id="references" class="level2" data-number="9.5">
-<h2 data-number="9.5" class="anchored" data-anchor-id="references"><span class="header-section-number">9.5</span> References</h2>
+<section id="references" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="references"><span class="header-section-number">9.4</span> References</h2>
 <p>Lee JS, Pottier E. Polarimetric Radar Imaging: From Basics to Applications. Boca Raton, FL, USA: CRC Press; 2009</p>
-<div id="refs" role="list" style="display: none">
-
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-ballinger_leveraging_2023" class="csl-entry" role="listitem">
+Ballinger, Ollie, and Wim Zwijnenburg. 2023. <span>“Leveraging Emerging Technologies to Enable Environmental Monitoring and Accountability in Conflict Zones <span></span> <span>International</span> <span>Review</span> of the <span>Red</span> <span>Cross</span> <span></span> <span>Cambridge</span> <span>Core</span>.”</span> <a href="https://www.cambridge.org/core/journals/international-review-of-the-red-cross/article/abs/leveraging-emerging-technologies-to-enable-environmental-monitoring-and-accountability-in-conflict-zones/048F61CD42B7C21931B37C091FC2C95F">https://www.cambridge.org/core/journals/international-review-of-the-red-cross/article/abs/leveraging-emerging-technologies-to-enable-environmental-monitoring-and-accountability-in-conflict-zones/048F61CD42B7C21931B37C091FC2C95F</a>.
+</div>
+<div id="ref-dabboor_wetland_2018" class="csl-entry" role="listitem">
+Dabboor, Mohammed, Brian Brisco, Mohammed Dabboor, and Brian Brisco. 2018. <span>“Wetland <span>Monitoring</span> and <span>Mapping</span> <span>Using</span> <span>Synthetic</span> <span>Aperture</span> <span>Radar</span>.”</span> In <em>Wetlands <span>Management</span> - <span>Assessing</span> <span>Risk</span> and <span>Sustainable</span> <span>Solutions</span></em>. IntechOpen. <a href="https://doi.org/10.5772/intechopen.80224">https://doi.org/10.5772/intechopen.80224</a>.
+</div>
 </div>
 
 

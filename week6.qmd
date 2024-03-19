@@ -12,11 +12,9 @@ link-citations: true
 
 Geospatial data processing & analysis cloud-based platform powered by Google; It hosts petabytes of over 40 years of remotely-sensed data, such as Landsat, MODIS, National Oceanographic and Atmospheric Administration Advanced Very High Resolution Radiometer (NOAA AVHRR), Sentinel 1, 2, 3 and 5-P; and Advanced Land Observing Satellite (ALOS) data [@gorelick_google_2017]. MODIS collections for example, provide a twice a day global coverage.
 
-GEE platform data is publicly available and is designed to be used with an explorer web app. It also provides various machine learning algorithms based on Google's computational infrastructure and allows for high-speed parallel processing. In addition it provides library of APIs enabling the use of JavaScript and Python for analysis [@tamiminia_google_2020]
+GEE platform data is publicly available and is designed to be used with an explorer web app. It also provides various machine learning algorithms based on Google's computational infrastructure and allows for high-speed parallel processing. In addition it provides library of APIs enabling the use of JavaScript and Python for analysis [@tamiminia_google_2020].
 
 This tool enables for analysis and visualizing big geospatial data without access to supercomputer or specialized coding expertise (cool!)
-
-https://www.sciencedirect.com/science/article/pii/S2352938522002154
 
 ## Applications
 

@@ -36,7 +36,7 @@ Due to solar energy being reflected differently based on surface characteristics
 
 ## Reflection
 
-The most interesting and life-changing part of this lecture was finally getting an answer to the biggest question of my life, why the sky is blue during a day, and orange/red during a sunset. Answer lies in scattering of sunlight. Due to difference in wave sizes, blue light is visible since it travels as shorter and smaller waves. This changes when the Sun gets lower in the sky, its light passes through more of the atmosphere, allowing the reds and yellows to pass straight through to our eyes.
+The most interesting and life-changing part of this lecture was finally getting an answer to the biggest question of my life, why    the sky is blue during a day, and orange/red during a sunset. Answer lies in scattering of sunlight. Due to difference in wave sizes, blue light is visible since it travels as shorter and smaller waves. This changes when the Sun gets lower in the sky, its light passes through more of the atmosphere, allowing the reds and yellows to pass straight through to our eyes.
 
 Another interesting realization is the amount of objects located in the atmosphere. This raises questions whether there are sufficient policies in place that would regulate the amount of cluster, control its life cycle and ensuring suitable recycling or removal.
 

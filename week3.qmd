@@ -60,4 +60,3 @@ Several studies have explored a variety of approaches to the aforementioned issu
 ## Reflection
 
 This lecture made me painfully aware how much effort needs to be taken before remote sensing data can be used. I'm glad that there is already numerous amount of appropriate algorithms, and corrected data than can be utilized by researchers. Nevertheless, the wide range of possible image enhancements and adjustments stands as a reminder of imagery limitations, i.e. each correction method entails some shortcomings.
-

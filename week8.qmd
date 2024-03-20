@@ -33,4 +33,3 @@ In the study by @saba_comparison_2023, three classification methods were evaluat
 ## Reflections
 
 To Kappa or not to Kappa? I have to admit, this material was rather challenging for me in comprehension since it introduced a lot of new vocabulary and acronyms into my life. Nevertheless, I find them very helpful, and now when I read articles, I am able to understand more dimensions of methodological descriptions than before. In addition, it seems that radiant MLHub might come very handy for my other machine learning projects I'm doing!
-

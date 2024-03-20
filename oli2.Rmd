@@ -140,4 +140,3 @@ I think, my lesson learnt would be design my future research questions in a very
 * Ozelkan, E., Chen, G. and Ustundag, B.B. (2016) ‘Multiscale object-based drought monitoring and comparison in rainfed and irrigated agriculture from Landsat 8 Oli imagery’, International Journal of Applied Earth Observation and Geoinformation, 44, pp. 159–170. doi:10.1016/j.jag.2015.08.003.   
 * Middlebury Remote Sensing (2020a) Whiskbroom vs. pushbroom sensors (class 4- V2), YouTube. Available at: https://www.youtube.com/watch?v=S7o0E593uc0&ab_channel=MiddleburyRemoteSensing (Accessed: 18 January 2024).   
 * NASA (2021) Operational Land Imager, NASA. Available at: https://landsat.gsfc.nasa.gov/satellites/landsat-8/spacecraft-instruments/operational-land-imager/ (Accessed: 18 January 2024).
----

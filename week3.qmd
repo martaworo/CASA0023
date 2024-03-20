@@ -8,17 +8,18 @@ link-citations: true
 
 ## Summary
 
-1.  Geometric correction -- distortion due to wind, Earth rotation, etc. Points are identified in a satellite image, and true image, e.g. Open Street Map (true representation of Earth). Ground control point is this location in image X, and find it on image Y. Then linear regression with distorted image and with gold standard data is performed. From Gold to EO. The more control points, the lower the error will be.
+1.  Geometric correction -- distortion due to wind, Earth rotation, etc. Points are identified in a satellite image, and true image, e.g. Open Street Map (true representation of Earth). Ground control point is this location in image X, and find it on image Y. Then linear regression with distorted image and with gold standard data is performed. From Gold to EO. The more control points, the lower the error.
 
 2.  Atmospheric correction -- distortion due to haze or scattering; adjacency effect -- pixels bleeding into other pixels; two ways to remove effects of atmosphere:
 
-    i)  relative - Dark object subtraction (DOS) or histogram adjustment; Psuedo-invariant Features (PIFs). o absolute (definitive) -- done through atmospheric radiative transfer models or empirical line correction -- using a field spectrometer, and the you do linear regression between these values. Path radiance (radiance reflected above the surface), atmospheric attenuation (absorption of EMR due to materials in atmosphere)
+    i)  **relative** - Dark object subtraction (DOS) or histogram adjustment; Psuedo-invariant Features (PIFs).
+    ii) **absolute (definitive)** -- done through atmospheric radiative transfer models or empirical line correction -- using a field spectrometer, and the you do linear regression between these values. Path radiance (radiance reflected above the surface), atmospheric attenuation (absorption of EMR due to materials in atmosphere)
 
 3.  Orthorectification correction -- subset of georectification;
 
-    i)  georectification = giving coordinates to an image;
+    i)  **georectification** = giving coordinates to an image;
 
-    ii) orthorectification = removing distortions... making the pixels viewed at nadir (straight down)
+    ii) **orthorectification** = removing distortions... making the pixels viewed at nadir (straight down)
 
 Atmospheric correction has to be done before topographic correction Radiometric Calibration - sensors capture image brightness and distributed as a Digital Number (or DN) - allows for efficient storage but has no units! Sensor calibration = linear regression;
 
@@ -30,13 +31,15 @@ ii) Reflectance is when light is off.
 
 iii) Reflectance is a property of a material (e.g. reflectance of grass is a property of grass)
 
-Landsat ARD -- **Analysis Ready Data** -- there are algorithms that prepare data but they are not perfect, what are the assumptions, influences. Level 2 product -- means something has changed or advanced from level 1.
+Landsat ARD -- **Analysis Ready Data** -- there are algorithms that prepare data but they are not perfect, what are the assumptions, influences.
 
-Joining data sets/ enhancements in remote sensing it is termed Mosaicking. If our study area is between two tiles, we do join. Before we clip data, we generate a seamline -- 10 pixels from both tiles, overlap, and apply histogram matching algorithm.
+Level 2 product -- means something has changed or advanced from level 1.
+
+Joining data sets/ enhancements in remote sensing it is termed *mosaicking*. If our study area is between two tiles, we do join. Before we clip data, we generate a seamline -- 10 pixels from both tiles, overlap, and apply histogram matching algorithm.
 
 ## Applications
 
-Since geometric distortions are inherit in remote sensing imagery due to the nature of image collection (platform movements) and Earth's rotation (inevitable), this section focuses on studies that explore various preprocessing methods for geometric correction.
+Since geometric distortions are inherit in remote sensing imagery due to the nature of image collection (platform movements) and Earth's rotation (inevitable), this section focuses on studies that explore various pre-processing methods for geometric correction.
 
 As it has been noted by @pdave_survey_2015 there are a couple of major difficulties occurring during geometric correction such as:
 
@@ -48,17 +51,13 @@ As it has been noted by @pdave_survey_2015 there are a couple of major difficult
 
 4.  Lack of technique to utilize for images with nonlinear geometric distortion.
 
-Several studies have explored a variety of approaches to the aforementioned issues such as @nguyen_optimal_2015 who suggested a way to optimize GCP (ground control point) assembly using a genetic/evolution algorithm (GA), compared to traditional GCPs and those selected by a Voronoi diagram approach [@li_research_2009]. It is concluded that the accuracy of GA-optimized GCPs is hihger than of the other methods.
+Several studies have explored a variety of approaches to the aforementioned issues such as @nguyen_optimal_2015 who suggested a way to optimize GCP (ground control point) assembly using a genetic/evolution algorithm (GA), compared to traditional GCPs and those selected by a Voronoi diagram approach [@li_research_2009]. It is concluded that the accuracy of GA-optimized GCPs is higher than of the other methods.
 
 @ma_image_2021 provides an overview of available methods intending to overcome second issue (correspondence between images) with area-based matching with machine learning strategies outlines for remote sensing data.
 
-@lin_robust_2024 suggests heterogenous model fitting (MIMF) for multi-source image correspondences as a way to overcome discrepancy between images caused by nonlinear radiation differences and geometric distortions.
+@lin_robust_2024 suggests heterogeneous model fitting (MIMF) for multi-source image correspondences as a way to overcome discrepancy between images caused by nonlinear radiation differences and geometric distortions.
 
 ## Reflection
 
 This lecture made me painfully aware how much effort needs to be taken before remote sensing data can be used. I'm glad that there is already numerous amount of appropriate algorithms, and corrected data than can be utilized by researchers. Nevertheless, the wide range of possible image enhancements and adjustments stands as a reminder of imagery limitations, i.e. each correction method entails some shortcomings.
 
-## References
-
-::: {#refs}
-:::

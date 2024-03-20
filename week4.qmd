@@ -27,8 +27,3 @@ The estimation of air pollution can be approached as a supervised computer visio
 ## Reflection
 
 Remote sensing data can support policy of introduction of low emission zone in Warsaw in order to ensure informed decisions regarding zone's boundaries and to facilitate a gentle introduction of the zone itself. Especially considering the fact that public consultation were met with a big protest from citizens and numerous local councils. For this reason, being able to ensure negative impact of transport on the urban environment is actually reduced, stands as a crucial part of policy introduction.
-
-## References
-
-::: {#refs}
-:::

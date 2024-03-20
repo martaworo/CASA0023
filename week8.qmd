@@ -7,40 +7,30 @@ link-citations: true
 # Classification II {.unnumbered}
 
 ## Summary
+
 This entry is a continuation of classification topic.
 
-There are available sources of pre-classified data that can be used instead of producing own datasets:
-- GlobeLand30
-- European Space Agency's (ESA) Climate Change Initiative (CCI)
-- Dynamic World - near real time 10m
-- MODIS
-- Google building data
+There are available sources of pre-classified data that can be used instead of producing own datasets: - GlobeLand30 - European Space Agency's (ESA) Climate Change Initiative (CCI) - Dynamic World - near real time 10m - MODIS - Google building data
 
-Dynamic World datasets are using semi-supervised approach - stratification based; trained with the expert group. Mapping unit is 5x5 pixels, therefore its limitation is that it can include various land uses. It is based on CNNs with accuracy assess through Confusion matrix. Training data available at Radiant MLHub.
+**Dynamic World** datasets are using semi-supervised approach - stratification based; trained with the expert group. Mapping unit is 5x5 pixels, therefore its limitation is that it can include various land uses. It is based on CNNs with accuracy assess through Confusion matrix. Training data available at Radiant MLHub.
 
-Object based image analysis (OBIA) - they are based on SLIC (Simple Lienar Iterative Clustering) Algorithm for Superpixel generation. It measure the distance from point to the centre of the pixel
+**Object based image analysis (OBIA)** - they are based on SLIC (Simple Lienar Iterative Clustering) Algorithm for Superpixel generation. It measure the distance from point to the centre of the pixel
 
-Sub pixel analysis (aka Spectral Mixture Analysis) - identification of the composition of land cover types per single pixel; with the use of comparing our findings to the known spectrally pure endmembers; V-I-S triangle is used here
+**Sub pixel analysis (aka Spectral Mixture Analysis)** - identification of the composition of land cover types per single pixel; with the use of comparing our findings to the known spectrally pure endmembers; V-I-S triangle is used here
 
-Accuracy assessment -  this process involves comparing the classified data against the actual data in order to determine how well it performs. Common metrics used in accuracy assessment include overall accuracy (OA), producer's accuracy, user's accuracy, errors of omission, errors of commission and the Kappa coefficient.
+**Accuracy assessment** - this process involves comparing the classified data against the actual data in order to determine how well it performs. Common metrics used in accuracy assessment include overall accuracy (OA), producer's accuracy, user's accuracy, errors of omission, errors of commission and the Kappa coefficient.
 
-Spatial cross validation - cross-validation techniques based on random split of the dataset into training and testing subsets. Crucial for models applied to geographic data because nearby observations are often more similar to each other than to distant observations, due to spatial autocorrelation.
+**Spatial cross validation** - cross-validation techniques based on random split of the dataset into training and testing subsets. Crucial for models applied to geographic data because nearby observations are often more similar to each other than to distant observations, due to spatial autocorrelation.
 
 ## Applications
 
-Image classification has various innovative applications, with one of them that amazes me the most is possibility to detect floating plastics in water bodies [@basu_development_2021].This and many other capabilities behind image classification allows to respond to a range of environmental issues in a very efficient way. Very impressing! I did delve down into a more methodological applications after that:
+Image classification has various innovative applications, with one of them that amazes me the most is possibility to detect floating plastics in water bodies [@basu_development_2021].This and many other capabilities behind image classification allows to respond to a range of environmental issues in a very efficient way. Very impressive! I did delve down into a more methodological applications after that:
 
 In the study by @saba_comparison_2023, three classification methods were evaluated for the purpose of detecting co-seismic landslides in seismically active area in Lesser Himalaya in Pakistan. Maximum Likelihood Classification, OBIA, and COSI-Corr were analyzed for the purpose of identifying their accuracy levels and model reliability (Figure 1). It has been concluded that MLC classification technique is performing worse than other pixel-based landslide classification algorithms which is consistent with other existing literature [@Saba2019ApplicationOS]. COSI-Corr offered better outcome thanks to the sub-pixel analysis and employing extra masks for landslide detection. This has also been confirmed by @Saba2017CoSeismicLA. However, as a consequence of natural variation and atmospheric effects, this method resulted in some extent of spleckled noise in pixels, which in consequence leads to spectral image being exhibited differently. Similar study by @montagnon_sub-pixel_2022 also explored this method for ground deformation study disregarding use of COSI-Corr for CNN-DATe which provided them with results of better accuracy. Back to the initial paper, third method OBIA's performance was deemed as highly dependent on the spatial resolution of the imagery.
 
-
-![Figure 1. Comparison of classification techniques (yellow), i.e. a Pixel-based MLC, b Object–based and c COSI-Corr](images/class.png)
-
+![Figure 1. Comparison of classification techniques (yellow), i.e. a Pixel-based MLC, b Object--based and c COSI-Corr](images/class.png)
 
 ## Reflections
-To Kappa or not to Kappa? I have to admit, this material was rather challenging for me in comprehension since it introduced a lot of new vocabulary and acronyms into my life. Nevertheless, I find them very helpful, and now when I read articles, I am able to understand more dimensions of methodological descriptions than before. 
-In addition, it seems that radiant MLHub might come very handy for my other machine learning projects I'm doing!
 
-## References
+To Kappa or not to Kappa? I have to admit, this material was rather challenging for me in comprehension since it introduced a lot of new vocabulary and acronyms into my life. Nevertheless, I find them very helpful, and now when I read articles, I am able to understand more dimensions of methodological descriptions than before. In addition, it seems that radiant MLHub might come very handy for my other machine learning projects I'm doing!
 
-::: {#refs}
-:::

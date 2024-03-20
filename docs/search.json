@@ -25,7 +25,7 @@
     "href": "week2.html",
     "title": "2  Week 2",
     "section": "",
-    "text": "Xaringan Presentation\nThis week content is a presentation in Xaringan on the selected sensor. Summary, application and reflection are all included in the presentation below:\n\nUnfortunately, when my Xaringan presentation is embedded on Quarto it is loosing all of the theme I applied and some of the images, even though they are stored in the exactly same location as other images that are showing up. Suprisingly, my Infinite Moon Reader and html versions are looking all good. I tried to resolve this issues with TAs, however mission was unsuccessful :c Please find a bit more pretty slides attached below:\n\n\n\nSlide2\n\n\n\n\n\nSlide6\n\n\n\n\n\nSlide7\n\n\n\n\n\nSlide8\n\n\n\n\n\nSlide9"
+    "text": "Xaringan Presentation\nThis week content is a presentation in Xaringan on the selected sensor. Summary, application and reflection are all included in the presentation below:\n\nUnfortunately, when my Xaringan presentation is embedded on Quarto it is loosing all of the theme I applied and some of the images, even though they are stored in the exactly same location as other images that are showing up. Suprisingly, my Infinite Moon Reader and html versions are looking all good.It seems that some of the files are not being pushed to github, however I compared html code and it’s looking exactly the same. I tried to resolve this issues with TAs, however mission was unsuccessful :c Please find a bit more pretty slides attached below:\n\n\n\nSlide2\n\n\n\n\n\nSlide6\n\n\n\n\n\nSlide7\n\n\n\n\n\nSlide8\n\n\n\n\n\nSlide9"
   },
   {
     "objectID": "week1.html",

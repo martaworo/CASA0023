@@ -1,11 +1,5 @@
 ---
 title: "Week 9"
-format: 
-  revealjs:
-    title-slide-attributes:
-      data-background-image: "images/gee9.png"
-      data-background-size: contain
-      data-background-opacity: "0.5"
 bibliography: references.bib
 link-citations: true
 ---

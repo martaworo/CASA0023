@@ -1,5 +1,11 @@
 ---
 title: "Week 9"
+format: 
+  revealjs:
+    title-slide-attributes:
+      data-background-image: "images/gee9.png"
+      data-background-size: contain
+      data-background-opacity: "0.5"
 bibliography: references.bib
 link-citations: true
 ---
@@ -39,6 +45,26 @@ Change detection:
 
 SAR has became a crucial tool in remote sensing, serving both military and non-combatant purposes. For military applications, it is used in intelligence gathering, battlefield survey, and weapons management. On the civilian side, SAR supports a range of activities including monitoring agriculture and land use, topographical mapping, geology, managing oil spills, observing sea ice, and many more. However, as it has been mentioned by @singh_review_2021 there are also some limitations that need to be considered when using SAR imagery, i.e. SAR images are inherently speckled in nature. There are various *despeckling* methods which should be implemented in order to reduce the scale of this issue, before making use out of this resource.
 
+### Practical SAR in GEE
+
+This practical was truly amazing and spectacular! It seems to offer an infinity number of datasets to respond to soooo many research questions. Below I included some of the figures from practical session that inspired me the most.
+
+![False Colour Layer](images/gee7.png)
+
+![False Colour Short Wave Layer](images/gee9.png)
+
+![Lights Layer. Suprisingly a lot of light sources in Belgium?](images/gee10.png)
+
+![RGB Light Layer. Extremely handy for urban change observation or to detect stable points of ligh, e.g. fishing fleet!](images/gee11.png)
+
+![Landsat 8 Image Collection](images/gee12.png) 
+![Global Forest Change 2000–2020 tree cover loss (yellow-red) and 2000 tree cover (black-green)](images/gee17.png)
+
+![NDVI calculated using Sentinel-2](images/gee18.png) 
+
+![Mask of of non-forest areas (black areas of the image)](images/gee20.png) 
+
+![Manual classification for machine learning process ](images/gee21.png) 
 
 ## Reflection
 

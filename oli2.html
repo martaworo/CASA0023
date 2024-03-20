@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Operational Land Imager (OLI)</title>
+    <meta charset="utf-8" />
+    <meta name="author" content=" Marta Woroniecka" />
+    <meta name="date" content="2024-01-16" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Operational Land Imager (OLI)
+]
+.author[
+### <br/>Marta Woroniecka
+]
+.institute[
+### CASA0023 Remotely Sensing Cities and Environments
+]
+.date[
+### 2024-01-16
+]
+
+---
+
+class: inverse
+background-image: url(images/AdobeStock_251166908-scaled.jpeg)
+
+
+# Summary: Overview
+Operational Land Imager (OLI) is an  sensor that is used on Landsat 8 and Landsat 9 satellites built by the Ball Aerospace &amp; Technologies Corporation (NASA, 2021).
+
+* It is a push broom type of sensor that plays a crucial role in Earth observation and remote sensing. 
+
+* It has a five-year design life. 
+
+* The entire Earth falls within view once every 16 days.
+
+
+
+&lt;div style="display: flex;"&gt;
+  &lt;figure&gt;
+    &lt;img src="images/OLI_logo2.jpg" alt="oli" style="width:500px; height: 250;"&gt;
+   &lt;figcaption style="font-size: 10px;"&gt;Operational Land Imager. (Image: NASA)&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;figure style="margin-left: 20px;"&gt;
+    &lt;img src="images/fly.jpg" alt="satellite" style="width: 500px; height: 250;"&gt;
+    &lt;figcaption style="font-size: 10px;"&gt;Landsat 8 Satellite Sensor. (Image: NASA)&lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+---
+# Summary: How does it work?
+
+It measures in the visible, near infrared, and short wave infrared portions of the spectrum as well as a panchromatic band (Knight &amp; Kvaran, 2014).
+* Its images have 30-meter multi-spectral spatial resolutions along a 185 km wide swath, covering wide areas of the Earth’s landscape while providing sufficient resolution to distinguish features like urban centers, farms, forests and other land uses
+* It has a four-mirror telescope and 12-bit quantization
+
+  &lt;/figure&gt;
+  &lt;figure style="margin: 0 auto; width: 480px;"&gt;
+    &lt;img src="images/Landsat_Data_Continuity_Mission_Operational_Land_Imager_Instrument_Design.jpg" alt="instrument" style="width: 370px; height: 230;"&gt;
+    &lt;figcaption style="font-size: 10px;"&gt; OLI Design.(Image: NASA) &lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+---
+# Summary: Push Broom  Scanner
+
+A push broom scanner (an along-track scanner), is a device that captures images with the use of spectroscopic sensors (Middlebury Remote Sensing, 2020).
+
+#### Advantages
+
+* A significant advantage of push broom scanners over whisk broom scanners is their ability to gather more light by focusing on a specific area for an extended period, like a long exposure on a camera. 
+This feature is particularly beneficial for capturing images under difficult lighting conditions and for observing subtle features on the Earth's surface.
+
+#### Challenges
+
+
+* Sensitivity of the individual detectors - this variance can affect image uniformity and quality, requiring calibration and correction during image processing.
+* Resolution is lower than a whisk broom scanner because the entire image is captured at once.
+---
+
+# Applications
+
+The images and data that OLI has helped collect have practical applications today in:
+* environmental monitoring (e.g. monitoring changes in snow, ice, and water)
+* urban planning
+
+* disaster management
+* agriculture
+
+  &lt;/figure&gt;
+  &lt;figure style="margin: 0 auto; width: 350px;"&gt;
+  &lt;img src="images/ice.jpg" alt="ice" style="width: 100%; height: auto;"&gt;
+  &lt;figcaption style="font-size: 10px;"&gt;Change in the amount of ice and snow in nine days in Antarctica (Image: NASA))&lt;/figcaption&gt;
+&lt;/figure&gt;
+  
+---
+
+# Applications: Environmental Monitoring
+
+In study by Kumar et al. (2022) Landsat 8 OLI was used to calculate the ground surface temperature in order to assess land degradation. Precisely, this study develops an algorithm using the observed thermal radiance of the LANDSAT 8 TIRS Band 10. Researchers were able to estimate how much of area is degradation lands, vegetation lands, built-up lands, desertified lands and water bodies. 
+
+&lt;figure style="margin: 0 auto; width: 300px;"&gt;
+  &lt;img src="images/kumar.jpg" alt="ice" style="width: 100%; height: auto;"&gt;
+  &lt;figcaption style="font-size: 10px;"&gt;Land degradation and desertification map of the study area. (Kumar et al., 2022)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+---
+
+# Applications: Urban Planning
+
+OLI can support urban planners in mapping city growth, land use changes, and infrastructure development.
+For example, a study by Khallef et al. (2020) analyzes the urban heat islands of the city of Guelma. Thanks to the use of data from Landsat 8, researchers were able to detect which parts of the city are experiencing the strongest phenomenon of urban heat islands and the worst eco-environment, and in consequence suggest which zones urgently require urban redevelopment. 
+  &lt;/figure&gt;
+  &lt;figure style="margin: 0 auto; width: 400px;"&gt;
+    &lt;img src="images/heat.png" alt="ice" style="width: 900px; height: 700;"&gt;
+   &lt;figcaption style="font-size: 10px;"&gt;Ecological evaluation index of the city of Guelma. Khallef et al. (2020)&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+---
+
+# Applications: Agriculture
+
+OLI imagery can be leveraged for making informed decision for agricultural production.
+In a study by Ozelkan et al. (2016), Landsat 8 Operational Land Imager (OLI) NDVI data was used in order to estimate meteorological drought – Standardized Precipitation Index (SPI) during spring and summer of 2013 and 2014 in Southeast Anatolia (Turkey). Accurate and spatially-explicit drought mapping can support effective farmland management and mitigate risks associated with drought and desertification.
+  &lt;/figure&gt;
+  &lt;figure style="margin: 0 auto; width: 300px;"&gt;
+    &lt;img src="images/agri.jpg" alt="ice" style="width: 900px; height: 700;"&gt;
+    &lt;figcaption style="font-size: 10px;"&gt;NDVI images calculated from OLI (Ozelkan et al., 2016). &lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+---
+background-image: url(images/olib.jpg)
+background-size: cover
+class: inverse, center
+
+# Reflections
+&lt;/br&gt;
+
+The OLI imagery is an incredible step forward in the ability to observe and analyze the Earth's surface. Vast practical application across many fields is just remarkable. It seems like an amazing tool for change monitoring, which can lead to extraordinary findings. Learning from the researches completed with the use of OLI, it can be concluded that there are plenty of approaches that can be taken for every study. 
+
+I think, my lesson learnt would be design my future research questions in a very detailed way, in order to ensure the abundance of data do not overpower me and my processing powers. 
+
+---
+# References
+* Khallef, B. et al. (2020) ‘Analysis of urban heat islands using Landsat 8 Oli / TIR data: Case of the City of Guelma (Algeria)’, Asian Journal of Environment &amp;amp; Ecology, pp. 42–51. doi:10.9734/ajee/2020/v12i430167. 
+* Knight, E. and Kvaran, G. (2014) ‘Landsat-8 operational land imager design, characterization and performance’, Remote Sensing, 6(11), pp. 10286–10305. doi:10.3390/rs61110286.
+* Kumar, B.P. et al. (2022) ‘Geo-environmental monitoring and assessment of land degradation and desertification in the semi-arid regions using Landsat 8 oli / TIRS, LST, and NDVI approach’, Environmental Challenges, 8, p. 100578. doi:10.1016/j.envc.2022.100578.
+* Ozelkan, E., Chen, G. and Ustundag, B.B. (2016) ‘Multiscale object-based drought monitoring and comparison in rainfed and irrigated agriculture from Landsat 8 Oli imagery’, International Journal of Applied Earth Observation and Geoinformation, 44, pp. 159–170. doi:10.1016/j.jag.2015.08.003.   
+* Middlebury Remote Sensing (2020a) Whiskbroom vs. pushbroom sensors (class 4- V2), YouTube. Available at: https://www.youtube.com/watch?v=S7o0E593uc0&amp;ab_channel=MiddleburyRemoteSensing (Accessed: 18 January 2024).   
+* NASA (2021) Operational Land Imager, NASA. Available at: https://landsat.gsfc.nasa.gov/satellites/landsat-8/spacecraft-instruments/operational-land-imager/ (Accessed: 18 January 2024).
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

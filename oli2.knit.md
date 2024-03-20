@@ -14,9 +14,7 @@ output:
 class: inverse
 background-image: url(images/AdobeStock_251166908-scaled.jpeg)
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
+
 # Summary: Overview
 Operational Land Imager (OLI) is an  sensor that is used on Landsat 8 and Landsat 9 satellites built by the Ball Aerospace & Technologies Corporation (NASA, 2021).
 

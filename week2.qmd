@@ -7,11 +7,7 @@ bibliography: references.bib
 
 This week content is a presentation in Xaringan on the selected sensor. Summary, application and reflection are all included in the presentation below:
 
-```{=html}
+
+``````{=html}
 <iframe src="oli2.html" width="100%" height="500px" style="border:none;"></iframe>
 ```
-
-```{=html}
-<iframe src="file:///C:/Users/woron/Dropbox/UCL/Remote%20Sesnsing/Learning%20Diart/oli2.html" width="100%" height="500px" style="border:none;"></iframe>
-```
-

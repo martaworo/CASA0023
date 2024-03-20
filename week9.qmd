@@ -31,7 +31,7 @@ Certain surfaces absorb electrical systems more strongly -\> this property matte
 Change detection:
 
 -   Example 1 (from lecture) Phase - location of wave on the cycle when it comes back to the sensor. If the surface changes (due to earthquake for example), by even 3cm (!), the signal will be returned differently. It allows to detect small shifts on the earth surface - it allows to map the changes in elevations
--   Example 2 [@ballinger_leveraging_2023] Pixel Wise T-Test -\> the main challange is to identify buildings that have been damaged due to conflicts - when and where. However, in previous projects based on satellite imagery and CNN techniques, there have been following issues observed:
+-   Example 2 [@ballinger_leveraging_2023] Pixel Wise T-Test -\> the main challenge is to identify buildings that have been damaged due to conflicts - when and where. However, in previous projects based on satellite imagery and CNN techniques, there have been following issues observed:
     -   expensive - it cannot be replicated on the whole country because it needs high resolution imagery to be replicated, e.g. \$13.9 million to scan all Ukraine each time
     -   it is not persistently collected like, e.g. Sentinel 1
     -   neural networks require training to be accurate in different geographies -\> according to Monitoring war destruction from space using machine learning Hannes Mueller -\> the issue is train/test split is based on same cities and the accuracy results, if replicated in different cities (even if in the same country) tend to drop significantly. In this case, as explored by Ollie Ballinger, SAR radar imagery can be applied, as it has been presented on the example of Ukraine and Gaza war zones, where flat roof surface (rumbled or not) has been used to detect damaged buildings (possible thanks to changes in backscattering). This method allowed to replicate high accuracies across different cities in different countries. Limitations here: snow on the rooftops!
@@ -46,7 +46,6 @@ Conversely, add some limitations https://link.springer.com/article/10.1007/s1183
 ## Reflection
 
 This week I am especially amazed by the applications of SAR imagery both in soldierly and non-combatant uses. Its ability to provide a vast data in an affordable way allows for advanced analysis
-
 
 ## References
 

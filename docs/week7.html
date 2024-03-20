@@ -81,6 +81,7 @@ div.csl-indent {
 }</script>
 
 
+<link rel="stylesheet" href="date.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -201,7 +202,6 @@ div.csl-indent {
   </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">7.2</span> Applications</a></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">7.3</span> Reflections</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.4</span> References</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -240,8 +240,9 @@ div.csl-indent {
 <p>Overfitting - too perfect model, 100% accuracy, most likely useless, e.g leaf with just one person or pixel value</p>
 <p>Underfitting - potentially can happen when forcing a linear relationship in regression when out data in not linear.</p>
 <p>- random forests - produce bootstrap samples; many decision trees with less control (from a random numver of variables)</p>
-<p>- image classification: - unsupervised (pixels are grouped into “clusters” based on their properties, and each “cluster” is classified with a land cover class)</p>
+<p>- image classification:</p>
 <ul>
+<li><p>Unsupervised (pixels are grouped into “clusters” based on their properties, and each “cluster” is classified with a land cover class)</p></li>
 <li><p>Supervised (representative samples are chosen for each land cover class, and based on the training set results, this is replicated for the entire image)</p></li>
 <li><p>OBIA - object based image analysis (especially useful for high-resolution data because it uses both spectral and contextual information; pixels are grouped into representative vector shapes with size and geometry)</p></li>
 </ul>
@@ -250,9 +251,8 @@ div.csl-indent {
 </section>
 <section id="applications" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">7.2</span> Applications</h2>
-<p>The goal of classification in environmental and Earth sciences is often to monitor changes over time, assess ecosystem health, plan conservation efforts, or understand human impact on natural landscapes, among other applications. In recent years, the use of deep learning in remote sensing image classification is becoming more and more popular, especially thanks to its powerful feature extraction capabilities and robustness <span class="citation" data-cites="dou_remote_2021">(<a href="week1.html#ref-dou_remote_2021" role="doc-biblioref">Dou et al. 2021</a>)</span>.</p>
-<p>Brazil case from lecture: Monitoring forests + illegal logging - instead of using the raw Earth observation data, they’re making composites, they’re taking part of the data that are most relevant for their application, so here we have maximum, minimum, mean values and some kind of linear regression also happening. And then from those metrics they are then using a classifier on the metrics as opposed to the raw Google data. Forest fires paper - vegetation was from a classified Landsat TM image - classified 16 categories.</p>
-<p><span class="citation" data-cites="feng_deep_2023">Feng et al. (<a href="week1.html#ref-feng_deep_2023" role="doc-biblioref">2023</a>)</span> study aims to develop a deep learning framework to improve the accuracy of crop type identification using Sentinel 2 data. Researchers built a time-series image classification framework using Attention-based Bidirectional Gated Recurrent Unit (A-BiGRU) to map rice, maize, and soybean in Fujin region of China, from reconstructed Sentinel-2 time-series images. Figure 1 demonstrates methodolgy used in this study. Interestingly, despite its the inherent disadvantage of CNNs is the need for a large number of spatially labeled samples as it has been observed by Gallo et al.&nbsp;(2023). Nevertheless, different studies which focused on using a different algorithm, e.g. <span class="citation" data-cites="wei2023early">Wei et al. (<a href="week1.html#ref-wei2023early" role="doc-biblioref">2023</a>)</span> who used RF algorithm also on Sentinel 2 data, was able to achieve a significantly higher accuracy. Their study was based on random forest importance and normalization, which concluded in a strong performance for early crop mapping.</p>
+<p>The goal of classification in environmental and Earth sciences is often to monitor changes over time, assess ecosystem health, plan conservation efforts, or understand human impact on natural landscapes, among other applications. In recent years, the use of deep learning in remote sensing image classification is becoming more and more popular, especially thanks to its powerful feature extraction capabilities and robustness <span class="citation" data-cites="dou_remote_2021">(<a href="references.html#ref-dou_remote_2021" role="doc-biblioref">Dou et al. 2021</a>)</span>.</p>
+<p><span class="citation" data-cites="feng_deep_2023">Feng et al. (<a href="references.html#ref-feng_deep_2023" role="doc-biblioref">2023</a>)</span> study aims to develop a deep learning framework to improve the accuracy of crop type identification using Sentinel 2 data. Researchers built a time-series image classification framework using Attention-based Bidirectional Gated Recurrent Unit (A-BiGRU) to map rice, maize, and soybean in Fujin region of China, from reconstructed Sentinel-2 time-series images. Figure 1 demonstrates methodolgy used in this study. Interestingly, despite its the inherent disadvantage of CNNs is the need for a large number of spatially labeled samples as it has been observed by Gallo et al.&nbsp;(2023). Nevertheless, different studies which focused on using a different algorithm, e.g. <span class="citation" data-cites="wei2023early">Wei et al. (<a href="references.html#ref-wei2023early" role="doc-biblioref">2023</a>)</span> who used RF algorithm also on Sentinel 2 data, was able to achieve a significantly higher accuracy. Their study was based on random forest importance and normalization, which concluded in a strong performance for early crop mapping.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/method.jpg" class="img-fluid figure-img"></p>
@@ -263,9 +263,8 @@ div.csl-indent {
 <section id="reflections" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">7.3</span> Reflections</h2>
 <p>Case of Brazil forest monitoring was among the most thought provoking this week for me. Fact that the area of a forest the size of Nepal can be monitored by two employees with two vehicles, a boat and a drone and provide a sufficient image within 20 minutes is just incredible, how efficient this is! At the same time, it is also a bit scary to think about its monitoring capabilities… is there a line between control, justice and big brother entering into our lives? Nevertheless, it is incredible how all of the image classification efforts (as in example from China) may result in tools able to predict crop yield and monitor its growth, indirectly ensuring food security. I found it interesting to find out about machine learning real use-cases. I’m quite amazed with its vast options and and seemingly endless opportunities for accuracy improvements.</p>
-</section>
-<section id="references" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="references"><span class="header-section-number">7.4</span> References</h2>
+
+
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
 <div id="ref-dou_remote_2021" class="csl-entry" role="listitem">
 Dou, Peng, Huanfeng Shen, Zhiwei Li, Xiaobin Guan, and Wenli Huang. 2021. <span>“Remote <span>Sensing</span> <span>Image</span> <span>Classification</span> <span>Using</span> <span>Deep</span>–<span>Shallow</span> <span>Learning</span>.”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 14 (January): 3070–83. <a href="https://doi.org/10.1109/JSTARS.2021.3062635">https://doi.org/10.1109/JSTARS.2021.3062635</a>.
@@ -277,8 +276,6 @@ Feng, Fukang, Maofang Gao, Ronghua Liu, Shuihong Yao, and Guijun Yang. 2023. <sp
 Wei, Peng, Huichun Ye, Shuting Qiao, Ronghao Liu, Chaojia Nie, Bingrui Zhang, Lijuan Song, and Shanyu Huang. 2023. <span>“Early Crop Mapping Based on Sentinel-2 Time-Series Data and the Random Forest Algorithm.”</span> <em>Remote Sensing</em> 15 (13): 3212. <a href="https://doi.org/10.3390/rs15133212">https://doi.org/10.3390/rs15133212</a>.
 </div>
 </div>
-
-
 </section>
 </section>
 

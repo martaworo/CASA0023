@@ -199,7 +199,6 @@ div.csl-indent {
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">3.2</span> Applications</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3.4</span> References</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -229,15 +228,16 @@ div.csl-indent {
 <section id="summary" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
 <ol type="1">
-<li><p>Geometric correction – distortion due to wind, Earth rotation, etc. Points are identified in a satellite image, and true image, e.g.&nbsp;Open Street Map (true representation of Earth). Ground control point is this location in image X, and find it on image Y. Then linear regression with distorted image and with gold standard data is performed. From Gold to EO. The more control points, the lower the error will be.</p></li>
+<li><p>Geometric correction – distortion due to wind, Earth rotation, etc. Points are identified in a satellite image, and true image, e.g.&nbsp;Open Street Map (true representation of Earth). Ground control point is this location in image X, and find it on image Y. Then linear regression with distorted image and with gold standard data is performed. From Gold to EO. The more control points, the lower the error.</p></li>
 <li><p>Atmospheric correction – distortion due to haze or scattering; adjacency effect – pixels bleeding into other pixels; two ways to remove effects of atmosphere:</p>
 <ol type="i">
-<li>relative - Dark object subtraction (DOS) or histogram adjustment; Psuedo-invariant Features (PIFs). o absolute (definitive) – done through atmospheric radiative transfer models or empirical line correction – using a field spectrometer, and the you do linear regression between these values. Path radiance (radiance reflected above the surface), atmospheric attenuation (absorption of EMR due to materials in atmosphere)</li>
+<li><strong>relative</strong> - Dark object subtraction (DOS) or histogram adjustment; Psuedo-invariant Features (PIFs).</li>
+<li><strong>absolute (definitive)</strong> – done through atmospheric radiative transfer models or empirical line correction – using a field spectrometer, and the you do linear regression between these values. Path radiance (radiance reflected above the surface), atmospheric attenuation (absorption of EMR due to materials in atmosphere)</li>
 </ol></li>
 <li><p>Orthorectification correction – subset of georectification;</p>
 <ol type="i">
-<li><p>georectification = giving coordinates to an image;</p></li>
-<li><p>orthorectification = removing distortions… making the pixels viewed at nadir (straight down)</p></li>
+<li><p><strong>georectification</strong> = giving coordinates to an image;</p></li>
+<li><p><strong>orthorectification</strong> = removing distortions… making the pixels viewed at nadir (straight down)</p></li>
 </ol></li>
 </ol>
 <p>Atmospheric correction has to be done before topographic correction Radiometric Calibration - sensors capture image brightness and distributed as a Digital Number (or DN) - allows for efficient storage but has no units! Sensor calibration = linear regression;</p>
@@ -247,29 +247,29 @@ div.csl-indent {
 <li><p>Reflectance is when light is off.</p></li>
 <li><p>Reflectance is a property of a material (e.g.&nbsp;reflectance of grass is a property of grass)</p></li>
 </ol>
-<p>Landsat ARD – <strong>Analysis Ready Data</strong> – there are algorithms that prepare data but they are not perfect, what are the assumptions, influences. Level 2 product – means something has changed or advanced from level 1.</p>
-<p>Joining data sets/ enhancements in remote sensing it is termed Mosaicking. If our study area is between two tiles, we do join. Before we clip data, we generate a seamline – 10 pixels from both tiles, overlap, and apply histogram matching algorithm.</p>
+<p>Landsat ARD – <strong>Analysis Ready Data</strong> – there are algorithms that prepare data but they are not perfect, what are the assumptions, influences.</p>
+<p>Level 2 product – means something has changed or advanced from level 1.</p>
+<p>Joining data sets/ enhancements in remote sensing it is termed <em>mosaicking</em>. If our study area is between two tiles, we do join. Before we clip data, we generate a seamline – 10 pixels from both tiles, overlap, and apply histogram matching algorithm.</p>
 </section>
 <section id="applications" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">3.2</span> Applications</h2>
-<p>Since geometric distortions are inherit in remote sensing imagery due to the nature of image collection (platform movements) and Earth’s rotation (inevitable), this section focuses on studies that explore various preprocessing methods for geometric correction.</p>
-<p>As it has been noted by <span class="citation" data-cites="pdave_survey_2015">P.Dave, Joshi, and Srivastava (<a href="week1.html#ref-pdave_survey_2015" role="doc-biblioref">2015</a>)</span> there are a couple of major difficulties occurring during geometric correction such as:</p>
+<p>Since geometric distortions are inherit in remote sensing imagery due to the nature of image collection (platform movements) and Earth’s rotation (inevitable), this section focuses on studies that explore various pre-processing methods for geometric correction.</p>
+<p>As it has been noted by <span class="citation" data-cites="pdave_survey_2015">P.Dave, Joshi, and Srivastava (<a href="references.html#ref-pdave_survey_2015" role="doc-biblioref">2015</a>)</span> there are a couple of major difficulties occurring during geometric correction such as:</p>
 <ol type="1">
 <li><p>Selection of the feature points form the images</p></li>
 <li><p>Determination of correspondence between images</p></li>
 <li><p>Selection of appropriate transformation function</p></li>
 <li><p>Lack of technique to utilize for images with nonlinear geometric distortion.</p></li>
 </ol>
-<p>Several studies have explored a variety of approaches to the aforementioned issues such as <span class="citation" data-cites="nguyen_optimal_2015">Nguyen (<a href="week1.html#ref-nguyen_optimal_2015" role="doc-biblioref">2015</a>)</span> who suggested a way to optimize GCP (ground control point) assembly using a genetic/evolution algorithm (GA), compared to traditional GCPs and those selected by a Voronoi diagram approach <span class="citation" data-cites="li_research_2009">(<a href="week1.html#ref-li_research_2009" role="doc-biblioref">Li and Bo 2009</a>)</span>. It is concluded that the accuracy of GA-optimized GCPs is hihger than of the other methods.</p>
-<p><span class="citation" data-cites="ma_image_2021">Ma et al. (<a href="week1.html#ref-ma_image_2021" role="doc-biblioref">2021</a>)</span> provides an overview of available methods intending to overcome second issue (correspondence between images) with area-based matching with machine learning strategies outlines for remote sensing data.</p>
-<p><span class="citation" data-cites="lin_robust_2024">Lin et al. (<a href="week1.html#ref-lin_robust_2024" role="doc-biblioref">2024</a>)</span> suggests heterogenous model fitting (MIMF) for multi-source image correspondences as a way to overcome discrepancy between images caused by nonlinear radiation differences and geometric distortions.</p>
+<p>Several studies have explored a variety of approaches to the aforementioned issues such as <span class="citation" data-cites="nguyen_optimal_2015">Nguyen (<a href="references.html#ref-nguyen_optimal_2015" role="doc-biblioref">2015</a>)</span> who suggested a way to optimize GCP (ground control point) assembly using a genetic/evolution algorithm (GA), compared to traditional GCPs and those selected by a Voronoi diagram approach <span class="citation" data-cites="li_research_2009">(<a href="references.html#ref-li_research_2009" role="doc-biblioref">Li and Bo 2009</a>)</span>. It is concluded that the accuracy of GA-optimized GCPs is higher than of the other methods.</p>
+<p><span class="citation" data-cites="ma_image_2021">Ma et al. (<a href="references.html#ref-ma_image_2021" role="doc-biblioref">2021</a>)</span> provides an overview of available methods intending to overcome second issue (correspondence between images) with area-based matching with machine learning strategies outlines for remote sensing data.</p>
+<p><span class="citation" data-cites="lin_robust_2024">Lin et al. (<a href="references.html#ref-lin_robust_2024" role="doc-biblioref">2024</a>)</span> suggests heterogeneous model fitting (MIMF) for multi-source image correspondences as a way to overcome discrepancy between images caused by nonlinear radiation differences and geometric distortions.</p>
 </section>
 <section id="reflection" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
 <p>This lecture made me painfully aware how much effort needs to be taken before remote sensing data can be used. I’m glad that there is already numerous amount of appropriate algorithms, and corrected data than can be utilized by researchers. Nevertheless, the wide range of possible image enhancements and adjustments stands as a reminder of imagery limitations, i.e.&nbsp;each correction method entails some shortcomings.</p>
-</section>
-<section id="references" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="references"><span class="header-section-number">3.4</span> References</h2>
+
+
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
 <div id="ref-li_research_2009" class="csl-entry" role="listitem">
 Li, Ying, and Cheng Bo. 2009. <span>“Research on <span>Automatic</span> <span>Optimization</span> of <span>Ground</span> <span>Control</span> <span>Points</span> in <span>Image</span> <span>Geometric</span> <span>Rectification</span> <span>Based</span> on <span>Voronoi</span> <span>Diagram</span>,”</span> October. <a href="https://doi.org/10.1117/12.813148">https://doi.org/10.1117/12.813148</a>.
@@ -287,8 +287,6 @@ Nguyen, Thanh. 2015. <span>“Optimal <span>Ground</span> <span>Control</span> <
 P.Dave, Chintan, Rahul Joshi, and S. Srivastava. 2015. <span>“A <span>Survey</span> on <span>Geometric</span> <span>Correction</span> of <span>Satellite</span> <span>Imagery</span>.”</span> <em>International Journal of Computer Applications</em> 116 (April): 24–27. <a href="https://doi.org/10.5120/20389-2655">https://doi.org/10.5120/20389-2655</a>.
 </div>
 </div>
-
-
 </section>
 </section>
 

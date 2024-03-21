@@ -52,13 +52,14 @@ This practical was truly amazing and spectacular! It seems to offer an infinity 
 ![RGB Light Layer. Extremely handy for urban change observation or to detect stable points of ligh, e.g. fishing fleet!](images/gee11.png)
 
 ![Landsat 8 Image Collection](images/gee12.png) 
-![Global Forest Change 2000–2020 tree cover loss (yellow-red) and 2000 tree cover (black-green)](images/gee17.png)
 
-![NDVI calculated using Sentinel-2](images/gee18.png) 
+![Global Forest Change 2000--2020 tree cover loss (yellow-red) and 2000 tree cover (black-green)](images/gee17.png)
 
-![Mask of of non-forest areas (black areas of the image)](images/gee20.png) 
+![NDVI calculated using Sentinel-2](images/gee18.png)
 
-![Manual classification for machine learning process ](images/gee21.png) 
+![Mask of of non-forest areas (black areas of the image)](images/gee20.png)
+
+![Manual classification for machine learning process](images/gee21.png)
 
 ## Reflection
 
